@@ -1,0 +1,126 @@
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.contact-info-section {
+  background: var(--bg-gradient);
+  padding: 3rem 1rem;
+  width: 100%;
+}
+
+.contact-info-heading {
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: var(--black-text);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact-highlight {
+  color: var(--highlight-text);
+}
+
+.contact-info-inner-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  width: 100%;
+  max-width: 75rem;
+  margin: 1.25rem auto;
+  padding: 0 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .contact-info-inner-container {
+    grid-template-columns: 1fr;
+  }
+  .contact-info-heading {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-info-heading {
+    font-size: 1.3rem;
+  }
+}
+.contact-info-box {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-left: 1.8px solid #9175d8;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-info-icon {
+  width: 55px;
+  height: 55px;
+  background-color: #54387a;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 21px;
+  flex-shrink: 0;
+  margin-top: -5px;
+}
+
+.contact-info-card-name {
+  font-size: 1.2rem;
+  color: #54387a;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info-links,
+.contact-info-phone,
+.contact-info-email {
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #000000;
+  letter-spacing: 0.2px;
+}
+
+.contact-info-link {
+  color: #000000;
+}
+.contact-info-email {
+  display: inline-block;
+  margin-top: 0.1rem;
+}
+
+.separator {
+  color: #000000;
+  margin: 0 8px;
+}
+
+.contact-info-social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.contact-info-social-icons a {
+  color: #000000;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.contact-info-social-icons a:hover {
+  cursor: pointer;
+}
+
+.contact-info-description {
+  font-size: 1.1rem;
+  color: #555555;
+  line-height: 1.8rem;
+  margin-top: 1.3rem;
+}

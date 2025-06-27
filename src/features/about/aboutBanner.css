@@ -1,0 +1,152 @@
+.about-banner-section {
+  background: var(--bg-gradient);
+  padding: 6rem 1rem 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: auto;
+  box-sizing: border-box;
+}
+
+.about-banner-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 75rem;
+  width: 100%;
+  gap: 3rem;
+  margin-top: 1rem;
+  padding: 2.3rem 1rem;
+  flex-wrap: wrap;
+}
+
+.about-banner-inner-container {
+  gap: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-banner-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.about-banner-text-container {
+  flex: 1;
+  line-height: 1.6;
+}
+
+.about-banner-image {
+  width: 100%; /* Allow image to scale fully */
+  max-width: 35rem;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.about-banner-badge {
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffffff;
+  color: #000000;
+  padding: 0.5rem 0.9rem;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  font-weight: 550;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: max-content;
+}
+
+.about-banner-emoji {
+  font-size: 1.5rem;
+}
+
+.about-banner-heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 3.5rem;
+  color: var(--black-text);
+}
+
+.about-banner-highlight {
+  color: var(--highlight-text);
+}
+
+.about-banner-description {
+  font-size: 1.2rem;
+  color: var(--gray-text);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+}
+
+/* .about-banner-cv-btn {
+  background-color: var(--bg-button);
+  color: var(--button-text);
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 550;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  display: inline-block;
+  margin-top: 1rem;
+} */
+
+@media (max-width: 1024px) {
+  .about-banner-section {
+    padding: 4rem 1rem 0.3rem 1rem;
+  }
+  .about-banner-inner-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 3.5rem;
+  }
+  .about-banner-image-container {
+    justify-content: center;
+    width: 100%;
+  }
+  .about-banner-image {
+    width: 100%;
+    max-width: 100%; /* Remove constraint */
+  }
+}
+
+@media (max-width: 600px) {
+  .about-banner-section {
+    padding: 1.5rem 1rem;
+  }
+  .about-banner-heading {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .about-banner-description {
+    font-size: 1.1rem;
+  }
+  .about-banner-image-container {
+    width: 100%;
+    padding: 0;
+  }
+  .about-banner-image {
+    width: 100%;
+    max-width: 100%;
+  }
+  .about-banner-badge {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  .about-banner-emoji {
+    font-size: 1rem;
+  }
+}

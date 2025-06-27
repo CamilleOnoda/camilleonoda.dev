@@ -1,0 +1,130 @@
+.about-skills-section {
+  background: var(--bg-gradient);
+  padding: 4rem 1rem 0rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -25px;
+}
+
+.about-skills-container {
+  max-width: 75rem;
+  width: 100%;
+}
+
+.about-skills-inner-container {
+  width: 100%;
+  max-width: 75rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  padding: 4rem 1rem;
+}
+
+.about-skills-education-container,
+.about-skills-skill-container {
+  max-width: 100%;
+  text-align: left;
+}
+
+.about-skills-education-heading,
+.about-skills-skill-heading {
+  font-size: 2.3rem;
+  color: var(--secondary-lavender-color);
+  margin-bottom: 2.5rem;
+  font-weight: 600;
+}
+
+.about-skills-education-list,
+.about-skills-skill-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-skills-education-items-container,
+.about-skills-skill-items-container {
+  position: relative;
+}
+
+.about-skills-education-items::before,
+.about-skills-skill-items::before {
+  content: "•";
+  color: var(--secondary-lavender-color);
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-right: 1.2rem;
+}
+
+.about-skills-education-items,
+.about-skills-skill-items {
+  font-size: 1.4rem;
+  color: var(--black-text);
+  letter-spacing: 0.3px;
+}
+
+@media (max-width: 1024px) {
+  .about-skills-inner-container {
+    grid-template-columns: 1fr;
+  }
+  .about-skills-education-heading,
+  .about-skills-skill-heading {
+    text-align: center;
+  }
+  .about-skills-education-container,
+  .about-skills-skill-container {
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .about-skills-education-container {
+    margin-top: -2rem;
+  }
+  .about-skills-description {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-skills-heading {
+    font-size: 2.3rem;
+    line-height: 2.6rem;
+  }
+
+  .about-skills-description {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+  }
+
+  .about-skills-education-heading,
+  .about-skills-skill-heading {
+    font-size: 1.9rem;
+    margin-bottom: 20px;
+  }
+
+  .about-skills-education-items,
+  .about-skills-skill-items {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-skills-heading {
+    font-size: 1.8rem;
+  }
+
+  .about-skills-description {
+    font-size: 1.2rem;
+  }
+
+  .about-skills-inner-container {
+    gap: 2rem;
+  }
+
+  .about-skills-education-items,
+  .about-skills-skill-items {
+    font-size: 1.1rem;
+    line-height: 2rem;
+  }
+}
