@@ -12,7 +12,7 @@
   text-align: center;
   color: var(--black-text);
   margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .home-testimonials-highlight {
@@ -60,7 +60,7 @@
 }
 
 .home-testimonials-user img {
-  width: 2.8125rem; /* 45px */
+  width: 2.8125rem;
   height: 2.8125rem;
   border-radius: 50%;
   object-fit: cover;
@@ -87,12 +87,6 @@
   }
   .home-testimonials-heading {
     font-size: 2.3rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .home-testimonials-heading {
-    font-size: 1.8rem;
     line-height: 2.7rem;
   }
 }
