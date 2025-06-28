@@ -95,14 +95,6 @@ const Navbar = () => {
               className="navbar-link-item navbar-dropdown-wrapper"
               onMouseEnter={() => handleMouseEnter("portfolio")}
               onMouseLeave={handleMouseLeave}
-              // onClick={(e) => {
-              //   if (isMobile) {
-              //     e.preventDefault();
-              //     setDropdownOpen(
-              //       dropdownOpen === "portfolio" ? "" : "portfolio"
-              //     );
-              //   }
-              // }}
               onClick={(e) => {
                 if (isMobile) {
                   e.preventDefault(); // stop navigating on parent click
@@ -150,12 +142,6 @@ const Navbar = () => {
               className="navbar-link-item navbar-dropdown"
               onMouseEnter={() => handleMouseEnter("blog")}
               onMouseLeave={handleMouseLeave}
-              // onClick={(e) => {
-              //   if (isMobile) {
-              //     e.preventDefault();
-              //     setDropdownOpen(dropdownOpen === "blog" ? "" : "blog");
-              //   }
-              // }}
               onClick={(e) => {
                 if (isMobile) {
                   e.preventDefault();
@@ -178,7 +164,7 @@ const Navbar = () => {
                 <ul className="navbar-dropdown-menu">
                   <li className="navbar-link-item">
                     <Link
-                      to="/blog-details/"
+                      to="/blog-details"
                       className="navbar-dropdown-item"
                       onClick={() => {
                         setDropdownOpen("");

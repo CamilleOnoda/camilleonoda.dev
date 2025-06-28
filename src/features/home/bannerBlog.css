@@ -1,6 +1,8 @@
 .home-blog-section {
   background: var(--bg-gradient);
-  padding: 3.5rem 1rem 5rem 1rem;
+  /* padding: 3.5rem 1rem 5rem 1rem; */
+  padding: 2rem 1rem 5rem 1rem;
+  margin-top: -0.5rem;
   width: 100%;
 }
 

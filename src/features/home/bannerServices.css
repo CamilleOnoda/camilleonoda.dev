@@ -1,7 +1,8 @@
 .home-services-container {
   background: var(--bg-gradient);
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
   width: 100%;
+  margin-top: -0.5rem;
 }
 
 .home-services-heading {
@@ -18,12 +19,12 @@
 }
 
 .home-services-inner-container {
-  display: grid; /* Grid layout */
-  grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 3rem; /* Spacing between items */
-  width: 100%; /* Full width */
-  max-width: 75rem; /* Limit width to 1200px */
-  margin: 1.25rem auto; /* 20px vertical, center horizontally */
+  width: 100%;
+  max-width: 75rem;
+  margin: 1.25rem auto;
   padding: 0 1.25rem; /* 20px horizontal padding */
 }
 

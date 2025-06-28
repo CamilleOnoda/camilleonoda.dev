@@ -6,7 +6,6 @@
   align-items: center;
   width: 100%;
   min-height: auto;
-  box-sizing: border-box;
 }
 
 .home-banner-container {
@@ -127,9 +126,12 @@
 }
 
 @media (max-width: 1024px) {
-  .home-banner-section {
+  /* .home-banner-section {
     padding: 4rem 1rem 0.3rem 1rem;
-  }
+  } */
+  /* .home-banner-section {
+    padding: 1rem;
+  } */
   .home-banner-inner-container {
     flex-direction: column;
     flex-wrap: wrap;
@@ -155,28 +157,21 @@
 }
 
 @media (max-width: 600px) {
-  .about-banner-section {
-    padding: 1.5rem 1rem;
-  }
   .home-banner-greeting {
-    font-size: 1.8rem;
+    font-size: 2.3rem;
   }
   .home-banner-name {
-    font-size: 2.7rem;
+    font-size: 3rem;
     margin-top: 0.1rem;
   }
   .home-banner-description {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   .home-banner-icon-container {
     gap: 0.8rem;
   }
-  /* .home-banner-cv-button {
-    font-size: 0.7rem;
-    padding: 0.3rem 0.8rem;
-  } */
   .home-banner-social-icons a {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .home-banner-image-container {
     width: 100%;
@@ -187,11 +182,11 @@
     max-width: 100%;
   }
   .home-banner-badge {
-    font-size: 1rem;
-    padding: 5px 8px;
-    bottom: -1rem;
+    font-size: 1.2rem;
+    padding: 7px 10px;
+    bottom: -0.5rem;
   }
   .home-banner-badge-year {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 }
