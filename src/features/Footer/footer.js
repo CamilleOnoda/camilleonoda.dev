@@ -7,20 +7,16 @@ function Footer() {
   return (
     <section className="footer-section">
       <div className="footer-container">
-        <h1 className=" footer-title">Let's Develop Your Product</h1>
-        {/* <a href="/contact " className="footer-button">
-          Schedule a Call
-        </a> */}
+        <h1 className="footer-title">Let's Develop Your Product</h1>
         <Button
           text="Schedule a Call"
           href="/contact"
           variant="footer"
           size="medium"
         />
-
-        <footer className="footer-description">
+        <p className="footer-description">
           © {currentYear} Lumina. All rights reserved
-        </footer>
+        </p>
       </div>
     </section>
   );
