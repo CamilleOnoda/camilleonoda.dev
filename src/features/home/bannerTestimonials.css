@@ -1,5 +1,4 @@
 .home-testimonials-container {
-  /* padding: 3rem 1rem; */
   padding: 3rem 1rem;
   margin-top: -0.5rem;
   background: var(--bg-gradient);
@@ -79,6 +78,9 @@
 }
 
 @media (max-width: 768px) {
+  .home-testimonials-container {
+    padding: 4rem 1rem;
+  }
   .home-testimonials-inner-container {
     grid-template-columns: 1fr;
   }

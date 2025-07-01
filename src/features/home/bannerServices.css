@@ -68,6 +68,9 @@
 }
 
 @media (max-width: 768px) {
+  .home-services-container {
+    padding: 4rem 1rem;
+  }
   .home-services-inner-container {
     grid-template-columns: 1fr;
   }
