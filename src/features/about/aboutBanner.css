@@ -1,6 +1,6 @@
 .about-banner-section {
   background: var(--bg-gradient);
-  padding: 6rem 1rem 2rem 1rem;
+  padding: 5rem 1rem 3rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,13 +105,17 @@
 
 @media (max-width: 1024px) {
   .about-banner-section {
-    padding: 4rem 1rem 0.3rem 1rem;
+    padding: 4rem 1rem 3rem 1rem;
   }
   .about-banner-inner-container {
     flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
-    gap: 3.5rem;
+    gap: 2rem;
+  }
+  .about-banner-text-container {
+    order: -1; /*This moves the text before the image */
+    width: 100%;
   }
   .about-banner-image-container {
     justify-content: center;
@@ -125,11 +129,10 @@
 
 @media (max-width: 600px) {
   .about-banner-section {
-    padding: 1.5rem 1rem;
+    padding: 3rem 1rem;
   }
   .about-banner-heading {
-    font-size: 2rem;
-    line-height: 2.5rem;
+    font-size: 2.3rem;
   }
   .about-banner-description {
     font-size: 1.1rem;

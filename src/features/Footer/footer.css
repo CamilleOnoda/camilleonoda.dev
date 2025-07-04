@@ -39,11 +39,6 @@
 }
 
 @media (max-width: 480px) {
-  .footer-title {
-    /* font-size: 1.7rem; */
-    margin-bottom: 1rem;
-  }
-
   .footer-description {
     font-size: 0.9rem;
     margin-top: 6rem;

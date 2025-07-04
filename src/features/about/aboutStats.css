@@ -1,6 +1,6 @@
 .about-stats-section {
   background: var(--bg-gradient);
-  padding: 4rem 1rem;
+  padding: 3rem 1rem;
   width: 100%;
 }
 
@@ -46,9 +46,14 @@
 @media (max-width: 900px) {
   .about-stats-inner-container {
     grid-template-columns: 1fr;
-    padding: 0rem 1rem 0rem 1rem;
   }
   .about-stats-container-box {
     width: 100%;
+  }
+}
+
+@media (max-width: 786px) {
+  .about-stats-section {
+    padding: 3rem 1rem;
   }
 }

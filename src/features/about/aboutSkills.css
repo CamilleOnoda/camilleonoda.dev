@@ -1,6 +1,6 @@
 .about-skills-section {
   background: var(--bg-gradient);
-  padding: 4rem 1rem 0rem 1rem;
+  padding: 3rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,19 +51,22 @@
 .about-skills-skill-items::before {
   content: "•";
   color: var(--secondary-lavender-color);
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   font-weight: 600;
   margin-right: 1.2rem;
 }
 
 .about-skills-education-items,
 .about-skills-skill-items {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
   color: var(--black-text);
-  letter-spacing: 0.3px;
 }
 
 @media (max-width: 1024px) {
+  .about-skills-section {
+    padding: 3rem 1rem;
+  }
   .about-skills-inner-container {
     grid-template-columns: 1fr;
   }
@@ -76,17 +79,17 @@
     text-align: center;
     padding: 0 1rem;
   }
-  .about-skills-education-container {
-    margin-top: -2rem;
-  }
   .about-skills-description {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
     padding: 0 1rem;
   }
 }
 
 @media (max-width: 768px) {
+  .about-skills-section {
+    padding: 3rem 1rem;
+  }
   .about-skills-heading {
     font-size: 2.3rem;
     line-height: 2.6rem;
@@ -94,7 +97,7 @@
 
   .about-skills-description {
     font-size: 1.5rem;
-    line-height: 2.2rem;
+    line-height: 2rem;
   }
 
   .about-skills-education-heading,
@@ -111,7 +114,7 @@
 
 @media (max-width: 480px) {
   .about-skills-heading {
-    font-size: 1.8rem;
+    font-size: 2.3rem;
   }
 
   .about-skills-description {
@@ -119,12 +122,12 @@
   }
 
   .about-skills-inner-container {
-    gap: 2rem;
+    /* gap: 2rem; */
   }
 
   .about-skills-education-items,
   .about-skills-skill-items {
     font-size: 1.1rem;
-    line-height: 2rem;
+    /* line-height: 2rem; */
   }
 }
