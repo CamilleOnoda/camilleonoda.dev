@@ -1,4 +1,4 @@
-import heroImg from "../Assets/project-img1.jpg";
+import heroImg from "../Assets/project1.webp";
 
 export const ProjectDetailsData = {
   ecommerceApp: {

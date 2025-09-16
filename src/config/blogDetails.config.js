@@ -1,4 +1,4 @@
-import heroImage from "../Assets/blog-img4.jpg";
+import heroImage from "../Assets/blog4.webp";
 
 const BlogDetailsData = {
   title: "Optimizing React Performance: Tips and Techniques",

@@ -1,4 +1,4 @@
-import contactImg from "../Assets/contact-img.jpg";
+import contactImg from "../Assets/contact-img.webp";
 import { FaGlobe, FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { SiStackoverflow } from "react-icons/si";
 

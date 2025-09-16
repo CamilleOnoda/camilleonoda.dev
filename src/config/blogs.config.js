@@ -1,8 +1,8 @@
-import blogImg1 from "../Assets/blog-img1.jpg";
-import blogImg2 from "../Assets/blog-img2.jpg";
-import blogImg3 from "../Assets/blog-img3.jpg";
-import blogImg4 from "../Assets/blog-img4.jpg";
-import authorImage from "../Assets/author-img.jpg";
+import blogImg1 from "../Assets/blog1.webp";
+import blogImg2 from "../Assets/blog2.webp";
+import blogImg3 from "../Assets/blog3.webp";
+import blogImg4 from "../Assets/blog4.webp";
+import authorImage from "../Assets/author-img.webp";
 
 export const BlogsData = [
   {

@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./navbar.css";
-import logo from "../../Assets/logo.png";
+import logo from "../../Assets/logo.webp";
 import { FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
 import { ThemeContext } from "../../context/ThemeContext";
 import ThemeToggle from "../../components/ThemeToggle";

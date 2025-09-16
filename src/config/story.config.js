@@ -1,8 +1,8 @@
-import image1 from "../Assets/author-img.jpg";
-import image2 from "../Assets/contact-img.jpg";
-import image3 from "../Assets/about-story.jpg";
-import image4 from "../Assets/blog-img4.jpg";
-import image5 from "../Assets/project-img4.jpg";
+import image1 from "../Assets/author-img.webp";
+import image2 from "../Assets/contact-img.webp";
+import image3 from "../Assets/about2.webp";
+import image4 from "../Assets/blog4.webp";
+import image5 from "../Assets/project4.webp";
 
 const storyData = {
   title: "How I became a Web Developer",

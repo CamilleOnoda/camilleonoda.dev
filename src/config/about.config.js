@@ -1,5 +1,5 @@
-import profileImage from "../Assets/about-banner.jpg";
-import deskImg from "../Assets/about-story.jpg";
+import profileImage from "../Assets/about1.webp";
+import deskImg from "../Assets/about2.webp";
 
 export const aboutIntro = {
   image: profileImage,
@@ -25,17 +25,17 @@ export const educationAndSkills = {
   heading: "I'm great in what I do\nand I'm loving it",
   education: [
     { degree: "MSc Software Engineering", year: "2020 - 2024" },
-    { degree: "Diploma in Web Development", year: "2020" },
+    { degree: "Diploma In Web Development", year: "2020" },
     { degree: "Specialization in Backend", year: "2019" },
     { degree: "Specialization in Frontend", year: "2020" },
     { degree: "BSc Computer Science", year: "2016 - 2019" },
   ],
   skills: [
-    "Frontend (React, Vue, JavaScript)",
+    "Frontend (ReactJS, JavaScript, Vue)",
     "Backend (Node.js, Django, Java)",
-    "Databases (MongoDB, PostgreSQL)",
-    "API Integration & RESTful Services",
-    "Testing & Debugging",
+    "Databases (MongoDB, MySQL, PostgreSQL)",
+    "Fully API Integration & RESTful Services",
+    "Testing, performance & Debugging",
   ],
 };
 

@@ -1,4 +1,4 @@
-import img from "../Assets/home-banner.jpg";
+import img from "../Assets/home-banner.webp";
 import {
   FaGlobe,
   FaGithub,

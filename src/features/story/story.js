@@ -43,7 +43,6 @@ function Story() {
               loading="lazy"
             />
           ))}
-          ))}
         </div>
 
         {/* Intro Description */}

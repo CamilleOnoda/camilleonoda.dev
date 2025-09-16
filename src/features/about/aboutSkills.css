@@ -65,7 +65,7 @@
 
 @media (max-width: 1024px) {
   .about-skills-section {
-    padding: 3rem 1rem;
+    padding: 1rem;
   }
   .about-skills-inner-container {
     grid-template-columns: 1fr;
@@ -73,61 +73,32 @@
   .about-skills-education-heading,
   .about-skills-skill-heading {
     text-align: center;
+    margin-bottom: 1.8rem;
+    margin-top: 1.5rem;
   }
   .about-skills-education-container,
   .about-skills-skill-container {
     text-align: center;
-    padding: 0 1rem;
-  }
-  .about-skills-description {
-    font-size: 1.3rem;
-    line-height: 2rem;
-    padding: 0 1rem;
+    padding: 1rem;
   }
 }
 
 @media (max-width: 768px) {
   .about-skills-section {
-    padding: 3rem 1rem;
+    padding: 1rem;
   }
-  .about-skills-heading {
-    font-size: 2.3rem;
-    line-height: 2.6rem;
-  }
-
-  .about-skills-description {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
   .about-skills-education-heading,
   .about-skills-skill-heading {
-    font-size: 1.9rem;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    margin-bottom: 1.8rem;
   }
-
   .about-skills-education-items,
   .about-skills-skill-items {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
+    line-height: 3rem;
   }
-}
-
-@media (max-width: 480px) {
-  .about-skills-heading {
-    font-size: 2.3rem;
-  }
-
-  .about-skills-description {
-    font-size: 1.2rem;
-  }
-
-  .about-skills-inner-container {
-    /* gap: 2rem; */
-  }
-
-  .about-skills-education-items,
-  .about-skills-skill-items {
-    font-size: 1.1rem;
-    /* line-height: 2rem; */
+  .about-skills-education-list,
+  .about-skills-skill-list {
+    gap: 2rem;
   }
 }

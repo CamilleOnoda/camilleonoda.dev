@@ -1,8 +1,8 @@
-import portflioImg1 from "../Assets/project-img1.jpg";
-import portflioImg2 from "../Assets/project-img2.jpg";
-import portflioImg3 from "../Assets/project-img3.jpg";
-import portflioImg4 from "../Assets/project-img4.jpg";
-import portflioImg5 from "../Assets/project-img4.jpg";
+import portflioImg1 from "../Assets/project1.webp";
+import portflioImg2 from "../Assets/project2.webp";
+import portflioImg3 from "../Assets/project3.webp";
+import portflioImg4 from "../Assets/project4.webp";
+import portflioImg5 from "../Assets/project4.webp";
 
 export const ProjectsData = [
   {
