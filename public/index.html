@@ -24,7 +24,10 @@
       content="Lumina is a ReactJS personal portfolio template showcasing projects, blogs, and technical skills."
     />
     <meta property="og:image" content="%PUBLIC_URL%/preview.png" />
-    <meta property="og:url" content="#" />
+    <meta
+      property="og:url"
+      content="https://react-portfolio-template-indol.vercel.app/"
+    />
     <meta property="og:type" content="website" />
 
     <!-- Twitter Card Meta Tags -->
@@ -39,7 +42,19 @@
     />
     <meta name="twitter:image" content="%PUBLIC_URL%/preview.png" />
 
+    <script>
+      const saved = localStorage.getItem("theme");
+      if (saved && JSON.parse(saved) === true) {
+        document.documentElement.classList.add("dark");
+      }
+    </script>
     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      as="style"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"

@@ -22,9 +22,16 @@ function AboutBanner() {
               alt="Amara Lune, frontend developer"
               className="about-banner-image"
               loading="lazy"
+              width="560"
+              height="700"
             />
+
             <div className="about-banner-badge">
-              <span className="about-banner-emoji">
+              <span
+                className="about-banner-emoji"
+                role="img"
+                aria-label="happy face"
+              >
                 {aboutIntro.badge.emoji}
               </span>
               {aboutIntro.badge.text} <br />
@@ -40,21 +47,16 @@ function AboutBanner() {
             viewport={{ once: true, amount: 0.5 }}
             variants={slideFromRight}
           >
-            <h2 id="about-heading" className="about-banner-heading">
-              I <span className="about-banner-highlight">build software</span>{" "}
-              that solve users problems
-            </h2>
+            <h1 id="about-heading" className="about-banner-heading">
+              {aboutIntro.heading.start}{" "}
+              <span className="about-banner-highlight">
+                {aboutIntro.heading.highlight}
+              </span>{" "}
+              {aboutIntro.heading.end}
+            </h1>
+
             <p className="about-banner-description">{aboutIntro.description}</p>
-            {/* <a
-              href={aboutIntro.cvLink}
-              className="about-banner-cv-btn"
-              download
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Download Amara's CV in PDF format"
-            >
-              Download CV
-            </a> */}
+
             <Button
               text="Download CV"
               href={aboutIntro.cvLink}

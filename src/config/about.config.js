@@ -9,20 +9,17 @@ export const aboutIntro = {
     description: "Happy Clients",
   },
   cvLink: "#",
+  heading: {
+    start: "I",
+    highlight: "build software",
+    end: "that solve users’ problems",
+  },
   description: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
   Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.ks
   Donec quam felis, ultricies nec. enean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.`,
 };
 
-export const aboutStats = [
-  { title: "3K+", description: "Happy customers with full satisfaction" },
-  { title: "500+", description: "Completed projects with full passion" },
-  { title: "10+", description: "Years of experience in web development" },
-  { title: "100+", description: "Team members across the world" },
-];
-
 export const educationAndSkills = {
-  heading: "I'm great in what I do\nand I'm loving it",
   education: [
     { degree: "MSc Software Engineering", year: "2020 - 2024" },
     { degree: "Diploma In Web Development", year: "2020" },
@@ -38,6 +35,13 @@ export const educationAndSkills = {
     "Testing, performance & Debugging",
   ],
 };
+
+export const aboutStats = [
+  { title: "3K+", description: "Happy customers with full satisfaction" },
+  { title: "500+", description: "Completed projects with full passion" },
+  { title: "10+", description: "Years of experience in web development" },
+  { title: "100+", description: "Team members across the world" },
+];
 
 export const storyData = {
   image: deskImg,

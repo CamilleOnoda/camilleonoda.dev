@@ -7,18 +7,13 @@
   margin-top: -25px;
 }
 
-.about-skills-container {
-  max-width: 75rem;
-  width: 100%;
-}
-
 .about-skills-inner-container {
   width: 100%;
   max-width: 75rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
-  padding: 4rem 1rem;
+  padding: 1rem;
 }
 
 .about-skills-education-container,
@@ -29,9 +24,9 @@
 
 .about-skills-education-heading,
 .about-skills-skill-heading {
-  font-size: 2.3rem;
+  font-size: var(--fs-heading);
   color: var(--secondary-lavender-color);
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   font-weight: 600;
 }
 
@@ -44,7 +39,8 @@
 
 .about-skills-education-items-container,
 .about-skills-skill-items-container {
-  position: relative;
+  display: flex;
+  align-items: flex-start;
 }
 
 .about-skills-education-items::before,
@@ -53,52 +49,41 @@
   color: var(--secondary-lavender-color);
   font-size: 1.3rem;
   font-weight: 600;
-  margin-right: 1.2rem;
+  margin-right: 0.8rem;
+  line-height: 1.6;
 }
 
 .about-skills-education-items,
 .about-skills-skill-items {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: clamp(1rem, 1.8vw, 1.3rem);
   color: var(--black-text);
 }
 
 @media (max-width: 1024px) {
-  .about-skills-section {
-    padding: 1rem;
-  }
   .about-skills-inner-container {
     grid-template-columns: 1fr;
   }
+
   .about-skills-education-heading,
   .about-skills-skill-heading {
     text-align: center;
     margin-bottom: 1.8rem;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
   }
+
   .about-skills-education-container,
   .about-skills-skill-container {
     text-align: center;
     padding: 1rem;
   }
-}
 
-@media (max-width: 768px) {
-  .about-skills-section {
-    padding: 1rem;
-  }
-  .about-skills-education-heading,
-  .about-skills-skill-heading {
-    font-size: 2.5rem;
-    margin-bottom: 1.8rem;
-  }
-  .about-skills-education-items,
-  .about-skills-skill-items {
-    font-size: 1.6rem;
-    line-height: 3rem;
-  }
   .about-skills-education-list,
   .about-skills-skill-list {
-    gap: 2rem;
+    align-items: center;
+  }
+
+  .about-skills-education-items-container,
+  .about-skills-skill-items-container {
+    justify-content: center;
   }
 }

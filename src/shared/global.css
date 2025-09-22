@@ -1,3 +1,16 @@
+:root {
+  /* Typography */
+  --fs-heading: clamp(2rem, 2.5vw, 2.5rem);
+  --fs-body: clamp(1rem, 1.5vw, 1.2rem);
+
+  /* Layout */
+  --spacing-section: 3rem;
+  --spacing-container: 1.25rem;
+
+  /* Border radius */
+  --radius: 10px;
+}
+
 body {
   font-family: "Inter", sans-serif;
   margin: 0;
