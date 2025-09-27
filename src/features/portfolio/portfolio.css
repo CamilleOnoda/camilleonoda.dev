@@ -15,7 +15,7 @@
 }
 
 .portfolio-header-title {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 600;
   line-height: 3.3rem;
   color: var(--black-text);
@@ -33,25 +33,6 @@
   gap: 1rem;
   margin-bottom: 2rem;
 }
-
-/* .portfolio-category-button {
-  padding: 0.7rem 1.1rem;
-  background-color: #ffffff;
-  color: #000000;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  border: 1px solid #ccc;
-  border-radius: 7px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  font-size: 0.9rem;
-  letter-spacing: 0.1px;
-}
-
-.portfolio-category-button.active,
-.portfolio-category-button:hover {
-  background-color: #54387a;
-  color: #ffffff;
-} */
 
 .portfolio-inner-container {
   display: grid;
@@ -122,7 +103,7 @@
 }
 
 .portfolio-card-title {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: #000000;
   margin-bottom: 1rem;
@@ -149,31 +130,14 @@
     padding: 0.5rem;
     gap: 2rem;
   }
-  .portfolio-header-title {
-    font-size: 2.1rem;
-    padding: 1rem;
-  }
   .portfolio-categories-container {
     margin-top: 0.3rem;
   }
-  .portfolio-category-button {
-    padding: 0.8rem 1rem;
-    font-size: 14px;
-  }
 }
 
-@media (max-width: 480px) {
-  .portfolio-section {
-    padding: 2rem 0.5rem;
-  }
+@media (max-width: 768px) {
   .portfolio-header-title {
-    font-size: 1.9rem;
-  }
-  .portfolio-category-button {
-    padding: 0.6rem 0.8rem;
-    font-size: 1rem;
-  }
-  .portfolio-card {
-    padding: 1rem;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
   }
 }

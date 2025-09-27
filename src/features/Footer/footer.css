@@ -14,7 +14,7 @@
 }
 
 .footer-title {
-  font-size: var(--fs-heading);
+  font-size: 2rem;
   font-weight: 600;
   line-height: 1.2;
   color: var(--button-text);
@@ -29,9 +29,9 @@
 
 @media (max-width: 768px) {
   .footer-title {
+    font-size: 1.8rem;
     margin-bottom: 1rem;
   }
-
   .footer-description {
     font-size: 0.95rem;
   }

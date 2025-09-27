@@ -54,7 +54,7 @@
   color: #54387a;
   font-weight: 400;
   padding: 0.5rem 0.7rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .navbar-active {
@@ -72,8 +72,8 @@
   top: calc(100% + 20px); /* spacing below the navbar link */
   left: 0;
   background-color: #ffffff;
-  min-width: 9.8rem;
-  height: 3rem;
+  min-width: 9rem;
+  height: 2.5rem;
   border-radius: 0 0 5px 5px; /* only top corners rounded */
   padding: 0.5rem 0;
   border-bottom: none; /* remove bottom border if you want it flush */

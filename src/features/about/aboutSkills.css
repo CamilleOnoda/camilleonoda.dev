@@ -24,7 +24,7 @@
 
 .about-skills-education-heading,
 .about-skills-skill-heading {
-  font-size: var(--fs-heading);
+  font-size: 2rem;
   color: var(--secondary-lavender-color);
   margin-bottom: 2rem;
   font-weight: 600;
@@ -55,7 +55,7 @@
 
 .about-skills-education-items,
 .about-skills-skill-items {
-  font-size: clamp(1rem, 1.8vw, 1.3rem);
+  font-size: 1.3rem;
   color: var(--black-text);
 }
 

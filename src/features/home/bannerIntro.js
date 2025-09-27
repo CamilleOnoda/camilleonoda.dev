@@ -22,15 +22,6 @@ function BannerIntro() {
             <p className="home-banner-description">{bannerIntro.description}</p>
 
             <div className="home-banner-icon-container">
-              {/* <a
-                href={bannerIntro.cvLink}
-                className="home-banner-cv-button"
-                download
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Download CV
-              </a> */}
               <Button
                 text="Download CV"
                 href={bannerIntro.cvLink}

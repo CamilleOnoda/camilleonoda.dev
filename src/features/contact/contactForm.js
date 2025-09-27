@@ -29,6 +29,15 @@ const ContactForm = () => {
           </motion.div>
 
           {/* Right: Contact Form with Animation */}
+          {/*
+             Contact Form UI only.
+             To make this form work, you can use any service or library:
+             - Formspree (https://formspree.io)
+             - Netlify Forms (if hosting on Netlify)
+             - EmailJS (https://www.emailjs.com/)
+             - Or connect it to your own backend API
+           */}
+
           <motion.form
             className="contact-form-text-container"
             initial="initial"
@@ -36,6 +45,7 @@ const ContactForm = () => {
             viewport={{ once: true, amount: 0.5 }}
             variants={slideFromRight}
             aria-describedby="contact-form-description"
+            name="contact"
           >
             <h2 id="contact-form-heading" className="contact-form-title">
               Let's start a
@@ -109,9 +119,6 @@ const ContactForm = () => {
             ></textarea>
 
             <div className="contact-form-submit-wrapper">
-              {/* <button type="submit" className="contact-form-submit-btn">
-                Send Message
-              </button> */}
               <Button
                 text="Send Message"
                 type="submit"

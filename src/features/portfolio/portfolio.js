@@ -62,16 +62,6 @@ const Portfolio = () => {
           viewport={{ once: true, amount: 0.6 }}
         >
           {categories.map((category) => (
-            // <button
-            //   key={category}
-            //   className={`portfolio-category-button ${
-            //     selectedCategory === category ? "active" : ""
-            //   }`}
-            //   onClick={() => setSelectedCategory(category)}
-            //   aria-pressed={selectedCategory === category}
-            // >
-            //   {category}
-            // </button>
             <Button
               text={category}
               onClick={() => setSelectedCategory(category)}

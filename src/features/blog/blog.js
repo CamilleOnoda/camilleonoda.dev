@@ -45,15 +45,6 @@ function Blogs() {
         >
           <div className="blog-categories-wrapper">
             {categories.map((category, index) => (
-              // <button
-              //   key={index}
-              //   className={`blog-category-button ${
-              //     currentCategory === category ? "active" : ""
-              //   }`}
-              //   onClick={() => setCurrentCategory(category)}
-              // >
-              //   {category}
-              // </button>
               <Button
                 key={index}
                 text={category}

@@ -3,6 +3,13 @@ import { ContactData } from "../../config/contact.config";
 import { motion } from "framer-motion";
 import { containerStagger, fadeUpItem } from "../../components/FramerVariants";
 
+// Utility component for all external links
+const ExternalLink = ({ href, children, ...props }) => (
+  <a href={href} target="_blank" rel="noopener noreferrer" {...props}>
+    {children}
+  </a>
+);
+
 const ContactInfo = () => {
   return (
     <section
@@ -21,7 +28,7 @@ const ContactInfo = () => {
         <span className="contact-highlight">email</span>
       </motion.h2>
 
-      {/* Animated Cards Container */}
+      {/* Contact Cards Container */}
       <motion.div
         className="contact-info-inner-container"
         variants={containerStagger}
@@ -34,36 +41,31 @@ const ContactInfo = () => {
             className="contact-info-box"
             key={index}
             variants={fadeUpItem}
-            aria-labelledby={`contact-card-${index}-title`}
           >
-            <div className="contact-info-icon" aria-hidden="true">
-              <i className={card.iconClass}></i>
-            </div>
+            {/*  Icon (use optimized imports, not full library) */}
+            {card.iconClass && (
+              <div className="contact-info-icon" aria-hidden="true">
+                <i className={card.iconClass}></i>
+              </div>
+            )}
 
             <div className="contact-info-content">
-              <h3
-                id={`contact-card-${index}-title`}
-                className="contact-info-card-name"
-              >
-                {card.type}
-              </h3>
+              <h3 className="contact-info-card-name">{card.type}</h3>
 
+              {/* Multiple links (e.g. GitHub, LinkedIn) */}
               {card.links && (
                 <p className="contact-info-links">
                   {card.links.map((link, i) => (
                     <span key={i}>
-                      <a
+                      <ExternalLink
                         href={link.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
                         className="contact-info-link"
                       >
                         {link.label}
-                      </a>
+                      </ExternalLink>
                       {i !== card.links.length - 1 && (
                         <span className="separator" aria-hidden="true">
-                          {" "}
-                          |{" "}
+                          {" | "}
                         </span>
                       )}
                     </span>
@@ -71,38 +73,38 @@ const ContactInfo = () => {
                 </p>
               )}
 
+              {/* Phone number (user replaces with their own) */}
               {card.phone && <p className="contact-info-phone">{card.phone}</p>}
 
+              {/* Email → uses mailto for quick setup */}
               {card.email && (
                 <a
                   className="contact-info-email"
-                  href={card.email.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href={`mailto:${card.email.label}`}
                 >
                   {card.email.label}
                 </a>
               )}
 
+              {/* Social icons (e.g. GitHub, Twitter, LinkedIn) */}
               {card.icons && (
                 <div className="contact-info-social-icons">
                   {card.icons.map((item, i) => {
                     const Icon = item.icon;
                     return (
-                      <a
+                      <ExternalLink
                         key={i}
                         href={item.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label={`Open ${item.label} link in new tab`}
+                        aria-label={`Open ${item.label} in new tab`}
                       >
                         <Icon />
-                      </a>
+                      </ExternalLink>
                     );
                   })}
                 </div>
               )}
 
+              {/* Optional description */}
               {card.description && (
                 <p className="contact-info-description">{card.description}</p>
               )}

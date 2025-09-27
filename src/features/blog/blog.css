@@ -15,7 +15,7 @@
 }
 
 .blog-header-title {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 600;
   line-height: 3.3rem;
   color: var(--black-text);
@@ -34,46 +34,30 @@
   margin-bottom: 2rem;
 }
 
-/* .blog-category-button {
-  padding: 0.7rem 1.1rem;
-  background-color: #ffffff;
-  color: #000000;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  border: 1px solid #ccc;
-  border-radius: 7px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  font-size: 0.9rem;
-  letter-spacing: 0.1px;
-}
-
-.blog-category-button.active,
-.blog-category-button:hover {
-  background-color: #54387a;
-  color: #fff;
-} */
-
 .blog-categories-wrapper {
-  width: 50rem;
+  width: 100%;
+  max-width: 50rem; /* optional max width */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.8rem; /* reduce gap for small screens */
   align-items: center;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
-/* Wrapper for search bar */
 .blog-search-bar {
   display: flex;
   align-items: center;
   border: 1px solid #ccc;
   border-radius: 7px;
   overflow: hidden;
-  height: 2.55rem;
+  height: 2.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  max-width: 15rem; /* optional for large screens */
+  width: 100%; /* fill available space */
 }
 
-/* Search icon styled like a button */
 .blog-search-icon-btn {
   background-color: var(--secondary-lavender-color);
   color: var(--button-text);
@@ -87,17 +71,20 @@
   border-right: 1px solid #ccc;
 }
 
-/* Search input */
 .blog-search-input {
   border: none;
   outline: none;
-  padding: 0 1rem;
+  padding: 0 0.8rem;
   font-size: 1rem;
   height: 100%;
-  width: 180px;
+  flex: 1; /* fill remaining space */
+  min-width: 5rem; /* avoid too small input */
 }
 
-/* Responsive Grid Setup */
+.blog-search-icon-btn {
+  flex-shrink: 0; /* keep the icon button fixed size */
+}
+
 .blog-inner-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -147,7 +134,7 @@
 }
 
 .blog-card-title {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: #000000;
   line-height: 1.9rem;
@@ -177,31 +164,23 @@
     padding: 0.5rem;
     gap: 2rem;
   }
-  .blog-header-title {
-    font-size: 2.1rem;
-    padding: 1rem;
-  }
   .blog-categories-container {
     margin-top: 0.3rem;
-  }
-  .blog-category-button {
-    padding: 0.8rem 1rem;
-    font-size: 14px;
   }
 }
 
 @media (max-width: 480px) {
-  .blog-section {
-    padding: 2rem 0.5rem;
+  .blog-categories-wrapper {
+    gap: 1rem;
+  }
+  .blog-search-bar {
+    width: 100%;
+    max-width: none;
+  }
+  .blog-search-input {
+    font-size: 0.9rem;
   }
   .blog-header-title {
     font-size: 1.9rem;
-  }
-  .blog-category-button {
-    padding: 0.6rem 0.8rem;
-    font-size: 1rem;
-  }
-  .blog-card {
-    padding: 1rem;
   }
 }
