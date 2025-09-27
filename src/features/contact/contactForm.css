@@ -99,14 +99,7 @@
     flex-wrap: wrap;
     text-align: center;
     gap: 1.5rem;
-    /* padding: 0 1rem; */
   }
-
-  /* .contact-form-image-container,
-  .contact-form-text-container {
-    width: 100%;
-    padding: 0 1rem;
-  } */
 
   .contact-form-text-container,
   .contact-form-image-container {
@@ -135,11 +128,5 @@
     font-size: 1.8rem;
     padding-bottom: 1.3rem;
     line-height: 2.7rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .contact-form-title {
-    font-size: 1.5rem;
   }
 }

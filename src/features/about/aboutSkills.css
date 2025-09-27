@@ -68,7 +68,6 @@
   .about-skills-skill-heading {
     text-align: center;
     margin-bottom: 1.8rem;
-    margin-top: 1rem;
   }
 
   .about-skills-education-container,
@@ -85,5 +84,13 @@
   .about-skills-education-items-container,
   .about-skills-skill-items-container {
     justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-skills-education-heading,
+  .about-skills-skill-heading {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
   }
 }
