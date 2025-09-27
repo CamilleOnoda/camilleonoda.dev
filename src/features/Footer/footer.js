@@ -1,5 +1,5 @@
 import "./footer.css";
-import Button from "../../components/Button";
+import Button from "../../shared/components/button/Button";
 
 function Footer() {
   const currentYear = new Date().getFullYear();

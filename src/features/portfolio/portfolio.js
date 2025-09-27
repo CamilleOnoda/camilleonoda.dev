@@ -3,8 +3,8 @@ import { useLocation, Link } from "react-router-dom";
 import "./portfolio.css";
 import { ProjectsData } from "../../config/projects.config";
 import { motion } from "framer-motion";
-import { fadeUpItem } from "../../components/FramerVariants";
-import Button from "../../components/Button";
+import { fadeUpItem } from "../../shared/components/FramerVariants";
+import Button from "../../shared/components/button/Button";
 
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");

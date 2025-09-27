@@ -4,7 +4,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { ThemeProvider } from "./context/ThemeContext";
-import "./shared/global.css";
+import "../src/shared/styles/global.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

@@ -1,0 +1,84 @@
+.details-section {
+  background: var(--bg-gradient);
+  padding: 5rem 1rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.details-container {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+
+.details-title {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: var(--black-text);
+  line-height: 3rem;
+}
+
+.details-container-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 3rem 0 0rem;
+  color: var(--black-text);
+}
+
+.details-description {
+  font-size: 1.1rem;
+  line-height: 2rem;
+  letter-spacing: 0.1px;
+  color: var(--gray-text);
+  margin: 1rem 0;
+}
+
+/* ========== Project / Blog Skills Section ========== */
+.details-skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+}
+
+.details-skills-line {
+  color: var(--gray-text);
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+
+.details-skills-line strong {
+  color: var(--black-text);
+  font-weight: 500;
+  margin-right: 0.2rem;
+}
+
+.details-skills-website-link {
+  color: var(--secondary-lavender-color);
+  font-size: 1.1rem;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+  .details-section {
+    padding: 4rem 1rem 2rem;
+    margin-top: 3rem;
+  }
+
+  .details-title {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+
+  .details-container-title {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .details-section {
+    padding: 2.5rem 1rem;
+  }
+}

@@ -2,7 +2,10 @@ import "./bannerServices.css";
 import { Link } from "react-router-dom";
 import { bannerServices } from "../../config/home.config";
 import { motion } from "framer-motion";
-import { containerStagger, fadeUpItem } from "../../components/FramerVariants";
+import {
+  containerStagger,
+  fadeUpItem,
+} from "../../shared/components/FramerVariants";
 
 function BannerServices() {
   return (

@@ -1,7 +1,10 @@
 import "./contactInfo.css";
 import { ContactData } from "../../config/contact.config";
 import { motion } from "framer-motion";
-import { containerStagger, fadeUpItem } from "../../components/FramerVariants";
+import {
+  containerStagger,
+  fadeUpItem,
+} from "../../shared/components/FramerVariants";
 
 // Utility component for all external links
 const ExternalLink = ({ href, children, ...props }) => (

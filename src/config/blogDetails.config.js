@@ -4,18 +4,12 @@ const BlogDetailsData = {
   title: "Optimizing React Performance: Tips and Techniques",
   subtitle:
     "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur pellentesque eu, pretium quis, sem.",
-  meta: {
-    category: "React Development",
-    published: "March 22, 2025",
-    author: "Amara Lune",
-    readingTime: "5 min read",
-  },
   heroImg: heroImage,
   sections: [
     {
       heading: "Introduction",
       content:
-        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eum.enean massa. Cum sociis natoque penatibus et magnis dis, pellentesque eum.enean massa. Cum sociis natoque penatibus et magnis dis.",
+        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eum.enean massa.",
     },
     {
       heading: "The Challenge",

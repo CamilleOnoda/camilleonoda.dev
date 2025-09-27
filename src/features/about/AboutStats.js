@@ -1,7 +1,10 @@
 import "./aboutStats.css";
 import { aboutStats } from "../../config/about.config";
 import { motion } from "framer-motion";
-import { fadeUpItem, containerStagger } from "../../components/FramerVariants";
+import {
+  fadeUpItem,
+  containerStagger,
+} from "../../shared/components/FramerVariants";
 
 function AboutStats() {
   return (

@@ -1,7 +1,10 @@
 import "./testimonial.css";
 import { TestimonialsData } from "../../config/testimonials.config";
 import { motion } from "framer-motion";
-import { fadeUpItem, containerStagger } from "../../components/FramerVariants";
+import {
+  fadeUpItem,
+  containerStagger,
+} from "../../shared/components/FramerVariants";
 
 function Testimonial() {
   return (

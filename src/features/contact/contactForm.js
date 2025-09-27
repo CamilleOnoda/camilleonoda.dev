@@ -1,8 +1,11 @@
 import "./contactForm.css";
 import { ContactData } from "../../config/contact.config";
 import { motion } from "framer-motion";
-import { slideFromLeft, slideFromRight } from "../../components/FramerVariants";
-import Button from "../../components/Button";
+import {
+  slideFromLeft,
+  slideFromRight,
+} from "../../shared/components/FramerVariants";
+import Button from "../../shared/components/button/Button";
 
 const ContactForm = () => {
   return (

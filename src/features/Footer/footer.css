@@ -29,17 +29,11 @@
 
 @media (max-width: 768px) {
   .footer-title {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
+    line-height: 2.7rem;
     margin-bottom: 1rem;
   }
   .footer-description {
-    font-size: 0.95rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .footer-description {
     font-size: 0.9rem;
-    margin-top: 6rem;
   }
 }

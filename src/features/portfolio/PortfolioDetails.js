@@ -1,7 +1,7 @@
-import "../../shared/details.css";
+import "../../shared/styles/details.css";
 import { ProjectDetailsData } from "../../config/projectDetails.config";
 
-function PortfolioDetails() {
+function ProjectDetails() {
   const project = ProjectDetailsData.ecommerceApp;
 
   return (
@@ -13,7 +13,9 @@ function PortfolioDetails() {
         </h1>
 
         {/* Project Subtitle */}
-        <p className="details-description">{project.projectSubtitle}</p>
+        {project.projectSubtitle && (
+          <p className="details-description">{project.projectSubtitle}</p>
+        )}
 
         {/* Tech and Links */}
         <div
@@ -21,68 +23,87 @@ function PortfolioDetails() {
           role="region"
           aria-label="Project technologies and links"
         >
-          <div className="details-skills-line">
-            <strong>Technologies:</strong>{" "}
-            <span>{project.techStack.join(", ")}</span>
-          </div>
+          {project.techStack?.length > 0 && (
+            <div className="details-skills-line">
+              <strong>Technologies:</strong>{" "}
+              <span>{project.techStack.join(", ")}</span>
+            </div>
+          )}
 
-          <div className="details-skills-line">
-            <strong>Website:</strong>{" "}
-            <a
-              href={project.liveLink}
-              className="details-skills-website-link"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visit live project site in a new tab"
-            >
-              Visit Site
-            </a>
-          </div>
+          {project.liveLink && (
+            <div className="details-skills-line">
+              <strong>Website:</strong>{" "}
+              <a
+                href={project.liveLink}
+                className="details-skills-website-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Visit ${project.projectTitle} live site (opens in new tab)`}
+              >
+                Visit Site
+              </a>
+            </div>
+          )}
 
-          <div className="details-skills-line">
-            <strong>GitHub:</strong>{" "}
-            <a
-              href={project.githubLink}
-              className="details-skills-website-link"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="View project source code on GitHub in a new tab"
-            >
-              View Code
-            </a>
-          </div>
+          {project.githubLink && (
+            <div className="details-skills-line">
+              <strong>GitHub:</strong>{" "}
+              <a
+                href={project.githubLink}
+                className="details-skills-website-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`View ${project.projectTitle} source code on GitHub (opens in new tab)`}
+              >
+                View Code
+              </a>
+            </div>
+          )}
         </div>
 
         {/* Project Image */}
-        <img
-          src={project.heroImage}
-          alt={`Screenshot of ${project.projectTitle}`}
-          className="details-img"
-          loading="lazy"
-        />
+        {project.heroImage && (
+          <img
+            src={project.heroImage}
+            alt={`Screenshot of ${project.projectTitle}`}
+            className="details-img"
+            loading="lazy"
+            width="800"
+            height="450"
+          />
+        )}
 
         {/* Project Sections */}
-        <div className="details-description-container">
-          {project.projectSections.map((section, index) => (
-            <article className="details-description-block" key={index}>
-              <h2 className="details-container-title">
-                {section.sectionTitle}
-              </h2>
-              {Array.isArray(section.sectionContent) ? (
-                section.sectionContent.map((item, i) => (
-                  <p className="details-description" key={i}>
-                    {item}
+        {project.projectSections?.length > 0 && (
+          <div className="details-description-container">
+            {project.projectSections.map((section, index) => (
+              <article
+                className="details-description-block"
+                key={index}
+                aria-labelledby={`section-${index}`}
+              >
+                <h2 id={`section-${index}`} className="details-container-title">
+                  {section.sectionTitle}
+                </h2>
+
+                {Array.isArray(section.sectionContent) ? (
+                  section.sectionContent.map((item, i) => (
+                    <p className="details-description" key={i}>
+                      {item}
+                    </p>
+                  ))
+                ) : (
+                  <p className="details-description">
+                    {section.sectionContent}
                   </p>
-                ))
-              ) : (
-                <p className="details-description">{section.sectionContent}</p>
-              )}
-            </article>
-          ))}
-        </div>
+                )}
+              </article>
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );
 }
 
-export default PortfolioDetails;
+export default ProjectDetails;

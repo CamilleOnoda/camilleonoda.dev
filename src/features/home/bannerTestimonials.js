@@ -2,7 +2,10 @@ import "./bannerTestimonials.css";
 import { FaQuoteLeft } from "react-icons/fa";
 import { TestimonialsData } from "../../config/testimonials.config";
 import { motion } from "framer-motion";
-import { containerStagger, fadeUpItem } from "../../components/FramerVariants";
+import {
+  containerStagger,
+  fadeUpItem,
+} from "../../shared/components/FramerVariants";
 
 function BannerTestimonials() {
   return (

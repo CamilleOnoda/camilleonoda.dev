@@ -2,7 +2,10 @@ import "./aboutStory.css";
 import { Link } from "react-router-dom";
 import { storyData } from "../../config/about.config";
 import { motion } from "framer-motion";
-import { slideFromLeft, slideFromRight } from "../../components/FramerVariants";
+import {
+  slideFromLeft,
+  slideFromRight,
+} from "../../shared/components/FramerVariants";
 
 function AboutStory() {
   return (

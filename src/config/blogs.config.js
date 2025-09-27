@@ -2,7 +2,6 @@ import blogImg1 from "../Assets/blog1.webp";
 import blogImg2 from "../Assets/blog2.webp";
 import blogImg3 from "../Assets/blog3.webp";
 import blogImg4 from "../Assets/blog4.webp";
-import authorImage from "../Assets/author-img.webp";
 
 export const BlogsData = [
   {
@@ -13,8 +12,6 @@ export const BlogsData = [
     readTime: "10 mins read",
     image: blogImg1,
     category: "Backend",
-    author: "Amara Lune",
-    authorImg: authorImage,
   },
   {
     id: 2,
@@ -24,8 +21,6 @@ export const BlogsData = [
     readTime: "7 mins read",
     image: blogImg2,
     category: "Backend",
-    author: "Amara Lune",
-    authorImg: authorImage,
   },
   {
     id: 3,
@@ -35,8 +30,6 @@ export const BlogsData = [
     readTime: "8 mins read",
     image: blogImg3,
     category: "Responsive Design",
-    author: "Amara Lune",
-    authorImg: authorImage,
   },
   {
     id: 4,
@@ -46,8 +39,6 @@ export const BlogsData = [
     readTime: "9 mins read",
     image: blogImg4,
     category: "Frontend",
-    author: "Amara Lune",
-    authorImg: authorImage,
   },
   {
     id: 5,
@@ -57,8 +48,6 @@ export const BlogsData = [
     readTime: "9 mins read",
     image: blogImg2,
     category: "Responsive Design",
-    author: "Amara Lune",
-    authorImg: authorImage,
   },
   {
     id: 6,
@@ -68,8 +57,6 @@ export const BlogsData = [
     readTime: "7 mins read",
     image: blogImg1,
     category: "Frontend",
-    author: "Amara Lune",
-    authorImg: authorImage,
   },
   {
     id: 7,
@@ -79,8 +66,6 @@ export const BlogsData = [
     readTime: "8 mins read",
     image: blogImg3,
     category: "React Development",
-    author: "Amara Lune",
-    authorImg: authorImage,
   },
   {
     id: 8,
@@ -90,7 +75,5 @@ export const BlogsData = [
     readTime: "10 mins read",
     image: blogImg4,
     category: "React Development",
-    author: "Amara Lune",
-    authorImg: authorImage,
   },
 ];

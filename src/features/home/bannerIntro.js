@@ -1,8 +1,11 @@
 import "./bannerIntro.css";
 import { bannerIntro } from "../../config/home.config";
 import { motion } from "framer-motion";
-import { slideFromLeft, slideFromRight } from "../../components/FramerVariants";
-import Button from "../../components/Button";
+import {
+  slideFromLeft,
+  slideFromRight,
+} from "../../shared/components/FramerVariants";
+import Button from "../../shared/components/button/Button";
 
 function BannerIntro() {
   return (

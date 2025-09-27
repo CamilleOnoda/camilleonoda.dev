@@ -4,7 +4,7 @@ import "./navbar.css";
 import logo from "../../Assets/logo.webp";
 import { FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
 import { ThemeContext } from "../../context/ThemeContext";
-import ThemeToggle from "../../components/ThemeToggle";
+import ThemeToggle from "../../shared/components/ThemeToggle";
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState("");
@@ -76,6 +76,7 @@ const Navbar = () => {
             {[
               { path: "/", label: "Home" },
               { path: "/about", label: "About" },
+              { path: "/story", label: "My Story" },
             ].map((item, index) => (
               <li key={index} className="navbar-link-item">
                 <Link

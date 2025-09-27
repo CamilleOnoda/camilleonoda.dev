@@ -4,8 +4,8 @@ import { FaExternalLinkAlt, FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { BlogsData } from "../../config/blogs.config";
 import { motion } from "framer-motion";
-import { fadeUpItem } from "../../components/FramerVariants";
-import Button from "../../components/Button";
+import { fadeUpItem } from "../../shared/components/FramerVariants";
+import Button from "../../shared/components/button/Button";
 
 function Blogs() {
   const [currentCategory, setCurrentCategory] = useState("All");

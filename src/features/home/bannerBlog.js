@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 import "./bannerBlog.css";
 import { BlogsData } from "../../config/blogs.config";
 import { motion } from "framer-motion";
-import { containerStagger, fadeUpItem } from "../../components/FramerVariants";
+import {
+  containerStagger,
+  fadeUpItem,
+} from "../../shared/components/FramerVariants";
 
 function BannerBlog() {
   const [featured, ...others] = BlogsData;

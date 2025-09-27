@@ -1,7 +1,10 @@
 import "./aboutSkills.css";
 import { educationAndSkills } from "../../config/about.config";
 import { motion } from "framer-motion";
-import { slideFromLeft, slideFromRight } from "../../components/FramerVariants";
+import {
+  slideFromLeft,
+  slideFromRight,
+} from "../../shared/components/FramerVariants";
 
 const AboutSkills = () => {
   return (
