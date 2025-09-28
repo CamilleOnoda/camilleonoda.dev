@@ -59,27 +59,12 @@
   font-weight: 500;
 }
 
-.home-blog-author-container {
+.home-blog-date-container {
   display: flex;
   align-items: center;
   gap: 0.7rem;
   line-height: 1.3rem;
   margin-top: 1rem;
-}
-
-.home-blog-author-img {
-  width: 2.8rem;
-  height: 2.8rem;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 1.5px solid #9175d8;
-}
-
-.home-blog-author-name {
-  font-weight: 600;
-  font-size: 1rem;
-  color: #54387a;
-  margin-bottom: 0.1875rem;
 }
 
 .home-blog-date {

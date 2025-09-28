@@ -43,14 +43,8 @@ function BannerBlog() {
               />
               <div className="home-blog-content">
                 <h3 className="home-blog-title">{post.title}</h3>
-                <div className="home-blog-author-container">
-                  <img
-                    src={post.authorImg}
-                    alt={`Author: ${post.author}`}
-                    className="home-blog-author-img"
-                  />
+                <div className="home-blog-date-container">
                   <div>
-                    <p className="home-blog-author-name">{post.author}</p>
                     <p className="home-blog-date">{post.date}</p>
                   </div>
                   <a
