@@ -5,19 +5,6 @@
   width: 100%;
 }
 
-.home-testimonials-heading {
-  font-size: 2rem;
-  font-weight: 600;
-  text-align: center;
-  color: var(--black-text);
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.home-testimonials-highlight {
-  color: var(--highlight-text);
-}
-
 .home-testimonials-inner-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -85,9 +72,5 @@
   }
   .home-testimonials-container-box {
     width: 100%;
-  }
-  .home-testimonials-heading {
-    font-size: 1.8rem;
-    line-height: 2.7rem;
   }
 }

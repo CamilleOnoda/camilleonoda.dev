@@ -7,6 +7,7 @@ import {
   containerStagger,
   fadeUpItem,
 } from "../../shared/components/FramerVariants";
+import SectionHeader from "../../shared/components/SectionHeader/SectionHeader";
 
 function BannerBlog() {
   const [featured, ...others] = BlogsData;
@@ -14,16 +15,14 @@ function BannerBlog() {
   return (
     <section className="home-blog-section" aria-labelledby="blog-heading">
       {/* Heading with upward fade */}
-      <motion.h2
-        id="blog-heading"
-        className="home-blog-section-heading"
+      <motion.div
         variants={fadeUpItem}
         initial="initial"
         whileInView="animate"
         viewport={{ once: true, amount: 0.6 }}
       >
-        My Latest <span className="home-blog-highlight">Articles</span>
-      </motion.h2>
+        <SectionHeader title="My Latest" highlight="Articles" />
+      </motion.div>
 
       {/* Cards stagger upward */}
       <motion.div

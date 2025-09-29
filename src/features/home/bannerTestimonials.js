@@ -1,11 +1,15 @@
 import "./bannerTestimonials.css";
 import { FaQuoteLeft } from "react-icons/fa";
-import { TestimonialsData } from "../../config/testimonials.config";
+import {
+  TestimonialsData,
+  TestimonialHeading,
+} from "../../config/testimonials.config";
 import { motion } from "framer-motion";
 import {
   containerStagger,
   fadeUpItem,
 } from "../../shared/components/FramerVariants";
+import SectionHeader from "../../shared/components/SectionHeader/SectionHeader";
 
 function BannerTestimonials() {
   return (
@@ -14,17 +18,19 @@ function BannerTestimonials() {
       aria-labelledby="testimonials-heading"
     >
       {/* Heading with fade-up animation */}
-      <motion.h2
-        id="testimonials-heading"
-        className="home-testimonials-heading"
+      <motion.div
         variants={fadeUpItem}
         initial="initial"
         whileInView="animate"
         viewport={{ once: true, amount: 0.6 }}
       >
-        What <span className="home-testimonials-highlight">my clients</span> say
-        about me
-      </motion.h2>
+        <SectionHeader
+          title={TestimonialHeading.heading.title}
+          highlight={TestimonialHeading.heading.highlight}
+          end={TestimonialHeading.heading.end}
+          align={TestimonialHeading.heading.align}
+        />
+      </motion.div>
 
       {/* Container with staggered upward testimonial cards */}
       <motion.div

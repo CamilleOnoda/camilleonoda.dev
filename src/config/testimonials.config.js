@@ -5,6 +5,14 @@ import avatar4 from "../Assets/user1.webp";
 import avatar5 from "../Assets/user2.webp";
 import avatar6 from "../Assets/user3.webp";
 
+export const TestimonialHeading = {
+  heading: {
+    title: "What",
+    highlight: "my clients",
+    end: "say about my work",
+  },
+};
+
 export const TestimonialsData = [
   {
     name: "Emma Hayes",

@@ -1,0 +1,25 @@
+.section-header-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  line-height: 2.7rem;
+  color: var(--black-text);
+}
+
+.section-header-title.center {
+  text-align: center;
+}
+
+.section-header-title.left {
+  text-align: left;
+}
+
+.section-header-title .highlight {
+  color: var(--highlight-text);
+}
+
+@media (max-width: 768px) {
+  .section-header-title {
+    font-size: 1.8rem;
+  }
+}

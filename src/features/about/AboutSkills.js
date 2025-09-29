@@ -5,6 +5,7 @@ import {
   slideFromLeft,
   slideFromRight,
 } from "../../shared/components/FramerVariants";
+import SectionHeader from "../../shared/components/SectionHeader/SectionHeader";
 
 const AboutSkills = () => {
   return (
@@ -21,9 +22,8 @@ const AboutSkills = () => {
           viewport={{ once: true, amount: 0.5 }}
           variants={slideFromLeft}
         >
-          <h2 id="education-heading" className="about-skills-education-heading">
-            My Education
-          </h2>
+          <SectionHeader title="My Education" align="left" />
+
           <div className="about-skills-education-list">
             {educationAndSkills.education.map((edu, index) => (
               <div
@@ -46,7 +46,8 @@ const AboutSkills = () => {
           viewport={{ once: true, amount: 0.5 }}
           variants={slideFromRight}
         >
-          <h2 className="about-skills-skill-heading">My Skills</h2>
+          <SectionHeader title="My Skills" align="left" />
+
           <div className="about-skills-skill-list">
             {educationAndSkills.skills.map((skill, index) => (
               <div key={index} className="about-skills-skill-items-container">

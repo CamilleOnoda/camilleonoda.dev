@@ -5,18 +5,6 @@
   margin-top: -0.5rem;
 }
 
-.home-services-heading {
-  font-size: 2rem;
-  font-weight: 600;
-  color: var(--black-text);
-  text-align: center;
-  margin: 2rem 0;
-}
-
-.home-services-highlight {
-  color: var(--highlight-text);
-}
-
 .home-services-inner-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -70,9 +58,5 @@
   }
   .home-services-container-box {
     width: 100%;
-  }
-  .home-services-heading {
-    font-size: 1.8rem;
-    line-height: 2.7rem;
   }
 }

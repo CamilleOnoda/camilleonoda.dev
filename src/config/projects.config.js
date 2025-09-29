@@ -4,6 +4,14 @@ import portflioImg3 from "../Assets/project3.webp";
 import portflioImg4 from "../Assets/project4.webp";
 import portflioImg5 from "../Assets/project4.webp";
 
+export const ProjectsIntro = {
+  heading: {
+    title: "Here’s",
+    highlight: "what 10+ years",
+    end: "of development looks like",
+  },
+};
+
 export const ProjectsData = [
   {
     id: 1,

@@ -6,6 +6,7 @@ import {
   containerStagger,
   fadeUpItem,
 } from "../../shared/components/FramerVariants";
+import SectionHeader from "../../shared/components/SectionHeader/SectionHeader";
 
 function BannerServices() {
   return (
@@ -13,17 +14,15 @@ function BannerServices() {
       className="home-services-container"
       aria-labelledby="services-heading"
     >
-      {/* Heading with fade-up animation */}
-      <motion.h2
-        id="services-heading"
-        className="home-services-heading"
+      {/* Reusable Section Header */}
+      <motion.div
         variants={fadeUpItem}
         initial="initial"
         whileInView="animate"
         viewport={{ once: true, amount: 0.6 }}
       >
-        How can <span className="home-services-highlight">I help you</span>
-      </motion.h2>
+        <SectionHeader title="How can" highlight="I help you" />
+      </motion.div>
 
       {/* Container with staggered upward cards */}
       <motion.div

@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import { useLocation, Link } from "react-router-dom";
 import "./portfolio.css";
-import { ProjectsData } from "../../config/projects.config";
+import { ProjectsData, ProjectsIntro } from "../../config/projects.config";
 import { motion } from "framer-motion";
 import { fadeUpItem } from "../../shared/components/FramerVariants";
 import Button from "../../shared/components/button/Button";
+import SectionHeader from "../../shared/components/SectionHeader/SectionHeader";
 
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -48,9 +49,12 @@ const Portfolio = () => {
           whileInView="animate"
           viewport={{ once: true, amount: 0.6 }}
         >
-          {/* Explore <span className="portfolio-highlight">My Projects</span> */}
-          Here's <span className="portfolio-highlight">what 10+ years</span> of
-          development looks like
+          <SectionHeader
+            title={ProjectsIntro.heading.title}
+            highlight={ProjectsIntro.heading.highlight}
+            end={ProjectsIntro.heading.end}
+            align={ProjectsIntro.heading.align}
+          />
         </motion.h2>
 
         {/* Filter Buttons */}

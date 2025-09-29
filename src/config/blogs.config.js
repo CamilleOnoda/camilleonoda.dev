@@ -3,6 +3,16 @@ import blogImg2 from "../Assets/blog2.webp";
 import blogImg3 from "../Assets/blog3.webp";
 import blogImg4 from "../Assets/blog4.webp";
 
+export const BlogsIntro = {
+  heading: {
+    title: "Insights from",
+    highlight: "My Developer",
+    end: "Journey",
+    align: "center",
+  },
+  categories: ["All", "Frontend", "Backend"],
+};
+
 export const BlogsData = [
   {
     id: 1,

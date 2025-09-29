@@ -5,18 +5,6 @@
   margin-top: 2rem;
 }
 
-.testimonial-title {
-  font-size: 2rem;
-  font-weight: 600;
-  color: var(--black-text);
-  margin-bottom: 3rem;
-}
-
-.testimonial-highlight,
-.highlight {
-  color: var(--highlight-text);
-}
-
 .testimonial-inner-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -78,10 +66,5 @@
 @media (max-width: 600px) {
   .testimonial-section {
     padding: 4.5rem 1rem 2.5rem;
-  }
-  .testimonial-title {
-    font-size: 1.8rem;
-    line-height: 2.7rem;
-    margin-bottom: 1.5rem;
   }
 }

@@ -6,6 +6,7 @@ import {
   slideFromRight,
 } from "../../shared/components/FramerVariants";
 import Button from "../../shared/components/button/Button";
+import SectionHeader from "../../shared/components/SectionHeader/SectionHeader";
 
 function AboutBanner() {
   return (
@@ -29,12 +30,8 @@ function AboutBanner() {
               height="700"
             />
 
-            <div className="about-banner-badge">
-              <span
-                className="about-banner-emoji"
-                role="img"
-                aria-label="happy face"
-              >
+            <div className="about-banner-badge" role="status">
+              <span className="about-banner-emoji" aria-hidden="true">
                 {aboutIntro.badge.emoji}
               </span>
               {aboutIntro.badge.text} <br />
@@ -50,13 +47,12 @@ function AboutBanner() {
             viewport={{ once: true, amount: 0.5 }}
             variants={slideFromRight}
           >
-            <h1 id="about-heading" className="about-banner-heading">
-              {aboutIntro.heading.start}{" "}
-              <span className="about-banner-highlight">
-                {aboutIntro.heading.highlight}
-              </span>{" "}
-              {aboutIntro.heading.end}
-            </h1>
+            <SectionHeader
+              title={aboutIntro.heading.start}
+              highlight={aboutIntro.heading.highlight}
+              end={aboutIntro.heading.end}
+              align="left"
+            />
 
             <p className="about-banner-description">{aboutIntro.description}</p>
 

@@ -14,18 +14,6 @@
   padding: 1rem;
 }
 
-.blog-header-title {
-  font-size: 2rem;
-  font-weight: 600;
-  line-height: 3.3rem;
-  color: var(--black-text);
-  padding: 1.5rem 0;
-}
-
-.blog-highlight {
-  color: var(--highlight-text);
-}
-
 .blog-categories-container {
   display: flex;
   flex-wrap: wrap;
@@ -179,9 +167,5 @@
   }
   .blog-search-input {
     font-size: 0.9rem;
-  }
-  .blog-header-title {
-    font-size: 1.8rem;
-    line-height: 2.7rem;
   }
 }

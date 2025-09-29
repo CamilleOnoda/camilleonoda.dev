@@ -69,16 +69,6 @@
   font-size: 1.5rem;
 }
 
-.about-banner-heading {
-  font-size: 2rem;
-  font-weight: 600;
-  color: var(--black-text);
-}
-
-.about-banner-highlight {
-  color: var(--highlight-text);
-}
-
 .about-banner-description {
   font-size: 1.1rem;
   color: var(--gray-text);
@@ -109,6 +99,9 @@
     width: 100%;
     max-width: 100%; /* Remove constraint */
   }
+  .about-banner-text-container .section-header-title {
+    text-align: center;
+  }
 }
 
 @media (max-width: 600px) {
@@ -128,9 +121,5 @@
   }
   .about-banner-emoji {
     font-size: 1rem;
-  }
-  .about-banner-heading {
-    font-size: 1.8rem;
-    line-height: 2.7rem;
   }
 }

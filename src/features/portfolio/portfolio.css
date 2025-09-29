@@ -14,18 +14,6 @@
   padding: 1rem;
 }
 
-.portfolio-header-title {
-  font-size: 2rem;
-  font-weight: 600;
-  line-height: 3.3rem;
-  color: var(--black-text);
-  padding: 1.5rem 0;
-}
-
-.portfolio-highlight {
-  color: var(--highlight-text);
-}
-
 .portfolio-categories-container {
   display: flex;
   flex-wrap: wrap;
@@ -132,12 +120,5 @@
   }
   .portfolio-categories-container {
     margin-top: 0.3rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .portfolio-header-title {
-    font-size: 1.8rem;
-    line-height: 2.7rem;
   }
 }

@@ -1,10 +1,14 @@
 import "./testimonial.css";
-import { TestimonialsData } from "../../config/testimonials.config";
+import {
+  TestimonialsData,
+  TestimonialHeading,
+} from "../../config/testimonials.config";
 import { motion } from "framer-motion";
 import {
   fadeUpItem,
   containerStagger,
 } from "../../shared/components/FramerVariants";
+import SectionHeader from "../../shared/components/SectionHeader/SectionHeader";
 
 function Testimonial() {
   return (
@@ -21,8 +25,12 @@ function Testimonial() {
         whileInView="animate"
         viewport={{ once: true, amount: 0.6 }}
       >
-        What <span className="testimonial-highlight">my clients</span> say about
-        <span className="highlight"> my work</span>
+        <SectionHeader
+          title={TestimonialHeading.heading.title}
+          highlight={TestimonialHeading.heading.highlight}
+          end={TestimonialHeading.heading.end}
+          align={TestimonialHeading.heading.align}
+        />
       </motion.h2>
 
       {/* Testimonials list */}

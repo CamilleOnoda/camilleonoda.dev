@@ -48,13 +48,6 @@
   line-height: 1.6;
 }
 
-.about-story-text-heading {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  color: var(--secondary-lavender-color);
-}
-
 .about-story-text-description {
   font-size: 1.1rem;
   line-height: 2rem;
@@ -85,14 +78,14 @@
   .about-story-img {
     max-width: 100%;
   }
+  .about-story-text-container .section-header-title {
+    text-align: center;
+  }
 }
 
 @media (max-width: 650px) {
   .about-story-section {
     padding: 1rem;
-  }
-  .about-story-text-heading {
-    font-size: 1.8rem;
   }
   .about-story-link {
     font-size: 1.1rem;

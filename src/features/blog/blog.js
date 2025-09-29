@@ -2,16 +2,17 @@ import { useState } from "react";
 import "./blog.css";
 import { FaExternalLinkAlt, FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { BlogsData } from "../../config/blogs.config";
+import { BlogsData, BlogsIntro } from "../../config/blogs.config";
 import { motion } from "framer-motion";
 import { fadeUpItem } from "../../shared/components/FramerVariants";
 import Button from "../../shared/components/button/Button";
+import SectionHeader from "../../shared/components/SectionHeader/SectionHeader";
 
 function Blogs() {
   const [currentCategory, setCurrentCategory] = useState("All");
   const [searchQuery, setSearchQuery] = useState("");
 
-  const categories = ["All", "Frontend", "Backend"];
+  const categories = BlogsIntro.categories;
 
   const filteredBlogs = BlogsData.filter((blog) => {
     const matchesCategory =
@@ -25,17 +26,22 @@ function Blogs() {
   return (
     <section className="blog-section">
       <div className="blog-header-container">
-        {/* Heading with upward animation */}
-        <motion.h2
-          className="blog-header-title"
+        {/* Reusable Heading */}
+        <motion.div
           variants={fadeUpItem}
           initial="initial"
           whileInView="animate"
           viewport={{ once: true, amount: 0.6 }}
         >
-          Insights from <span className="blog-highlight">My Developer</span>{" "}
-          Journey
-        </motion.h2>
+          <SectionHeader
+            title={BlogsIntro.heading.title}
+            highlight={BlogsIntro.heading.highlight}
+            end={BlogsIntro.heading.end}
+            align={BlogsIntro.heading.align}
+          />
+        </motion.div>
+
+        {/* Categories + Search */}
         <motion.div
           className="blog-categories-container"
           variants={fadeUpItem}

@@ -6,6 +6,7 @@ import {
   slideFromLeft,
   slideFromRight,
 } from "../../shared/components/FramerVariants";
+import SectionHeader from "../../shared/components/SectionHeader/SectionHeader";
 
 function AboutStory() {
   return (
@@ -39,9 +40,8 @@ function AboutStory() {
             viewport={{ once: true, amount: 0.5 }}
             variants={slideFromRight}
           >
-            <h2 id="about-story-heading" className="about-story-text-heading">
-              {storyData.heading}
-            </h2>
+            <SectionHeader title={storyData.heading} align="left" />
+
             <p className="about-story-text-description">{storyData.text}</p>
             <Link to={storyData.linkUrl} className="about-story-link">
               {storyData.linkText}
