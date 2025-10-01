@@ -21,7 +21,10 @@ function BannerServices() {
         whileInView="animate"
         viewport={{ once: true, amount: 0.6 }}
       >
-        <SectionHeader title="How can" highlight="I help you" />
+        <SectionHeader
+          title={bannerServices.heading.start}
+          highlight={bannerServices.heading.highlight}
+        />
       </motion.div>
 
       {/* Container with staggered upward cards */}
@@ -32,7 +35,7 @@ function BannerServices() {
         whileInView="animate"
         viewport={{ once: true, amount: 0.4 }}
       >
-        {bannerServices.map((service, index) => (
+        {bannerServices.services.map((service, index) => (
           <motion.div
             key={index}
             className="home-services-container-box"

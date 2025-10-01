@@ -22,8 +22,11 @@ const AboutSkills = () => {
           viewport={{ once: true, amount: 0.5 }}
           variants={slideFromLeft}
         >
-          <SectionHeader title="My Education" align="left" />
-
+          <SectionHeader
+            title={educationAndSkills.educationHeading.start}
+            highlight={educationAndSkills.educationHeading.highlight}
+            align="left"
+          />
           <div className="about-skills-education-list">
             {educationAndSkills.education.map((edu, index) => (
               <div
@@ -46,7 +49,11 @@ const AboutSkills = () => {
           viewport={{ once: true, amount: 0.5 }}
           variants={slideFromRight}
         >
-          <SectionHeader title="My Skills" align="left" />
+          <SectionHeader
+            title={educationAndSkills.skillHeading.start}
+            highlight={educationAndSkills.skillHeading.highlight}
+            align="left"
+          />
 
           <div className="about-skills-skill-list">
             {educationAndSkills.skills.map((skill, index) => (

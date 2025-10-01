@@ -1,5 +1,6 @@
 import "../../shared/styles/details.css";
 import BlogDetailsData from "../../config/blogDetails.config";
+import SectionHeader from "../../shared/components/SectionHeader/SectionHeader";
 
 function BlogDetails() {
   const { title, subtitle, heroImg, sections } = BlogDetailsData;
@@ -7,9 +8,7 @@ function BlogDetails() {
   return (
     <section className="details-section" aria-labelledby="blog-title">
       <div className="details-container">
-        <h1 id="blog-title" className="details-title">
-          {title}
-        </h1>
+        <SectionHeader title={BlogDetailsData.title} align="left" />
         <p className="details-description">{subtitle}</p>
 
         <img

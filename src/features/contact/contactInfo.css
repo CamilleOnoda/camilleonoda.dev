@@ -4,18 +4,6 @@
   width: 100%;
 }
 
-.contact-info-heading {
-  font-size: 2rem;
-  font-weight: 600;
-  color: var(--black-text);
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-.contact-highlight {
-  color: var(--highlight-text);
-}
-
 .contact-info-inner-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -108,9 +96,5 @@
 @media (max-width: 768px) {
   .contact-info-inner-container {
     grid-template-columns: 1fr;
-  }
-  .contact-info-heading {
-    font-size: 1.8rem;
-    line-height: 2.7rem;
   }
 }

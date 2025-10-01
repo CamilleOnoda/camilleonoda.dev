@@ -1,7 +1,7 @@
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "./bannerBlog.css";
-import { BlogsData } from "../../config/blogs.config";
+import { BlogsData, BlogsIntro } from "../../config/blogs.config";
 import { motion } from "framer-motion";
 import {
   containerStagger,
@@ -21,7 +21,10 @@ function BannerBlog() {
         whileInView="animate"
         viewport={{ once: true, amount: 0.6 }}
       >
-        <SectionHeader title="My Latest" highlight="Articles" />
+        <SectionHeader
+          title={BlogsIntro.homeHeading.start}
+          highlight={BlogsIntro.homeHeading.highlight}
+        />
       </motion.div>
 
       {/* Cards stagger upward */}

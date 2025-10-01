@@ -29,7 +29,6 @@ function Testimonial() {
           title={TestimonialHeading.heading.title}
           highlight={TestimonialHeading.heading.highlight}
           end={TestimonialHeading.heading.end}
-          align={TestimonialHeading.heading.align}
         />
       </motion.h2>
 

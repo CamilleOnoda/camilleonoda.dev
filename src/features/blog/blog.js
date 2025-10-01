@@ -37,7 +37,6 @@ function Blogs() {
             title={BlogsIntro.heading.title}
             highlight={BlogsIntro.heading.highlight}
             end={BlogsIntro.heading.end}
-            align={BlogsIntro.heading.align}
           />
         </motion.div>
 

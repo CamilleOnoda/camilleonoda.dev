@@ -10,6 +10,10 @@ export const BlogsIntro = {
     end: "Journey",
     align: "center",
   },
+  homeHeading: {
+    start: "My latest",
+    highlight: "articles",
+  },
   categories: ["All", "Frontend", "Backend"],
 };
 

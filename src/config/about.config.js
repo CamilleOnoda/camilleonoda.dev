@@ -20,6 +20,10 @@ export const aboutIntro = {
 };
 
 export const educationAndSkills = {
+  educationHeading: {
+    start: "My",
+    highlight: "Education",
+  },
   education: [
     { degree: "MSc Software Engineering", year: "2020 - 2024" },
     { degree: "Diploma In Web Development", year: "2020" },
@@ -27,6 +31,10 @@ export const educationAndSkills = {
     { degree: "Specialization in Frontend", year: "2020" },
     { degree: "BSc Computer Science", year: "2016 - 2019" },
   ],
+  skillHeading: {
+    start: "My",
+    highlight: "Skills",
+  },
   skills: [
     "Frontend (ReactJS, JavaScript, Vue)",
     "Backend (Node.js, Django, Java)",
@@ -45,7 +53,10 @@ export const aboutStats = [
 
 export const storyData = {
   image: deskImg,
-  heading: "My Story",
+  heading: {
+    start: "My",
+    highlight: "Story",
+  },
   text: `How I discovered my passion for development, and started building my path as a Web Developer. I share the valuable lessons I've learned so far, book recommendations, and sneak peeks of my very first project. You'll also see how I approach problem-solving, and how I continuously adapt and grow by exploring new ones.`,
   linkText: "Read my story",
   linkUrl: "/story",

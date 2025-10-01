@@ -6,6 +6,7 @@ import {
   slideFromRight,
 } from "../../shared/components/FramerVariants";
 import Button from "../../shared/components/button/Button";
+import SectionHeader from "../../shared/components/SectionHeader/SectionHeader";
 
 const ContactForm = () => {
   return (
@@ -50,10 +51,11 @@ const ContactForm = () => {
             aria-describedby="contact-form-description"
             name="contact"
           >
-            <h2 id="contact-form-heading" className="contact-form-title">
-              Let's start a
-              <span className="contact-highlight"> new project!</span>
-            </h2>
+            <SectionHeader
+              title={ContactData.heading.start}
+              highlight={ContactData.heading.highlight}
+              align="left"
+            />
 
             <p id="contact-form-description" className="sr-only">
               Fill out the form below to get in touch with me about your

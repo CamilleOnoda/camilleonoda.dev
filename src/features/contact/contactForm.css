@@ -51,16 +51,6 @@
   margin-top: 1rem;
 }
 
-.contact-form-title {
-  font-size: 2rem;
-  font-weight: 600;
-  color: var(--black-text);
-}
-
-.contact-highlight {
-  color: var(--highlight-text);
-}
-
 .contact-form-input-container {
   display: flex;
   gap: 1rem;
@@ -115,6 +105,9 @@
   .contact-form-input-container {
     width: 100%;
   }
+  .contact-form-container .section-header-title {
+    text-align: center;
+  }
 }
 
 @media (max-width: 600px) {
@@ -123,10 +116,5 @@
   }
   .contact-form-input-container {
     flex-direction: column;
-  }
-  .contact-form-title {
-    font-size: 1.8rem;
-    padding-bottom: 1.3rem;
-    line-height: 2.7rem;
   }
 }

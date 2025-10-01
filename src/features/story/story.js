@@ -1,15 +1,13 @@
 import "../../shared/styles/details.css";
 import StoryGallery from "../../shared/components/gallery/storyGallery";
 import storyData from "../../config/story.config";
+import SectionHeader from "../../shared/components/SectionHeader/SectionHeader";
 
 function Story() {
   return (
     <section className="details-section" aria-labelledby="story-title">
       <div className="details-container">
-        <h1 id="story-title" className="details-title">
-          {storyData.title}
-        </h1>
-
+        <SectionHeader title={storyData.title} align="left" />
         <p className="details-description">{storyData.subtitle}</p>
 
         <StoryGallery images={storyData.images} />

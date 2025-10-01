@@ -4,7 +4,14 @@ import { SiStackoverflow } from "react-icons/si";
 
 export const ContactData = {
   image: contactImg,
-
+  heading: {
+    start: "Let's start a",
+    highlight: "new project!",
+  },
+  secondheading: {
+    start: "React out via",
+    highlight: "social media or email",
+  },
   contactCards: [
     {
       type: "Hire Me",

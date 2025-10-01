@@ -1,5 +1,6 @@
 import "../../shared/styles/details.css";
 import { ProjectDetailsData } from "../../config/projectDetails.config";
+import SectionHeader from "../../shared/components/SectionHeader/SectionHeader";
 
 function ProjectDetails() {
   const project = ProjectDetailsData.ecommerceApp;
@@ -8,9 +9,10 @@ function ProjectDetails() {
     <section className="details-section" aria-labelledby="project-title">
       <div className="details-container">
         {/* Project Title */}
-        <h1 id="project-title" className="details-title">
-          {project.projectTitle}
-        </h1>
+        <SectionHeader
+          title={ProjectDetailsData.ecommerceApp.projectTitle}
+          align="left"
+        />
 
         {/* Project Subtitle */}
         {project.projectSubtitle && (

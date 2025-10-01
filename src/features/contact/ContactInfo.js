@@ -5,6 +5,7 @@ import {
   containerStagger,
   fadeUpItem,
 } from "../../shared/components/FramerVariants";
+import SectionHeader from "../../shared/components/SectionHeader/SectionHeader";
 
 // Utility component for all external links
 const ExternalLink = ({ href, children, ...props }) => (
@@ -27,8 +28,10 @@ const ContactInfo = () => {
         whileInView="animate"
         viewport={{ once: true, amount: 0.6 }}
       >
-        Reach out via <span className="contact-highlight">social media</span> or{" "}
-        <span className="contact-highlight">email</span>
+        <SectionHeader
+          title={ContactData.secondheading.start}
+          highlight={ContactData.secondheading.highlight}
+        />
       </motion.h2>
 
       {/* Contact Cards Container */}

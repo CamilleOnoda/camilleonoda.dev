@@ -40,7 +40,11 @@ function AboutStory() {
             viewport={{ once: true, amount: 0.5 }}
             variants={slideFromRight}
           >
-            <SectionHeader title={storyData.heading} align="left" />
+            <SectionHeader
+              title={storyData.heading.start}
+              highlight={storyData.heading.highlight}
+              align="left"
+            />
 
             <p className="about-story-text-description">{storyData.text}</p>
             <Link to={storyData.linkUrl} className="about-story-link">
