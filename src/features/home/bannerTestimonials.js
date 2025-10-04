@@ -1,5 +1,4 @@
 import "./bannerTestimonials.css";
-import { FaQuoteLeft } from "react-icons/fa";
 import {
   TestimonialsData,
   TestimonialHeading,
@@ -10,6 +9,7 @@ import {
   fadeUpItem,
 } from "../../shared/components/FramerVariants";
 import SectionHeader from "../../shared/components/SectionHeader/SectionHeader";
+import Card from "../../shared/components/card/Card";
 
 function BannerTestimonials() {
   return (
@@ -17,7 +17,7 @@ function BannerTestimonials() {
       className="home-testimonials-container"
       aria-labelledby="testimonials-heading"
     >
-      {/* Heading with fade-up animation */}
+      {/* Heading */}
       <motion.div
         variants={fadeUpItem}
         initial="initial"
@@ -31,7 +31,7 @@ function BannerTestimonials() {
         />
       </motion.div>
 
-      {/* Container with staggered upward testimonial cards */}
+      {/* Testimonials as cards */}
       <motion.div
         className="home-testimonials-inner-container"
         variants={containerStagger}
@@ -40,27 +40,15 @@ function BannerTestimonials() {
         viewport={{ once: true, amount: 0.4 }}
       >
         {TestimonialsData.slice(0, 4).map((testimonial, index) => (
-          <motion.article
+          <Card
             key={index}
-            className="home-testimonials-container-box"
+            type="testimonial"
+            description={testimonial.text}
+            title={testimonial.name}
+            image={testimonial.image}
+            role={testimonial.role}
             variants={fadeUpItem}
-            aria-label={`Testimonial from ${testimonial.name}`}
-          >
-            <FaQuoteLeft className="home-testimonials-quote-icon" />
-            <p className="home-testimonials-description">{testimonial.text}</p>
-            <div className="home-testimonials-user">
-              <img
-                src={testimonial.image}
-                alt={`Photo of ${testimonial.name}, ${testimonial.role}`}
-              />
-              <div>
-                <h4 className="home-testimonials-user-name">
-                  {testimonial.name}
-                </h4>
-                <span>{testimonial.role}</span>
-              </div>
-            </div>
-          </motion.article>
+          />
         ))}
       </motion.div>
     </section>

@@ -40,6 +40,8 @@ export const bannerServices = {
       description:
         "Creating visually stunning and interactive user interfaces with React, Vue, and modern CSS.",
       category: "Frontend",
+      clickable: true,
+      link: "/portfolio?category=Frontend", // added link
     },
     {
       title: "Backend Development",
@@ -47,6 +49,8 @@ export const bannerServices = {
       description:
         "Developing robust server-side applications using Node.js, Express, and Django.",
       category: "Backend",
+      clickable: true,
+      link: "/portfolio?category=Backend",
     },
     {
       title: "Database Management",
@@ -54,6 +58,8 @@ export const bannerServices = {
       description:
         "Designing and optimizing SQL and NoSQL databases for high performance and scalability.",
       category: "Database",
+      clickable: true,
+      link: "/portfolio?category=Database",
     },
     {
       title: "Testing & Debugging",
@@ -61,6 +67,8 @@ export const bannerServices = {
       description:
         "Ensuring code reliability with unit testing, debugging, and automated test frameworks.",
       category: "Testing & Debugging",
+      clickable: true,
+      link: "/portfolio?category=Testing%20%26%20Debugging",
     },
   ],
 };

@@ -1,8 +1,8 @@
-import portflioImg1 from "../Assets/project1.webp";
+import portflioImg1 from "../Assets/project4.webp";
 import portflioImg2 from "../Assets/project2.webp";
-import portflioImg3 from "../Assets/project3.webp";
-import portflioImg4 from "../Assets/project4.webp";
-import portflioImg5 from "../Assets/project4.webp";
+import portflioImg3 from "../Assets/project1.webp";
+import portflioImg4 from "../Assets/project2.webp";
+import portflioImg5 from "../Assets/project2.webp";
 
 export const ProjectsIntro = {
   heading: {
@@ -16,12 +16,12 @@ export const ProjectsData = [
   {
     id: 1,
     image: portflioImg1,
-    title: "E-Commerce Web App",
+    title: "Social Media Dashboard",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elit...",
-    link: "Read case study ⟶",
-    categories: ["Frontend", "Backend"],
-    type: "Web App",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elit... ",
+    link: "/portfolio-details/1",
+    categories: ["Database"],
+    type: "Web Dashboard",
   },
   {
     id: 2,
@@ -29,19 +29,19 @@ export const ProjectsData = [
     title: "MERN Stack Blog Platform",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elit... ",
-    link: "Read case study ⟶",
+    link: "/portfolio-details/2",
     categories: ["Frontend"],
     type: "Web Blog",
   },
   {
     id: 3,
     image: portflioImg3,
-    title: "Social Media Dashboard",
+    title: "E-Commerce Web App",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elit... ",
-    link: "Read case study ⟶",
-    categories: ["Database"],
-    type: "Web Dashboard",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elit...",
+    link: `/portfolio-details/3`, // link to details page
+    categories: ["Frontend", "Backend"],
+    type: "Web App",
   },
   {
     id: 4,
@@ -49,7 +49,7 @@ export const ProjectsData = [
     title: "Project Management Tool",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elit... ",
-    link: "Read case study ⟶",
+    link: "/portfolio-details/4",
     categories: ["Database", "Backend"],
     type: "DataBase Management",
   },
@@ -59,7 +59,7 @@ export const ProjectsData = [
     title: "SaaS Landing Page",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elit... ",
-    link: "Read case study ⟶",
+    link: "/portfolio-details/5",
     categories: ["Testing & Debugging"],
     type: "Website",
   },
@@ -69,7 +69,7 @@ export const ProjectsData = [
     title: "Real-time Chat Application",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elit... ",
-    link: "Read case study ⟶",
+    link: "/portfolio-details/6",
     categories: ["Testing & Debugging"],
     type: "Tested Web App",
   },
@@ -79,7 +79,7 @@ export const ProjectsData = [
     title: "Booking Backend Architecture",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elit... ",
-    link: "Read case study ⟶",
+    link: "/portfolio-details/7",
     categories: ["Backend"],
     type: "Database Management",
   },
@@ -89,7 +89,7 @@ export const ProjectsData = [
     title: "CMS Backend for Portfolio Management",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elit... ",
-    link: "Read case study ⟶",
+    link: "/portfolio-details/8",
     categories: ["Backend"],
     type: "Web App",
   },

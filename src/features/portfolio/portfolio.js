@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { fadeUpItem } from "../../shared/components/FramerVariants";
 import Button from "../../shared/components/button/Button";
 import SectionHeader from "../../shared/components/SectionHeader/SectionHeader";
+import Card from "../../shared/components/card/Card";
 
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -53,7 +54,6 @@ const Portfolio = () => {
             title={ProjectsIntro.heading.title}
             highlight={ProjectsIntro.heading.highlight}
             end={ProjectsIntro.heading.end}
-            align={ProjectsIntro.heading.align}
           />
         </motion.h2>
 
@@ -82,25 +82,17 @@ const Portfolio = () => {
           {filteredItems.map((item) => (
             <Link
               key={item.id}
-              to={`/portfolio-details/${item.id}`}
+              to={item.link}
               className="portfolio-card-link"
-              aria-label={`View details for ${item.title}`}
+              aria-label={`View details of ${item.title}`}
             >
-              <article className="portfolio-card">
-                <img
-                  src={item.image}
-                  alt={`Screenshot of ${item.title} project`}
-                  className="portfolio-card-img"
-                  loading="lazy"
-                />
-                <div className="portfolio-card-info-container">
-                  <h3 className="portfolio-card-title">{item.title}</h3>
-                  <p className="portfolio-card-description">
-                    {item.description}
-                  </p>
-                  <p className="portfolio-card-type">{item.type}</p>
-                </div>
-              </article>
+              <Card
+                title={item.title}
+                description={item.description}
+                image={item.image}
+                meta={item.type}
+                type="hover-arrow"
+              />
             </Link>
           ))}
         </div>

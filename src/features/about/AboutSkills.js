@@ -14,7 +14,6 @@ const AboutSkills = () => {
       aria-labelledby="education-heading"
     >
       <div className="about-skills-inner-container">
-        {/* Education Section */}
         <motion.div
           className="about-skills-education-container"
           initial="initial"
@@ -41,7 +40,6 @@ const AboutSkills = () => {
           </div>
         </motion.div>
 
-        {/* Skills Section */}
         <motion.div
           className="about-skills-skill-container"
           initial="initial"

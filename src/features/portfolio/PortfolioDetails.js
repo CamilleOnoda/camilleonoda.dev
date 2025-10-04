@@ -1,110 +1,60 @@
-import "../../shared/styles/details.css";
+import DetailsPage from "../../shared/components/detailPage/DetailPage";
 import { ProjectDetailsData } from "../../config/projectDetails.config";
-import SectionHeader from "../../shared/components/SectionHeader/SectionHeader";
 
 function ProjectDetails() {
   const project = ProjectDetailsData.ecommerceApp;
 
-  return (
-    <section className="details-section" aria-labelledby="project-title">
-      <div className="details-container">
-        {/* Project Title */}
-        <SectionHeader
-          title={ProjectDetailsData.ecommerceApp.projectTitle}
-          align="left"
-        />
-
-        {/* Project Subtitle */}
-        {project.projectSubtitle && (
-          <p className="details-description">{project.projectSubtitle}</p>
-        )}
-
-        {/* Tech and Links */}
-        <div
-          className="details-skills-container"
-          role="region"
-          aria-label="Project technologies and links"
-        >
-          {project.techStack?.length > 0 && (
-            <div className="details-skills-line">
-              <strong>Technologies:</strong>{" "}
-              <span>{project.techStack.join(", ")}</span>
-            </div>
-          )}
-
-          {project.liveLink && (
-            <div className="details-skills-line">
-              <strong>Website:</strong>{" "}
-              <a
-                href={project.liveLink}
-                className="details-skills-website-link"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`Visit ${project.projectTitle} live site (opens in new tab)`}
-              >
-                Visit Site
-              </a>
-            </div>
-          )}
-
-          {project.githubLink && (
-            <div className="details-skills-line">
-              <strong>GitHub:</strong>{" "}
-              <a
-                href={project.githubLink}
-                className="details-skills-website-link"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`View ${project.projectTitle} source code on GitHub (opens in new tab)`}
-              >
-                View Code
-              </a>
-            </div>
-          )}
+  const extraContent = (
+    <div
+      className="details-skills-container"
+      role="region"
+      aria-label="Project technologies and links"
+    >
+      {project.techStack?.length > 0 && (
+        <div className="details-skills-line">
+          <strong>Technologies:</strong>{" "}
+          <span>{project.techStack.join(", ")}</span>
         </div>
+      )}
 
-        {/* Project Image */}
-        {project.heroImage && (
-          <img
-            src={project.heroImage}
-            alt={`Screenshot of ${project.projectTitle}`}
-            className="details-img"
-            loading="lazy"
-            width="800"
-            height="450"
-          />
-        )}
+      {project.liveLink && (
+        <div className="details-skills-line">
+          <strong>Website:</strong>{" "}
+          <a
+            href={project.liveLink}
+            className="details-skills-website-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visit Site
+          </a>
+        </div>
+      )}
 
-        {/* Project Sections */}
-        {project.projectSections?.length > 0 && (
-          <div className="details-description-container">
-            {project.projectSections.map((section, index) => (
-              <article
-                className="details-description-block"
-                key={index}
-                aria-labelledby={`section-${index}`}
-              >
-                <h2 id={`section-${index}`} className="details-container-title">
-                  {section.sectionTitle}
-                </h2>
+      {project.githubLink && (
+        <div className="details-skills-line">
+          <strong>GitHub:</strong>{" "}
+          <a
+            href={project.githubLink}
+            className="details-skills-website-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Code
+          </a>
+        </div>
+      )}
+    </div>
+  );
 
-                {Array.isArray(section.sectionContent) ? (
-                  section.sectionContent.map((item, i) => (
-                    <p className="details-description" key={i}>
-                      {item}
-                    </p>
-                  ))
-                ) : (
-                  <p className="details-description">
-                    {section.sectionContent}
-                  </p>
-                )}
-              </article>
-            ))}
-          </div>
-        )}
-      </div>
-    </section>
+  return (
+    <DetailsPage
+      title={project.projectTitle}
+      subtitle={project.projectSubtitle}
+      heroImg={project.heroImage}
+      sections={project.projectSections}
+      extraContent={extraContent}
+    />
   );
 }
 

@@ -1,0 +1,79 @@
+.contact-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-left: 1.8px solid #9175d8;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-card-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #54387a;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1rem;
+  flex-shrink: 0;
+  margin-top: -5px;
+}
+
+.contact-card-name {
+  font-size: 1.2rem;
+  color: #54387a;
+  margin-bottom: 0.5rem;
+}
+
+.contact-card-links,
+.contact-card-phone,
+.contact-card-email {
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #000000;
+  letter-spacing: 0.2px;
+}
+
+.contact-card-link {
+  color: #000000;
+}
+
+.contact-card-email {
+  display: inline-block;
+  margin-top: 0.1rem;
+}
+
+.separator {
+  color: #000000;
+  margin: 0 0.2rem;
+}
+
+.contact-card-social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.contact-card-social-icons a {
+  color: #000000;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.contact-card-social-icons a:hover {
+  cursor: pointer;
+}
+
+.contact-card-description {
+  font-size: 1.1rem;
+  color: #555555;
+  line-height: 1.8rem;
+  margin-top: 1.3rem;
+}

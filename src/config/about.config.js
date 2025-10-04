@@ -45,7 +45,10 @@ export const educationAndSkills = {
 };
 
 export const aboutStats = [
-  { title: "3K+", description: "Happy customers with full satisfaction" },
+  {
+    title: "3K+",
+    description: "Happy customers with full satisfaction",
+  },
   { title: "500+", description: "Completed projects with full passion" },
   { title: "10+", description: "Years of experience in web development" },
   { title: "100+", description: "Team members across the world" },

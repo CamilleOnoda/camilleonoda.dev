@@ -8,8 +8,8 @@ function Home() {
     <main>
       <BannerIntro />
       <BannerServices />
-      <BannerTestimonials />
-      <BannerBlog />
+      {/* <BannerTestimonials /> */}
+      {/* <BannerBlog /> */}
     </main>
   );
 }

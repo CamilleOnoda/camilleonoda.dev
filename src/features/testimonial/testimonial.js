@@ -4,11 +4,9 @@ import {
   TestimonialHeading,
 } from "../../config/testimonials.config";
 import { motion } from "framer-motion";
-import {
-  fadeUpItem,
-  containerStagger,
-} from "../../shared/components/FramerVariants";
+import { fadeUpItem } from "../../shared/components/FramerVariants";
 import SectionHeader from "../../shared/components/SectionHeader/SectionHeader";
+import TestimonialCard from "../../shared/components/testimonialCard/TestimonialCard";
 
 function Testimonial() {
   return (
@@ -16,7 +14,7 @@ function Testimonial() {
       className="testimonial-section"
       aria-labelledby="testimonial-heading"
     >
-      {/* Accessible and semantic heading */}
+      {/* Heading with motion */}
       <motion.h2
         id="testimonial-heading"
         className="testimonial-title"
@@ -33,43 +31,15 @@ function Testimonial() {
       </motion.h2>
 
       {/* Testimonials list */}
-      <motion.div
-        className="testimonial-inner-container"
-        variants={containerStagger}
-        initial="initial"
-        whileInView="animate"
-        viewport={{ once: true, amount: 0.4 }}
-      >
+      <div className="testimonial-inner-container">
         {TestimonialsData.map((testimonial, index) => (
-          <motion.article
+          <TestimonialCard
             key={index}
-            className="testimonial-card"
-            variants={fadeUpItem}
-            aria-labelledby={`testimonial-${index}-name`}
-          >
-            <header className="testimonial-header">
-              <img
-                src={testimonial.image}
-                alt={`${testimonial.name}'s profile`}
-                className="testimonial-img"
-                loading="lazy"
-              />
-              <div>
-                <h3
-                  id={`testimonial-${index}-name`}
-                  className="testimonial-name"
-                >
-                  {testimonial.name}
-                </h3>
-                <p className="testimonial-role">{testimonial.role}</p>
-              </div>
-            </header>
-            <blockquote className="testimonial-description">
-              “{testimonial.text}”
-            </blockquote>
-          </motion.article>
+            testimonial={testimonial}
+            index={index}
+          />
         ))}
-      </motion.div>
+      </div>
     </section>
   );
 }

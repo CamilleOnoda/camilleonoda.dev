@@ -10,7 +10,7 @@ import Testimonial from "./features/testimonial/testimonial";
 import ScrollToTop from "./ScrollToTop";
 import Footer from "./features/Footer/footer";
 import { Contact } from "./features/contact/Contact";
-import Story from "./features/story/story";
+import Story from "./features/story/StoryDetails";
 
 function App() {
   return (
