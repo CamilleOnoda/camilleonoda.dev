@@ -53,7 +53,7 @@
   left: 50%;
   transform: translateX(-50%);
   background: #ffffff;
-  color: #000000;
+  color: #28282b;
   padding: 0.5rem 0.9rem;
   border-radius: 10px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
@@ -70,11 +70,11 @@
 }
 
 .about-banner-description {
-  font-size: 1.1rem;
-  color: var(--gray-text);
+  font-size: 1.05rem;
+  color: #28282b;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  line-height: 2rem;
+  line-height: 2.2rem;
 }
 
 @media (max-width: 1024px) {

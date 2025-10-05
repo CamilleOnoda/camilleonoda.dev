@@ -14,15 +14,14 @@
 }
 
 .footer-title {
-  font-size: 2rem;
-  font-weight: 600;
-  line-height: 1.2;
+  font-size: 1.9rem;
+  font-weight: 500;
   color: var(--button-text);
   margin-bottom: 1.3rem;
 }
 
 .footer-description {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--button-text);
   margin-top: 7rem;
 }
@@ -34,6 +33,6 @@
     margin-bottom: 1rem;
   }
   .footer-description {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }

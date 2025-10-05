@@ -1,9 +1,9 @@
 .section-header-title {
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 1.9rem;
+  font-weight: 500;
   margin-bottom: 2rem;
-  line-height: 2.7rem;
-  color: var(--black-text);
+  line-height: 2.8rem;
+  color: var(--heading-color);
 }
 
 .section-header-title.center {
@@ -12,10 +12,6 @@
 
 .section-header-title.left {
   text-align: left;
-}
-
-.section-header-title .highlight {
-  color: var(--highlight-text);
 }
 
 @media (max-width: 768px) {

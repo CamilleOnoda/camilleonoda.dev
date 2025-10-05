@@ -5,10 +5,7 @@ import blogImg4 from "../Assets/blog4.webp";
 
 export const BlogsIntro = {
   heading: {
-    title: "Insights from",
-    highlight: "My Developer",
-    end: "Journey",
-    align: "center",
+    title: "Lessons, stories, and expertise from my developer journey",
   },
   homeHeading: {
     start: "My latest",

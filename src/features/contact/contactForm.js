@@ -51,16 +51,7 @@ const ContactForm = () => {
             aria-describedby="contact-form-description"
             name="contact"
           >
-            <SectionHeader
-              title={ContactData.heading.start}
-              highlight={ContactData.heading.highlight}
-              align="left"
-            />
-
-            <p id="contact-form-description" className="sr-only">
-              Fill out the form below to get in touch with me about your
-              project.
-            </p>
+            <SectionHeader title={ContactData.heading.title} align="left" />
 
             <fieldset className="contact-form-input-container">
               <label htmlFor="name" className="sr-only">

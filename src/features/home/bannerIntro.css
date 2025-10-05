@@ -28,7 +28,7 @@
 
 .home-banner-greeting {
   font-size: 2rem;
-  color: var(--gray-text);
+  color: #656565;
 }
 
 .home-banner-name {
@@ -42,7 +42,7 @@
 
 .home-banner-description {
   font-size: 1.3rem;
-  color: var(--black-text);
+  color: #28282b;
   line-height: 2.5rem;
   letter-spacing: -0.2px;
 }
@@ -102,7 +102,7 @@
 }
 
 .home-banner-badge-year {
-  color: #8962c5;
+  color: #54387a;
   font-size: 2.1rem;
   letter-spacing: -1px;
 }

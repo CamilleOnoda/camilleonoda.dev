@@ -16,7 +16,7 @@
   font-size: 2rem;
   font-weight: 500;
   margin-bottom: 1rem;
-  color: var(--black-text);
+  color: #54387a;
   line-height: 3rem;
 }
 
@@ -24,14 +24,14 @@
   font-size: 1.8rem;
   font-weight: 500;
   margin: 3rem 0 0rem;
-  color: var(--black-text);
+  color: #54387a;
 }
 
 .details-description {
-  font-size: 1.1rem;
-  line-height: 2rem;
+  font-size: 1.05rem;
+  line-height: 2.2rem;
   letter-spacing: 0.1px;
-  color: var(--gray-text);
+  color: #28282b;
   margin: 1rem 0;
 }
 
@@ -44,20 +44,20 @@
 }
 
 .details-skills-line {
-  color: var(--gray-text);
+  color: #28282b;
   font-size: 1.1rem;
   line-height: 2rem;
 }
 
 .details-skills-line strong {
-  color: var(--black-text);
+  color: #54387a;
   font-weight: 500;
   margin-right: 0.2rem;
 }
 
 .details-skills-website-link {
-  color: var(--secondary-lavender-color);
-  font-size: 1.1rem;
+  color: #28282b;
+  font-size: 1.05rem;
 }
 
 @media (max-width: 768px) {

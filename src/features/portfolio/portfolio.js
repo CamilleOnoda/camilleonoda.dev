@@ -50,11 +50,7 @@ const Portfolio = () => {
           whileInView="animate"
           viewport={{ once: true, amount: 0.6 }}
         >
-          <SectionHeader
-            title={ProjectsIntro.heading.title}
-            highlight={ProjectsIntro.heading.highlight}
-            end={ProjectsIntro.heading.end}
-          />
+          <SectionHeader title={ProjectsIntro.heading.title} />
         </motion.h2>
 
         {/* Filter Buttons */}

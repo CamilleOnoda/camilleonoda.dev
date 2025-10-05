@@ -3,7 +3,7 @@
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  border-left: 1.8px solid #9175d8;
+  border-left: 1.8px solid #54387a;
   display: flex;
   align-items: flex-start;
   gap: 1rem;
@@ -35,12 +35,12 @@
 .contact-card-email {
   font-size: 1rem;
   line-height: 1rem;
-  color: #000000;
+  color: #28282b;
   letter-spacing: 0.2px;
 }
 
 .contact-card-link {
-  color: #000000;
+  color: #28282b;
 }
 
 .contact-card-email {
@@ -49,7 +49,7 @@
 }
 
 .separator {
-  color: #000000;
+  color: #28282b;
   margin: 0 0.2rem;
 }
 
@@ -62,7 +62,7 @@
 }
 
 .contact-card-social-icons a {
-  color: #000000;
+  color: #28282b;
   font-size: 1.1rem;
   text-decoration: none;
 }
@@ -72,8 +72,8 @@
 }
 
 .contact-card-description {
-  font-size: 1.1rem;
-  color: #555555;
+  font-size: 1rem;
+  color: #28282b;
   line-height: 1.8rem;
   margin-top: 1.3rem;
 }

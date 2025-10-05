@@ -47,12 +47,7 @@ function AboutBanner() {
             viewport={{ once: true, amount: 0.5 }}
             variants={slideFromRight}
           >
-            <SectionHeader
-              title={aboutIntro.heading.start}
-              highlight={aboutIntro.heading.highlight}
-              end={aboutIntro.heading.end}
-              align="left"
-            />
+            <SectionHeader title={aboutIntro.heading.title} align="left" />
 
             <p className="about-banner-description">{aboutIntro.description}</p>
 

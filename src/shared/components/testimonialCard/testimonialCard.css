@@ -2,7 +2,7 @@
   background: #ffffff;
   padding: 1.5rem;
   border-radius: 10px;
-  border-left: 1.8px solid #9175d8;
+  border-left: 1.8px solid #54387a;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   text-align: left;
   transition: transform 0.2s ease-in-out;
@@ -20,23 +20,23 @@
   height: 45px;
   border-radius: 50%;
   object-fit: cover;
-  border: 1.5px solid #9175d8;
+  border: 1.5px solid #54387a;
 }
 
 .testimonial-name {
   font-size: 1rem;
-  color: #000000;
+  color: var(--heading-color);
   margin-bottom: 0.3rem;
 }
 
 .testimonial-role {
   font-size: 0.9rem;
-  color: #555555;
+  color: #28282b;
 }
 
 .testimonial-description {
   font-size: 1rem;
-  color: hsl(0, 0%, 33%);
+  color: #28282b;
   line-height: 1.8rem;
   letter-spacing: 0.2px;
 }

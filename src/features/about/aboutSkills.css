@@ -22,14 +22,6 @@
   text-align: left;
 }
 
-.about-skills-education-heading,
-.about-skills-skill-heading {
-  font-size: 2rem;
-  color: var(--secondary-lavender-color);
-  margin-bottom: 2rem;
-  font-weight: 600;
-}
-
 .about-skills-education-list,
 .about-skills-skill-list {
   display: flex;
@@ -46,7 +38,7 @@
 .about-skills-education-items::before,
 .about-skills-skill-items::before {
   content: "•";
-  color: var(--secondary-lavender-color);
+  color: #54387a;
   font-size: 1.3rem;
   font-weight: 600;
   margin-right: 0.8rem;
@@ -55,8 +47,8 @@
 
 .about-skills-education-items,
 .about-skills-skill-items {
-  font-size: 1.3rem;
-  color: var(--black-text);
+  font-size: 1.2rem;
+  color: #28282b;
 }
 
 @media (max-width: 1024px) {

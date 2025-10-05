@@ -19,10 +19,7 @@ function BannerServices() {
         whileInView="animate"
         viewport={{ once: true, amount: 0.6 }}
       >
-        <SectionHeader
-          title={bannerServices.heading.start}
-          highlight={bannerServices.heading.highlight}
-        />
+        <SectionHeader title={bannerServices.heading.title} />
       </motion.div>
 
       {/* Services List */}

@@ -9,7 +9,7 @@ function DetailsPage({ title, subtitle, heroImg, sections, extraContent }) {
 
         {subtitle && <p className="details-description">{subtitle}</p>}
 
-        {/* 👇 Extra content above image */}
+        {/* Extra content above image */}
         {extraContent}
 
         {heroImg && (
@@ -30,7 +30,7 @@ function DetailsPage({ title, subtitle, heroImg, sections, extraContent }) {
                 {section.heading || section.sectionTitle}
               </h2>
 
-              {/* ✅ FIXED: Handle both “content” and “sectionContent” */}
+              {/* FIXED: Handle both “content” and “sectionContent” */}
               {(section.content || section.sectionContent) && (
                 <p className="details-description">
                   {section.content || section.sectionContent}

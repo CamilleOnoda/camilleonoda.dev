@@ -49,15 +49,15 @@
 }
 
 .about-story-text-description {
-  font-size: 1.1rem;
-  line-height: 2rem;
-  color: var(--gray-text);
+  font-size: 1.05rem;
+  line-height: 2.2rem;
+  color: #28282b;
   margin-bottom: 1.5rem;
 }
 
 .about-story-link {
-  font-size: 1.3rem;
-  color: var(--secondary-lavender-color);
+  font-size: 1.2rem;
+  color: #54387a;
   font-weight: 600;
   text-decoration: underline;
 }

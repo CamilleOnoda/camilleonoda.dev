@@ -17,11 +17,7 @@ function Blogs() {
           whileInView="animate"
           viewport={{ once: true, amount: 0.6 }}
         >
-          <SectionHeader
-            title={BlogsIntro.heading.title}
-            highlight={BlogsIntro.heading.highlight}
-            end={BlogsIntro.heading.end}
-          />
+          <SectionHeader title={BlogsIntro.heading.title} />
         </motion.div>
 
         {/* Blog Cards */}

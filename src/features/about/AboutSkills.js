@@ -22,8 +22,7 @@ const AboutSkills = () => {
           variants={slideFromLeft}
         >
           <SectionHeader
-            title={educationAndSkills.educationHeading.start}
-            highlight={educationAndSkills.educationHeading.highlight}
+            title={educationAndSkills.educationHeading.title}
             align="left"
           />
           <div className="about-skills-education-list">
@@ -48,8 +47,7 @@ const AboutSkills = () => {
           variants={slideFromRight}
         >
           <SectionHeader
-            title={educationAndSkills.skillHeading.start}
-            highlight={educationAndSkills.skillHeading.highlight}
+            title={educationAndSkills.skillHeading.title}
             align="left"
           />
 

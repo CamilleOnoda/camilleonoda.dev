@@ -7,7 +7,8 @@ const lightTheme = {
   "--bg-name": "linear-gradient(to right, #54387a, #9175D8, #EDEAF8)",
   "--highlight-text": " #9175D8",
   "--black-text": " #000000",
-  "--gray-text": " #555555",
+  "--gray-text": " #656565",
+  "--heading-color": "#54387a" /*just set for testing*/,
 
   // Footer
   "--bg-footer": "  #54387a",
@@ -28,6 +29,7 @@ const darkTheme = {
   "--highlight-text": " #ffffff",
   "--black-text": " #ffffff",
   "--gray-text": " #EDEAF8",
+  "--heading-color": "#ffffff" /*just set for testing*/,
 
   // Footer
   "--bg-footer": "  #EDEAF8",

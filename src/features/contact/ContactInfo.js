@@ -20,10 +20,7 @@ const ContactInfo = () => {
         whileInView="animate"
         viewport={{ once: true, amount: 0.6 }}
       >
-        <SectionHeader
-          title={ContactData.secondheading.start}
-          highlight={ContactData.secondheading.highlight}
-        />
+        <SectionHeader title={ContactData.secondheading.title} />
       </motion.h2>
 
       {/* Cards list (no motion on individual cards) */}

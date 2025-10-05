@@ -16,7 +16,7 @@ export const bannerIntro = {
   experience: {
     years: "10+",
     text: "Years Of Experience",
-    emoji: "😍",
+    emoji: "😊",
   },
   image: img,
   socialLinks: [
@@ -30,42 +30,41 @@ export const bannerIntro = {
 
 export const bannerServices = {
   heading: {
-    start: "How can I",
-    highlight: "help you",
+    title: "How I bring ideas to life",
   },
   services: [
     {
       title: "Frontend Development",
-      projects: "30 PROJECTS",
+      projects: "30 Projects",
       description:
-        "Creating visually stunning and interactive user interfaces with React, Vue, and modern CSS.",
+        "Bringing ideas to life with sleek, responsive, and interactive interfaces built using React, Vue, and CSS",
       category: "Frontend",
       clickable: true,
       link: "/portfolio?category=Frontend", // added link
     },
     {
       title: "Backend Development",
-      projects: "25 PROJECTS",
+      projects: "25 Projects",
       description:
-        "Developing robust server-side applications using Node.js, Express, and Django.",
+        "Powering applications with secure, high-performance backends using Node.js, Express, and Django",
       category: "Backend",
       clickable: true,
       link: "/portfolio?category=Backend",
     },
     {
       title: "Database Management",
-      projects: "20 PROJECTS",
+      projects: "20 Projects",
       description:
-        "Designing and optimizing SQL and NoSQL databases for high performance and scalability.",
+        "Designing and tuning SQL and NoSQL databases for seamless performance, scalability, and reliability",
       category: "Database",
       clickable: true,
       link: "/portfolio?category=Database",
     },
     {
       title: "Testing & Debugging",
-      projects: "15 PROJECTS",
+      projects: "15 Projects",
       description:
-        "Ensuring code reliability with unit testing, debugging, and automated test frameworks.",
+        "Delivering bug-free, reliable code through smart debugging and automated testing frameworks",
       category: "Testing & Debugging",
       clickable: true,
       link: "/portfolio?category=Testing%20%26%20Debugging",

@@ -5,12 +5,10 @@ import { SiStackoverflow } from "react-icons/si";
 export const ContactData = {
   image: contactImg,
   heading: {
-    start: "Let's start a",
-    highlight: "new project!",
+    title: "Let's start a new project",
   },
   secondheading: {
-    start: "React out via",
-    highlight: "social media or email",
+    title: "Let’s connect for projects, collaborations, or a quick hello",
   },
   contactCards: [
     {
@@ -26,7 +24,7 @@ export const ContactData = {
       type: "Phone",
       iconClass: "fas fa-phone-alt",
       phone: "+123 456 7890",
-      description: "Feel free to call me for any inquiries or collaborations",
+      description: "Feel free to reach out by phone for any questions or ideas",
     },
     {
       type: "Email",
@@ -35,7 +33,8 @@ export const ContactData = {
         label: "email@gmail.com",
         href: "#",
       },
-      description: "Contact me via email for projects and opportunities",
+      description:
+        "Connect with me via email for projects, collaborations, or opportunities",
     },
     {
       type: "Social Media",
@@ -47,7 +46,7 @@ export const ContactData = {
         { icon: FaGlobe, href: "#" },
         { icon: SiStackoverflow, href: "#" },
       ],
-      description: "Stay connected for updates from my coding journey",
+      description: "Stay connected for more stories from my coding journey",
     },
   ],
 };

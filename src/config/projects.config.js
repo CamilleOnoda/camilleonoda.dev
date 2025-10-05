@@ -6,9 +6,7 @@ import portflioImg5 from "../Assets/project2.webp";
 
 export const ProjectsIntro = {
   heading: {
-    title: "Here’s",
-    highlight: "what 10+ years",
-    end: "of development looks like",
+    title: "10+ years of development, creativity, and growth",
   },
 };
 
