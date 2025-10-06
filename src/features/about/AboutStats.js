@@ -5,6 +5,7 @@ import {
   fadeUpItem,
   containerStagger,
 } from "../../shared/components/FramerVariants";
+import AboutCard from "../../shared/components/aboutCard/AboutCard";
 
 function AboutStats() {
   return (
@@ -12,6 +13,19 @@ function AboutStats() {
       className="about-stats-section"
       aria-labelledby="about-stats-heading"
     >
+      {/* <motion.div
+        className="about-stats-inner-container"
+        variants={containerStagger}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true, amount: 0.4 }}
+      >
+        {aboutStats.map((stat, index) => (
+          <motion.div key={index} variants={fadeUpItem}>
+            <AboutCard title={stat.title} description={stat.description} />
+          </motion.div>
+        ))}
+      </motion.div> */}
       <motion.div
         className="about-stats-inner-container"
         variants={containerStagger}
@@ -22,11 +36,11 @@ function AboutStats() {
         {aboutStats.map((stat, index) => (
           <motion.article
             key={index}
-            className="about-stats-container-box"
+            className="about-stats-card-wrapper"
             variants={fadeUpItem}
+            style={{ display: "flex", flexDirection: "column", height: "100%" }}
           >
-            <h2 className="about-stats-box-heading">{stat.title}</h2>
-            <p className="about-stats-box-description">{stat.description}</p>
+            <AboutCard title={stat.title} description={stat.description} />
           </motion.article>
         ))}
       </motion.div>

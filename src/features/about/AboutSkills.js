@@ -6,6 +6,7 @@ import {
   slideFromRight,
 } from "../../shared/components/FramerVariants";
 import SectionHeader from "../../shared/components/SectionHeader/SectionHeader";
+import AboutCard from "../../shared/components/aboutCard/AboutCard";
 
 const AboutSkills = () => {
   return (
@@ -14,100 +15,46 @@ const AboutSkills = () => {
       aria-labelledby="education-heading"
     >
       <div className="about-skills-inner-container">
-        {/* <motion.div
-          className="about-skills-education-container"
+        <motion.div
+          className="about-skills-card-wrapper"
           initial="initial"
           whileInView="animate"
           viewport={{ once: true, amount: 0.5 }}
           variants={slideFromLeft}
+          style={{ display: "flex", flexDirection: "column", height: "100%" }}
         >
           <SectionHeader
             title={educationAndSkills.educationHeading.title}
             align="left"
           />
-          <div className="about-skills-education-list">
+          <AboutCard>
             {educationAndSkills.education.map((edu, index) => (
-              <div
-                key={index}
-                className="about-skills-education-items-container"
-              >
-                <p className="about-skills-education-items">
-                  {edu.degree} ({edu.year})
-                </p>
-              </div>
+              <p key={index} className="about-skills-education-items">
+                {edu.degree} ({edu.year})
+              </p>
             ))}
-          </div>
+          </AboutCard>
         </motion.div>
 
         <motion.div
-          className="about-skills-skill-container"
+          className="about-skills-card-wrapper"
           initial="initial"
           whileInView="animate"
           viewport={{ once: true, amount: 0.5 }}
           variants={slideFromRight}
+          style={{ display: "flex", flexDirection: "column", height: "100%" }}
         >
           <SectionHeader
             title={educationAndSkills.skillHeading.title}
             align="left"
           />
-
-          <div className="about-skills-skill-list">
+          <AboutCard>
             {educationAndSkills.skills.map((skill, index) => (
-              <div key={index} className="about-skills-skill-items-container">
-                <p className="about-skills-skill-items">{skill}</p>
-              </div>
+              <p key={index} className="about-skills-skill-items">
+                {skill}
+              </p>
             ))}
-          </div>
-        </motion.div> */}
-        <motion.div
-          className="about-skills-education-container"
-          initial="initial"
-          whileInView="animate"
-          viewport={{ once: true, amount: 0.5 }}
-          variants={slideFromLeft}
-        >
-          <SectionHeader
-            title={educationAndSkills.educationHeading.title}
-            align="left"
-          />
-
-          <div className="about-skills-card">
-            <div className="about-skills-education-list">
-              {educationAndSkills.education.map((edu, index) => (
-                <div
-                  key={index}
-                  className="about-skills-education-items-container"
-                >
-                  <p className="about-skills-education-items">
-                    {edu.degree} ({edu.year})
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </motion.div>
-
-        <motion.div
-          className="about-skills-skill-container"
-          initial="initial"
-          whileInView="animate"
-          viewport={{ once: true, amount: 0.5 }}
-          variants={slideFromRight}
-        >
-          <SectionHeader
-            title={educationAndSkills.skillHeading.title}
-            align="left"
-          />
-
-          <div className="about-skills-card">
-            <div className="about-skills-skill-list">
-              {educationAndSkills.skills.map((skill, index) => (
-                <div key={index} className="about-skills-skill-items-container">
-                  <p className="about-skills-skill-items">{skill}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+          </AboutCard>
         </motion.div>
       </div>
     </section>

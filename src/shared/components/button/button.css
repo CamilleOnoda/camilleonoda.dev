@@ -1,6 +1,6 @@
 .btn {
   font-family: "Inter", sans-serif;
-  font-weight: 550;
+  font-weight: 500;
   border-radius: 5px;
   text-decoration: none;
   transition: 0.3s ease-in-out;
@@ -54,11 +54,12 @@
   background-color: #54387a;
   color: #fff;
   padding: 0.5rem 0.9rem;
-  font-weight: 550;
+  font-weight: 500;
   transition: background 0.3s;
   text-decoration: none;
   border-radius: 5px;
 }
+
 .btn.nav:hover {
   background-color: #3d2b5c;
 }

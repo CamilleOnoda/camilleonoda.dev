@@ -9,82 +9,51 @@
 
 .about-skills-inner-container {
   width: 100%;
-  max-width: 75rem;
   display: grid;
+  max-width: 75rem;
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
-  padding: 1rem;
+  padding: 3rem 1rem;
+  align-items: stretch; /* stretch all grid items to tallest */
+}
+
+.about-skills-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* important to allow stretching */
+}
+
+.about-card {
+  flex: 1; /* take up remaining height inside wrapper */
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-left: 1.8px solid #54387a;
+  display: flex;
+  flex-direction: column;
 }
 
 .about-skills-education-container,
 .about-skills-skill-container {
   max-width: 100%;
-  text-align: left;
-}
-
-.about-skills-education-list,
-.about-skills-skill-list {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.about-skills-education-items-container,
-.about-skills-skill-items-container {
-  display: flex;
-  align-items: flex-start;
-}
-
-.about-skills-education-items,
-.about-skills-skill-items {
-  font-size: 1.05rem;
-  color: #28282b;
-}
-
-.about-skills-card {
-  background: #ffffff;
-  padding: 2rem;
-  border-left: 2px solid #54387a;
-  border-radius: 10px;
-  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-top: -1rem;
-}
-
-about-skills-skill-list {
-  list-style-type: none;
+  /* text-align: left; */
 }
 
 @media (max-width: 1024px) {
   .about-skills-inner-container {
     grid-template-columns: 1fr;
   }
-
-  .about-skills-section .section-header-title {
-    text-align: center;
+  .about-skills-card-wrapper .section-header-title {
+    text-align: center !important;
+    width: 100%;
   }
-
   .about-skills-education-container,
   .about-skills-skill-container {
     text-align: center;
-    padding: 1rem;
   }
-
-  .about-skills-education-list,
-  .about-skills-skill-list {
-    align-items: center;
-  }
-
-  .about-skills-education-items-container,
-  .about-skills-skill-items-container {
-    justify-content: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .about-skills-education-heading,
-  .about-skills-skill-heading {
-    font-size: 1.8rem;
-    line-height: 2.7rem;
+  .about-skills-education-container .section-header-title,
+  .about-skills-skill-container .section-header-title {
+    text-align: center;
   }
 }

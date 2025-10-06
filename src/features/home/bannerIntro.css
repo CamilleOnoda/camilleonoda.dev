@@ -29,6 +29,7 @@
 .home-banner-greeting {
   font-size: 2rem;
   color: #656565;
+  font-weight: 550;
 }
 
 .home-banner-name {
@@ -38,6 +39,7 @@
   -webkit-text-fill-color: transparent;
   margin-top: -0.7rem;
   margin-bottom: -0.2rem;
+  font-weight: 600;
 }
 
 .home-banner-description {
