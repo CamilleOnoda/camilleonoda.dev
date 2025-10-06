@@ -35,20 +35,24 @@
   align-items: flex-start;
 }
 
-.about-skills-education-items::before,
-.about-skills-skill-items::before {
-  content: "•";
-  color: #54387a;
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin-right: 0.8rem;
-  line-height: 1.6;
-}
-
 .about-skills-education-items,
 .about-skills-skill-items {
-  font-size: 1.2rem;
+  font-size: 1.05rem;
   color: #28282b;
+}
+
+.about-skills-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-left: 2px solid #54387a;
+  border-radius: 10px;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: -1rem;
+}
+
+about-skills-skill-list {
+  list-style-type: none;
 }
 
 @media (max-width: 1024px) {

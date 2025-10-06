@@ -4,7 +4,7 @@ import image4 from "../Assets/blog4.webp";
 import image5 from "../Assets/project4.webp";
 
 const storyData = {
-  title: "How I became a Web Developer",
+  title: "How I Became a Web Developer",
   subtitle:
     "Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec.",
   images: [
