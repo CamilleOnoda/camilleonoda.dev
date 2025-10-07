@@ -1,5 +1,5 @@
 .about-banner-section {
-  background: var(--bg-gradient);
+  background: var(--background-color);
   padding: 5rem 1rem 3rem 1rem;
   display: flex;
   justify-content: center;
@@ -71,7 +71,7 @@
 
 .about-banner-description {
   font-size: 1.05rem;
-  color: #28282b;
+  color: var(--black-text);
   margin-top: 1rem;
   margin-bottom: 1rem;
   line-height: 2.2rem;

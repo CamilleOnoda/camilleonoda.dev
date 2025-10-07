@@ -1,5 +1,5 @@
 .home-banner-section {
-  background: var(--bg-gradient);
+  background: var(--background-color);
   padding: 4rem 1rem;
   display: flex;
   justify-content: center;
@@ -27,9 +27,9 @@
 }
 
 .home-banner-greeting {
-  font-size: 2rem;
-  color: #656565;
-  font-weight: 550;
+  font-size: 1.8rem;
+  color: var(--black-text);
+  font-weight: 500;
 }
 
 .home-banner-name {
@@ -44,7 +44,7 @@
 
 .home-banner-description {
   font-size: 1.3rem;
-  color: #28282b;
+  color: var(--black-text);
   line-height: 2.5rem;
   letter-spacing: -0.2px;
 }
@@ -63,8 +63,8 @@
 }
 
 .home-banner-social-icons a {
-  color: var(--secondary-lavender-color);
-  font-size: 1.6rem;
+  color: var(--icons-color);
+  font-size: 1.5rem;
   margin-bottom: -0.5rem;
 }
 

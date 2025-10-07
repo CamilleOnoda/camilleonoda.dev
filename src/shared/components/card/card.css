@@ -32,7 +32,7 @@
   font-weight: 600;
   line-height: 2rem;
   margin: 0.8rem 0;
-  color: var(--heading-color);
+  color: #54387a;
 }
 
 .card-description {
@@ -55,13 +55,9 @@
   margin-top: 1rem;
   font-weight: 600;
   font-size: 1rem;
-  color: var(--heading-color) !important;
+  color: #54387a !important;
   text-decoration: underline;
   transition: color 0.2s ease-in-out;
-}
-
-.card-container .card-content .card-explore-link:hover {
-  color: #3e295d !important; /* hover color */
 }
 
 /* Hover arrow effect */

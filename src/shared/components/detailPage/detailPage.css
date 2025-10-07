@@ -1,5 +1,5 @@
 .details-section {
-  background: var(--bg-gradient);
+  background: var(--background-color);
   padding: 5rem 1rem;
   display: flex;
   justify-content: center;
@@ -16,7 +16,6 @@
   font-size: 2rem;
   font-weight: 500;
   margin-bottom: 1rem;
-  color: #54387a;
   line-height: 3rem;
 }
 
@@ -24,14 +23,14 @@
   font-size: 1.8rem;
   font-weight: 500;
   margin: 3rem 0 0rem;
-  color: #54387a;
+  color: var(--section-heading-color);
 }
 
 .details-description {
   font-size: 1.05rem;
   line-height: 2.2rem;
   letter-spacing: 0.1px;
-  color: #28282b;
+  color: var(--black-text);
   margin: 1rem 0;
 }
 
@@ -44,19 +43,19 @@
 }
 
 .details-skills-line {
-  color: #28282b;
+  color: var(--black-text);
   font-size: 1.1rem;
   line-height: 2rem;
 }
 
 .details-skills-line strong {
-  color: #54387a;
+  color: var(--section-heading-color);
   font-weight: 500;
   margin-right: 0.2rem;
 }
 
 .details-skills-website-link {
-  color: #28282b;
+  color: var(--black-text);
   font-size: 1.05rem;
 }
 

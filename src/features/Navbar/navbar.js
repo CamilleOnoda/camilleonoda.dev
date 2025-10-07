@@ -5,6 +5,7 @@ import logo from "../../Assets/logo.webp";
 import { FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
 import { ThemeContext } from "../../context/ThemeContext";
 import ThemeToggle from "../../shared/components/ThemeToggle";
+import Button from "../../shared/components/button/Button";
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState("");
@@ -40,12 +41,14 @@ const Navbar = () => {
     <nav className="navbar-section">
       <div className="navbar-container">
         <div className="navbar-inner-container">
+          {/* Logo */}
           <div className="navbar-logo-container">
             <Link to="/" onClick={closeMenu}>
               <img src={logo} alt="Logo" className="navbar-logo" />
             </Link>
           </div>
 
+          {/* Hamburger */}
           <button
             className="navbar-hamburger"
             onClick={toggleMenu}
@@ -54,6 +57,7 @@ const Navbar = () => {
             {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
           </button>
 
+          {/* Links */}
           <ul
             className={`navbar-links-container ${
               isMenuOpen ? "navbar-open" : ""
@@ -72,7 +76,7 @@ const Navbar = () => {
               </li>
             )}
 
-            {/* Static Links: Home, About */}
+            {/* Static Links */}
             {[
               { path: "/", label: "Home" },
               { path: "/about", label: "About" },
@@ -98,7 +102,7 @@ const Navbar = () => {
               onMouseLeave={handleMouseLeave}
               onClick={(e) => {
                 if (isMobile) {
-                  e.preventDefault(); // stop navigating on parent click
+                  e.preventDefault();
                   setDropdownOpen(
                     dropdownOpen === "portfolio" ? "" : "portfolio"
                   );
@@ -200,32 +204,35 @@ const Navbar = () => {
             {/* Mobile: Hire Me Button */}
             {isMobile && isMenuOpen && (
               <li className="navbar-link-item navbar-mobile-hire-me">
-                <Link
+                <Button
+                  text="Hire Me"
                   to="/contact"
-                  className="navbar-hire-me-btn-mobile"
+                  variant="primary"
+                  size="medium"
                   onClick={closeMenu}
-                >
-                  Hire Me
-                </Link>
+                />
               </li>
             )}
           </ul>
 
+          {/* Mobile overlay */}
           {isMobile && isMenuOpen && (
             <div className="navbar-overlay" onClick={closeMenu}></div>
           )}
 
+          {/* Desktop Buttons */}
           <div className="navbar-btn-container">
             <ThemeToggle isMobile={false} />
-            <Link
+            <Button
+              text="Hire Me"
               to="/contact"
-              className="navbar-hire-me-btn"
+              variant="primary"
+              size="medium"
               onClick={closeMenu}
-            >
-              Hire Me
-            </Link>
+            />
           </div>
 
+          {/* Mobile Theme Toggle */}
           {isMobile && <ThemeToggle isMobile={true} />}
         </div>
       </div>

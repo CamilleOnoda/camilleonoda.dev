@@ -13,6 +13,7 @@ export const bannerIntro = {
   description:
     "Full-stack developer focused on building web experiences, writing clean code, solving problems, and staying curious",
   cvLink: "#",
+  button: "See my CV",
   experience: {
     years: "10+",
     text: "Years Of Experience",

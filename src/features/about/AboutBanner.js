@@ -52,13 +52,11 @@ function AboutBanner() {
             <p className="about-banner-description">{aboutIntro.description}</p>
 
             <Button
-              text="Download CV"
+              text={aboutIntro.cvText}
               href={aboutIntro.cvLink}
               download
-              target="_blank"
-              rel="noopener noreferrer"
               variant="primary"
-              size="medium"
+              size="small"
             />
           </motion.div>
         </div>

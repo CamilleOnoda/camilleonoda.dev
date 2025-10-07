@@ -1,5 +1,5 @@
 .about-skills-section {
-  background: var(--bg-gradient);
+  background: var(--background-color);
   padding: 3rem 1rem;
   display: flex;
   flex-direction: column;

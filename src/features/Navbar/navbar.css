@@ -144,16 +144,6 @@
   gap: 0.5rem;
 }
 
-.navbar-hire-me-btn {
-  background-color: #54387a;
-  color: #fff;
-  padding: 0.5rem 0.9rem;
-  border-radius: 5px;
-  font-weight: 550;
-  text-decoration: none;
-  transition: background 0.3s;
-}
-
 .navbar-theme-toggle-btn {
   background: none;
   border: none;
@@ -259,24 +249,6 @@ button:focus-visible {
   .navbar-dropdown-item {
     color: #ffffff; /* Make dropdown items white */
     padding-left: 2rem;
-  }
-
-  .navbar-mobile-hire-me {
-    display: block;
-    margin-top: 1rem;
-    text-align: left;
-    padding-left: 3rem;
-  }
-
-  .navbar-hire-me-btn-mobile {
-    display: inline-block; /* Important: prevent full width */
-    width: 7rem; /* Prevent stretching */
-    text-align: center;
-    background-color: #ffffff;
-    color: #000000 !important;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-left: 1rem;
   }
 
   .navbar-theme-toggle-btn-mobile {

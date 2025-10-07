@@ -26,11 +26,9 @@ function BannerIntro() {
 
             <div className="home-banner-icon-container">
               <Button
-                text="See My CV"
+                text={bannerIntro.button}
                 href={bannerIntro.cvLink}
                 download
-                target="_blank"
-                rel="noopener noreferrer"
                 variant="primary"
                 size="medium"
               />

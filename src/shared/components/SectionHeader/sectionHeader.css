@@ -3,7 +3,7 @@
   font-weight: 500;
   margin-bottom: 2rem;
   line-height: 2.8rem;
-  color: var(--heading-color);
+  color: var(--section-heading-color);
 }
 
 .section-header-title.center {

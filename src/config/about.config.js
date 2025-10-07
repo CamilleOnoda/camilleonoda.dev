@@ -9,6 +9,7 @@ export const aboutIntro = {
     description: "Happy Clients",
   },
   cvLink: "#",
+  cvText: "See my CV",
   heading: {
     title: "I build software that solve users’ problems",
   },
