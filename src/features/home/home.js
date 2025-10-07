@@ -1,15 +1,13 @@
 import BannerIntro from "./bannerIntro";
 import BannerServices from "./bannerServices";
-import BannerTestimonials from "./bannerTestimonials";
-import BannerBlog from "./bannerBlog";
+import BannerTestimonial from "./bannerTestimonial";
 
 function Home() {
   return (
     <main>
       <BannerIntro />
       <BannerServices />
-      {/* <BannerTestimonials /> */}
-      {/* <BannerBlog /> */}
+      <BannerTestimonial />
     </main>
   );
 }

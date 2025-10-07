@@ -8,8 +8,7 @@ export const BlogsIntro = {
     title: "Lessons, stories, and expertise from my developer journey",
   },
   homeHeading: {
-    start: "My latest",
-    highlight: "articles",
+    title: "My latest articles",
   },
   categories: ["All", "Frontend", "Backend"],
 };

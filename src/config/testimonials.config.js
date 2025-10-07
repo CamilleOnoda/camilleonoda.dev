@@ -8,8 +8,7 @@ import avatar6 from "../Assets/user3.webp";
 export const TestimonialHeading = {
   heading: {
     title: "What my clients say about my work",
-    // highlight: "my clients",
-    // end: "say about my work",
+    homeTitle: "Stories from happy clients",
   },
 };
 

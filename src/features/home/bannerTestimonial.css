@@ -1,21 +1,21 @@
-/* .home-blog-section {
+.home-testimonials-section {
   background: var(--background-color);
-  padding: 3rem 1rem 5rem 1rem;
-  margin-top: -0.5rem;
+  padding: 3rem 1rem;
   width: 100%;
+  margin-top: -0.5rem;
 }
 
-.home-blog-inner-container {
+.home-testimonials-inner-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
   max-width: 75rem;
-  margin: 0 auto;
+  margin: 1.5rem auto;
   padding: 0 1rem;
 }
 
-@media (max-width: 1024px) {
-  .home-blog-inner-container {
+@media (max-width: 768px) {
+  .home-testimonials-inner-container {
     grid-template-columns: 1fr;
   }
-} */
+}

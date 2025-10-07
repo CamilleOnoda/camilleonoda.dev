@@ -63,6 +63,7 @@
 /* Hover arrow effect */
 .card-container.hover-arrow:hover {
   transform: translateY(-4px);
+  cursor: pointer;
 }
 
 .card-container.hover-arrow::after {

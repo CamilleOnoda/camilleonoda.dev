@@ -41,7 +41,7 @@ export const bannerServices = {
         "Bringing ideas to life with sleek, responsive, and interactive interfaces built using React, Vue, and CSS",
       category: "Frontend",
       clickable: true,
-      link: "/portfolio?category=Frontend", // added link
+      link: "/portfolio?category=Frontend",
     },
     {
       title: "Backend Development",
