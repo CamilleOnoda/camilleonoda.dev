@@ -1,3 +1,4 @@
+/* AboutBanner Section */
 .about-banner-section {
   background: var(--background-color);
   padding: 5rem 1rem 3rem 1rem;
@@ -8,6 +9,7 @@
   box-sizing: border-box;
 }
 
+/* Container */
 .about-banner-container {
   display: flex;
   align-items: center;
@@ -19,6 +21,7 @@
   padding: 2.3rem 1rem;
 }
 
+/* Inner Flex Layout */
 .about-banner-inner-container {
   gap: 3rem;
   display: flex;
@@ -26,6 +29,7 @@
   justify-content: space-between;
 }
 
+/* Left: Image + Badge */
 .about-banner-image-container {
   flex: 1;
   display: flex;
@@ -34,19 +38,15 @@
   width: 100%;
 }
 
-.about-banner-text-container {
-  flex: 1;
-  line-height: 1.6;
-}
-
 .about-banner-image {
-  width: 100%; /* Allow image to scale fully */
+  width: 100%;
   max-width: 35rem;
   height: auto;
   object-fit: cover;
   border-radius: 10px;
 }
 
+/* Badge */
 .about-banner-badge {
   position: absolute;
   bottom: -2rem;
@@ -69,41 +69,46 @@
   font-size: 1.5rem;
 }
 
+/* Right: Text */
+.about-banner-text-container {
+  flex: 1;
+  line-height: 1.6;
+}
+
 .about-banner-description {
   font-size: 1.05rem;
   color: var(--black-text);
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   line-height: 2.2rem;
 }
 
+/* Responsive - Tablet */
 @media (max-width: 1024px) {
   .about-banner-section {
     padding: 4rem 1rem 3rem 1rem;
   }
   .about-banner-inner-container {
     flex-direction: column;
-    flex-wrap: wrap;
     text-align: center;
     gap: 2rem;
   }
   .about-banner-text-container {
-    order: -1; /*This moves the text before the image */
+    order: -1; /* Move text above image */
     width: 100%;
   }
   .about-banner-image-container {
-    justify-content: center;
     width: 100%;
+    justify-content: center;
   }
   .about-banner-image {
-    width: 100%;
-    max-width: 100%; /* Remove constraint */
+    max-width: 100%;
   }
   .about-banner-text-container .section-header-title {
     text-align: center;
   }
 }
 
+/* Responsive - Mobile */
 @media (max-width: 600px) {
   .about-banner-section {
     padding: 3rem 1rem;
@@ -113,7 +118,6 @@
     padding: 0;
   }
   .about-banner-image {
-    width: 100%;
     max-width: 100%;
   }
   .about-banner-badge {

@@ -22,7 +22,7 @@ function BannerServices() {
         <SectionHeader title={bannerServices.heading.title} />
       </motion.div>
 
-      {/* Services List */}
+      {/* Services Grid */}
       <div className="home-services-inner-container">
         {bannerServices.services.map((item) => (
           <Link

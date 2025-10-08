@@ -1,3 +1,4 @@
+/* BannerIntro Section */
 .home-banner-section {
   background: var(--background-color);
   padding: 4rem 1rem;
@@ -13,6 +14,7 @@
   padding: 2rem 1rem;
 }
 
+/* Inner Flex Layout */
 .home-banner-inner-container {
   gap: 3rem;
   display: flex;
@@ -20,6 +22,7 @@
   justify-content: space-between;
 }
 
+/* Text Content */
 .home-banner-text-container {
   flex: 1;
   line-height: 1.6;
@@ -49,6 +52,7 @@
   letter-spacing: -0.2px;
 }
 
+/* Buttons & Social */
 .home-banner-icon-container {
   display: flex;
   align-items: center;
@@ -65,9 +69,9 @@
 .home-banner-social-icons a {
   color: var(--icons-color);
   font-size: 1.5rem;
-  margin-bottom: -0.5rem;
 }
 
+/* Image Content */
 .home-banner-image-container {
   flex: 1;
   display: flex;
@@ -85,6 +89,7 @@
   border-radius: 10px;
 }
 
+/* Badge */
 .home-banner-badge {
   position: absolute;
   bottom: -2rem;
@@ -109,10 +114,10 @@
   letter-spacing: -1px;
 }
 
+/* Responsive - Tablet */
 @media (max-width: 1024px) {
   .home-banner-inner-container {
     flex-direction: column;
-    flex-wrap: wrap;
     text-align: center;
     gap: 1.5rem;
   }
@@ -128,12 +133,10 @@
   }
 }
 
+/* Responsive - Mobile */
 @media (max-width: 600px) {
   .home-banner-section {
     padding: 3rem 1rem;
-  }
-  .home-banner-greeting {
-    font-size: 1.8rem;
   }
   .home-banner-name {
     font-size: 3rem;

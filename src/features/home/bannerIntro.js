@@ -12,7 +12,7 @@ function BannerIntro() {
     <section className="home-banner-section">
       <div className="home-banner-container">
         <div className="home-banner-inner-container">
-          {/* Left - Text Container */}
+          {/* Left - Text Content: Greeting, Name, Description, CTA, Social Links */}
           <motion.div
             className="home-banner-text-container"
             initial="initial"
@@ -24,6 +24,7 @@ function BannerIntro() {
             <h1 className="home-banner-name">{bannerIntro.name}</h1>
             <p className="home-banner-description">{bannerIntro.description}</p>
 
+            {/* CTA Button & Social Links */}
             <div className="home-banner-icon-container">
               <Button
                 text={bannerIntro.button}
@@ -33,6 +34,7 @@ function BannerIntro() {
                 size="medium"
               />
 
+              {/* Social Icons */}
               <div className="home-banner-social-icons">
                 {bannerIntro.socialLinks.map((link, index) => (
                   <a
@@ -50,7 +52,7 @@ function BannerIntro() {
             </div>
           </motion.div>
 
-          {/* Right - Image Container */}
+          {/* Right - Image Content: Image & Experience Badge */}
           <motion.div
             className="home-banner-image-container"
             initial="initial"

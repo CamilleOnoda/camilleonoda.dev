@@ -5,25 +5,28 @@
   margin-top: -25px;
 }
 
+/* Grid Container */
 .about-stats-inner-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* adjust for responsive */
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  align-items: stretch; /* ensures all cards in the row are same height */
+  align-items: stretch; /* all cards same height */
   width: 100%;
   max-width: 75rem;
   margin: 1rem auto;
   padding: 2rem 1rem;
 }
 
+/* Each Card Wrapper */
 .about-stats-card-wrapper {
   display: flex;
   flex-direction: column;
-  height: 100%; /* stretch wrapper to match tallest card */
+  height: 100%; /* stretch to match tallest */
 }
 
+/* Card Styling */
 .about-card {
-  flex: 1; /* fill the wrapper height */
+  flex: 1;
   display: flex;
   flex-direction: column;
   background: #fff;
@@ -33,12 +36,14 @@
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* Responsive - Large screens */
 @media (max-width: 1200px) {
   .about-stats-inner-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
+/* Responsive - Tablets */
 @media (max-width: 768px) {
   .about-stats-section {
     padding: 2.5rem 1rem;
@@ -48,6 +53,7 @@
   }
 }
 
+/* Responsive - Mobile */
 @media (max-width: 600px) {
   .about-stats-inner-container {
     grid-template-columns: 1fr;

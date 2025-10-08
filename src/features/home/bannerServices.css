@@ -5,6 +5,7 @@
   margin-top: -0.5rem;
 }
 
+/* Services Grid */
 .home-services-inner-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -15,11 +16,12 @@
 }
 
 .home-services-inner-container a {
-  text-decoration: none; /* remove underline */
+  text-decoration: none;
   color: inherit; /* inherit color from card */
   display: block; /* ensures full card clickable */
 }
 
+/* Responsive - Mobile */
 @media (max-width: 768px) {
   .home-services-inner-container {
     grid-template-columns: 1fr;

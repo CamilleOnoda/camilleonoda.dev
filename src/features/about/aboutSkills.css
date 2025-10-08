@@ -1,12 +1,14 @@
+/* AboutSkills Section */
 .about-skills-section {
   background: var(--background-color);
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: -25px;
 }
 
+/* Cards Grid */
 .about-skills-inner-container {
   width: 100%;
   display: grid;
@@ -17,14 +19,16 @@
   align-items: stretch; /* stretch all grid items to tallest */
 }
 
+/* Each Card Wrapper */
 .about-skills-card-wrapper {
   display: flex;
   flex-direction: column;
-  height: 100%; /* important to allow stretching */
+  height: 100%; /* allow card stretching */
 }
 
+/* AboutCard */
 .about-card {
-  flex: 1; /* take up remaining height inside wrapper */
+  flex: 1;
   background: #fff;
   padding: 1.5rem;
   border-radius: 10px;
@@ -34,12 +38,7 @@
   flex-direction: column;
 }
 
-.about-skills-education-container,
-.about-skills-skill-container {
-  max-width: 100%;
-  /* text-align: left; */
-}
-
+/* Responsive - Tablet / Mobile */
 @media (max-width: 1024px) {
   .about-skills-inner-container {
     grid-template-columns: 1fr;
@@ -47,13 +46,5 @@
   .about-skills-card-wrapper .section-header-title {
     text-align: center !important;
     width: 100%;
-  }
-  .about-skills-education-container,
-  .about-skills-skill-container {
-    text-align: center;
-  }
-  .about-skills-education-container .section-header-title,
-  .about-skills-skill-container .section-header-title {
-    text-align: center;
   }
 }

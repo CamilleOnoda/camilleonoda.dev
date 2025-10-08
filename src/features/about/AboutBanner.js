@@ -30,6 +30,7 @@ function AboutBanner() {
               height="700"
             />
 
+            {/* Badge with status role for screen readers */}
             <div className="about-banner-badge" role="status">
               <span className="about-banner-emoji" aria-hidden="true">
                 {aboutIntro.badge.emoji}
@@ -39,7 +40,7 @@ function AboutBanner() {
             </div>
           </motion.div>
 
-          {/* Right: Text */}
+          {/* Right: Text Content */}
           <motion.div
             className="about-banner-text-container"
             initial="initial"

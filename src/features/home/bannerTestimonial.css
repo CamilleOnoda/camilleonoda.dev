@@ -5,6 +5,7 @@
   margin-top: -0.5rem;
 }
 
+/* Testimonials Grid */
 .home-testimonials-inner-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -14,6 +15,7 @@
   padding: 0 1rem;
 }
 
+/* Responsive - Mobile */
 @media (max-width: 768px) {
   .home-testimonials-inner-container {
     grid-template-columns: 1fr;

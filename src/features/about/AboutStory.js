@@ -16,7 +16,7 @@ function AboutStory() {
     >
       <div className="about-story-container">
         <div className="about-story-inner-container">
-          {/* Left: Image Container with Animation */}
+          {/* Left: Image with Animation */}
           <motion.div
             className="about-story-image-container"
             initial="initial"
@@ -32,7 +32,7 @@ function AboutStory() {
             />
           </motion.div>
 
-          {/* Right: Text Container with Animation */}
+          {/* Right: Text with Animation */}
           <motion.div
             className="about-story-text-container"
             initial="initial"
@@ -41,7 +41,6 @@ function AboutStory() {
             variants={slideFromRight}
           >
             <SectionHeader title={storyData.heading.title} align="left" />
-
             <p className="about-story-text-description">{storyData.text}</p>
             <Link to={storyData.linkUrl} className="about-story-link">
               {storyData.linkText}

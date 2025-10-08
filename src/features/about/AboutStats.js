@@ -13,22 +13,9 @@ function AboutStats() {
       className="about-stats-section"
       aria-labelledby="about-stats-heading"
     >
-      {/* <motion.div
-        className="about-stats-inner-container"
-        variants={containerStagger}
-        initial="initial"
-        whileInView="animate"
-        viewport={{ once: true, amount: 0.4 }}
-      >
-        {aboutStats.map((stat, index) => (
-          <motion.div key={index} variants={fadeUpItem}>
-            <AboutCard title={stat.title} description={stat.description} />
-          </motion.div>
-        ))}
-      </motion.div> */}
       <motion.div
         className="about-stats-inner-container"
-        variants={containerStagger}
+        variants={containerStagger} // stagger animation
         initial="initial"
         whileInView="animate"
         viewport={{ once: true, amount: 0.4 }}
@@ -40,6 +27,7 @@ function AboutStats() {
             variants={fadeUpItem}
             style={{ display: "flex", flexDirection: "column", height: "100%" }}
           >
+            {/* Stat Card */}
             <AboutCard title={stat.title} description={stat.description} />
           </motion.article>
         ))}
