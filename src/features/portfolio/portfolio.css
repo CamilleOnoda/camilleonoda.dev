@@ -1,8 +1,7 @@
 .portfolio-section {
   background: var(--background-color);
   margin: 3rem auto 0 auto;
-  text-align: center;
-  height: auto;
+  text-align: center; /* center heading & filters */
   padding: 3rem 1rem;
 }
 
@@ -17,31 +16,29 @@
 .portfolio-categories-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center; /* center filter buttons */
   gap: 1rem;
   margin-bottom: 2rem;
 }
 
 .portfolio-inner-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr); /* 2 per row */
   gap: 3rem;
   max-width: 75rem;
   margin: 1.5rem auto;
   padding: 1rem;
-  align-items: stretch;
-  /* text-align: lef */
-  align-items: stretch;
+  align-items: stretch; /* equal height cards */
 }
 
 .portfolio-card-link {
-  text-decoration: none; /* removes underline */
-  color: inherit; /* keeps text color same */
+  text-decoration: none; /* remove underline */
+  color: inherit; /* maintain text color */
 }
 
 @media (max-width: 950px) {
   .portfolio-inner-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* 1 per row */
     padding: 0.5rem;
     gap: 2rem;
   }

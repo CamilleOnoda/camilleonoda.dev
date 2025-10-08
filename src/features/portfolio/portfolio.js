@@ -12,12 +12,11 @@ const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const location = useLocation();
 
+  // Update category from URL query param
   useEffect(() => {
     const queryParams = new URLSearchParams(location.search);
     const categoryFromUrl = queryParams.get("category");
-    if (categoryFromUrl) {
-      setSelectedCategory(categoryFromUrl);
-    }
+    if (categoryFromUrl) setSelectedCategory(categoryFromUrl);
   }, [location]);
 
   const categories = [
@@ -28,6 +27,7 @@ const Portfolio = () => {
     "Testing & Debugging",
   ];
 
+  // Filter projects based on selected category
   const filteredItems =
     selectedCategory === "All"
       ? ProjectsData
@@ -41,7 +41,7 @@ const Portfolio = () => {
       aria-labelledby="portfolio-section-heading"
     >
       <div className="portfolio-header-container">
-        {/* Accessible Section Heading */}
+        {/* Section Heading */}
         <motion.h2
           id="portfolio-section-heading"
           className="portfolio-header-title"
@@ -53,7 +53,7 @@ const Portfolio = () => {
           <SectionHeader title={ProjectsIntro.heading.title} />
         </motion.h2>
 
-        {/* Filter Buttons */}
+        {/* Category Filters */}
         <motion.div
           className="portfolio-categories-container"
           variants={fadeUpItem}
@@ -63,6 +63,7 @@ const Portfolio = () => {
         >
           {categories.map((category) => (
             <Button
+              key={category} // Added missing key
               text={category}
               onClick={() => setSelectedCategory(category)}
               variant="secondary"
@@ -73,7 +74,7 @@ const Portfolio = () => {
           ))}
         </motion.div>
 
-        {/* Portfolio Cards */}
+        {/* Project Cards */}
         <div className="portfolio-inner-container">
           {filteredItems.map((item) => (
             <Link

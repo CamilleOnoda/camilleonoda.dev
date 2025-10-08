@@ -3,21 +3,21 @@ import { Link } from "react-router-dom";
 
 function Button({
   text,
-  href,
-  to,
+  href, // external link or file download
+  to, // internal routing link
   download = false,
   type = "button",
   onClick,
-  variant = "primary",
-  size = "medium",
-  isActive = false,
-  ariaPressed,
+  variant = "primary", // primary / secondary / nav / footer
+  size = "medium", // small / medium / large
+  isActive = false, // active state for styling
+  ariaPressed, // accessibility
   target,
   rel,
 }) {
   const classNames = `btn ${variant} ${size} ${isActive ? "active" : ""}`;
 
-  // External link or file download
+  // External link or downloadable file
   if (href) {
     return (
       <a
@@ -33,7 +33,7 @@ function Button({
     );
   }
 
-  // Internal navigation link
+  // Internal navigation link using react-router
   if (to) {
     return (
       <Link to={to} className={classNames} onClick={onClick}>
@@ -42,7 +42,7 @@ function Button({
     );
   }
 
-  // Regular <button>
+  // Default button
   return (
     <button
       type={type}

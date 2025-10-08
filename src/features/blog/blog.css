@@ -3,7 +3,7 @@
   margin: 3rem auto 0 auto;
   text-align: center;
   height: auto;
-  padding: 3rem 1rem;
+  padding: 3rem 1rem; /* top/bottom 3rem, left/right 1rem */
 }
 
 .blog-header-container {
@@ -16,19 +16,19 @@
 
 .blog-inner-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
   gap: 3rem;
   width: 100%;
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
   max-width: 75rem;
   padding: 1rem;
-  align-items: stretch;
+  align-items: stretch; /* make cards equal height */
 }
 
 .blog-card-link {
-  text-decoration: none; /* removes underline */
-  color: inherit; /* keeps the original text color */
-  display: block; /* ensures the entire card is clickable */
+  text-decoration: none; /* removes underline from link */
+  color: inherit; /* maintain text color */
+  display: block; /* entire card clickable */
 }
 
 @media (max-width: 950px) {

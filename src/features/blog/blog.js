@@ -10,7 +10,7 @@ function Blogs() {
   return (
     <section className="blog-section" aria-labelledby="blog-section-heading">
       <div className="blog-header-container">
-        {/* Section Heading */}
+        {/* Section Heading with animation */}
         <motion.div
           variants={fadeUpItem}
           initial="initial"
@@ -20,20 +20,20 @@ function Blogs() {
           <SectionHeader title={BlogsIntro.heading.title} />
         </motion.div>
 
-        {/* Blog Cards */}
+        {/* Blog Cards Grid */}
         <div className="blog-inner-container">
           {BlogsData.map((blog) => (
             <Link
               key={blog.id}
-              to={blog.link}
+              to={blog.link} // navigates to blog detail page
               className="blog-card-link"
               aria-label={`Read full article: ${blog.title}`}
             >
               <Card
-                description={blog.date}
-                title={blog.title}
-                image={blog.image}
-                type="hover-arrow"
+                description={blog.date} // display blog date
+                title={blog.title} // blog title
+                image={blog.image} // blog thumbnail
+                type="hover-arrow" // card hover effect
               />
             </Link>
           ))}
