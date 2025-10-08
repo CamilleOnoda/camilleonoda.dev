@@ -1,29 +1,28 @@
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./navbar.css";
 import logo from "../../Assets/logo.webp";
 import { FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
-import { ThemeContext } from "../../context/ThemeContext";
 import ThemeToggle from "../../shared/components/ThemeToggle";
+import Button from "../../shared/components/button/Button";
 
 const Navbar = () => {
-  const [dropdownOpen, setDropdownOpen] = useState("");
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
+  // States
+  const [dropdownOpen, setDropdownOpen] = useState(""); // track active dropdown
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // track mobile menu state
+  const [isMobile, setIsMobile] = useState(false); // detect screen size
   const location = useLocation();
-  const { isDark } = useContext(ThemeContext);
 
-  const handleMouseEnter = (menu) => {
-    if (!isMobile) setDropdownOpen(menu);
+  //Handlers
+  const handleMouseEnter = (menu) => !isMobile && setDropdownOpen(menu);
+  const handleMouseLeave = () => !isMobile && setDropdownOpen("");
+  const toggleMenu = () => setIsMenuOpen((prev) => !prev);
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+    setDropdownOpen("");
   };
 
-  const handleMouseLeave = () => {
-    if (!isMobile) setDropdownOpen("");
-  };
-
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-  const closeMenu = () => setIsMenuOpen(false);
-
+  // Detect mobile view dynamically
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 1024px)");
     const handleMediaChange = (e) => setIsMobile(e.matches);
@@ -32,34 +31,53 @@ const Navbar = () => {
     return () => mediaQuery.removeEventListener("change", handleMediaChange);
   }, []);
 
+  // Prevent background scroll when mobile menu is open
   useEffect(() => {
     document.body.style.overflow = isMobile && isMenuOpen ? "hidden" : "auto";
   }, [isMobile, isMenuOpen]);
 
+  // Close nav/dropdowns when route changes ---
+  useEffect(() => {
+    closeMenu();
+  }, [location.pathname]);
+
+  // Close menu on Escape key (keyboard accessibility)
+  useEffect(() => {
+    const handleKey = (e) => e.key === "Escape" && closeMenu();
+    window.addEventListener("keydown", handleKey);
+    return () => window.removeEventListener("keydown", handleKey);
+  }, []);
+
   return (
-    <nav className="navbar-section">
+    <nav className="navbar-section" aria-label="Main navigation">
       <div className="navbar-container">
         <div className="navbar-inner-container">
           <div className="navbar-logo-container">
-            <Link to="/" onClick={closeMenu}>
-              <img src={logo} alt="Logo" className="navbar-logo" />
+            <Link to="/" onClick={closeMenu} aria-label="Go to homepage">
+              <img src={logo} alt="Indol logo" className="navbar-logo" />
             </Link>
           </div>
 
+          {/* Hamburger Icon (Mobile) */}
           <button
             className="navbar-hamburger"
             onClick={toggleMenu}
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isMenuOpen}
+            aria-controls="primary-navigation"
           >
             {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
           </button>
 
+          {/* Navigation Links */}
           <ul
+            id="primary-navigation"
             className={`navbar-links-container ${
               isMenuOpen ? "navbar-open" : ""
             }`}
+            aria-hidden={isMobile ? !isMenuOpen : false}
           >
-            {/* Mobile Close X Button */}
+            {/* Close Button (Mobile) */}
             {isMobile && isMenuOpen && (
               <li className="navbar-close-btn-wrapper">
                 <button
@@ -72,13 +90,13 @@ const Navbar = () => {
               </li>
             )}
 
-            {/* Static Links: Home, About */}
+            {/* Static Links */}
             {[
               { path: "/", label: "Home" },
               { path: "/about", label: "About" },
               { path: "/story", label: "My Story" },
-            ].map((item, index) => (
-              <li key={index} className="navbar-link-item">
+            ].map((item, idx) => (
+              <li key={idx} className="navbar-link-item">
                 <Link
                   to={item.path}
                   className={
@@ -91,14 +109,14 @@ const Navbar = () => {
               </li>
             ))}
 
-            {/* Portfolio Dropdown */}
+            {/*Dropdown: Portfolio*/}
             <li
               className="navbar-link-item navbar-dropdown-wrapper"
               onMouseEnter={() => handleMouseEnter("portfolio")}
               onMouseLeave={handleMouseLeave}
               onClick={(e) => {
                 if (isMobile) {
-                  e.preventDefault(); // stop navigating on parent click
+                  e.preventDefault();
                   setDropdownOpen(
                     dropdownOpen === "portfolio" ? "" : "portfolio"
                   );
@@ -118,9 +136,9 @@ const Navbar = () => {
                 >
                   Portfolio <FaChevronDown size={10} />
                 </Link>
-                <div className="navbar-hover-bridge"></div>
+                <div className="navbar-hover-bridge" />
                 {dropdownOpen === "portfolio" && (
-                  <ul className="navbar-dropdown-menu">
+                  <ul id="portfolio-submenu" className="navbar-dropdown-menu">
                     <li className="navbar-link-item">
                       <Link
                         to="/portfolio-details/1"
@@ -138,7 +156,7 @@ const Navbar = () => {
               </div>
             </li>
 
-            {/* Blog Dropdown */}
+            {/* Dropdown: Blog*/}
             <li
               className="navbar-link-item navbar-dropdown"
               onMouseEnter={() => handleMouseEnter("blog")}
@@ -160,9 +178,9 @@ const Navbar = () => {
               >
                 Blog <FaChevronDown size={10} />
               </Link>
-              <div className="navbar-hover-bridge"></div>
+              <div className="navbar-hover-bridge" />
               {dropdownOpen === "blog" && (
-                <ul className="navbar-dropdown-menu">
+                <ul id="blog-submenu" className="navbar-dropdown-menu">
                   <li className="navbar-link-item">
                     <Link
                       to="/blog-details"
@@ -179,12 +197,12 @@ const Navbar = () => {
               )}
             </li>
 
-            {/* Testimonial & Contact */}
+            {/*Testimonial & Contact Links */}
             {[
               { path: "/testimonial", label: "Testimonial" },
               { path: "/contact", label: "Contact" },
-            ].map((item, index) => (
-              <li key={index} className="navbar-link-item">
+            ].map((item, idx) => (
+              <li key={idx} className="navbar-link-item">
                 <Link
                   to={item.path}
                   className={
@@ -197,7 +215,7 @@ const Navbar = () => {
               </li>
             ))}
 
-            {/* Mobile: Hire Me Button */}
+            {/*Mobile Only: Hire Me */}
             {isMobile && isMenuOpen && (
               <li className="navbar-link-item navbar-mobile-hire-me">
                 <Link
@@ -211,21 +229,24 @@ const Navbar = () => {
             )}
           </ul>
 
+          {/* Overlay (Mobile) */}
           {isMobile && isMenuOpen && (
-            <div className="navbar-overlay" onClick={closeMenu}></div>
+            <div className="navbar-overlay" onClick={closeMenu} />
           )}
 
+          {/*  Right Side Buttons */}
           <div className="navbar-btn-container">
             <ThemeToggle isMobile={false} />
-            <Link
-              to="/contact"
-              className="navbar-hire-me-btn"
+            <Button
+              text="Hire Me"
+              href="/contact"
+              variant="nav"
+              size="medium"
               onClick={closeMenu}
-            >
-              Hire Me
-            </Link>
+            />
           </div>
 
+          {/*Mobile Theme Toggle  */}
           {isMobile && <ThemeToggle isMobile={true} />}
         </div>
       </div>

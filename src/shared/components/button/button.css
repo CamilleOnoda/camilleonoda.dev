@@ -18,9 +18,11 @@
   padding: 0.4rem 0.8rem;
   font-size: 1rem;
 }
-.btn.large {
-  padding: 0.5rem 1rem;
-  font-size: 1.05rem;
+.btn.nav {
+  background-color: #54387a;
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  font-weight: 500;
 }
 
 /* Primary (used for CV download or submit buttons) */
@@ -45,7 +47,6 @@
   color: #ffffff;
 }
 
-/* Footer button */
 .btn.footer {
   background-color: var(--button-text);
   color: var(--footer-button-text);
@@ -53,22 +54,7 @@
   border-radius: 5px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-/* Navbar button */
-.btn.nav {
-  background-color: #54387a;
-  color: #fff;
-  padding: 0.5rem 0.9rem;
-  font-weight: 500;
-  transition: background 0.3s;
-  text-decoration: none;
-  border-radius: 5px;
-}
 
-.btn.nav:hover {
-  background-color: #3d2b5c;
-}
-
-/* Mobile Responsive Adjustments */
 @media (max-width: 480px) {
   .btn.small {
     padding: 0.3rem 0.7rem;

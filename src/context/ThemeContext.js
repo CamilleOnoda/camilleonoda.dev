@@ -9,6 +9,13 @@ const lightTheme = {
   "--black-text": "#28282B ",
   "--icons-color": " #54387a",
 
+  // Navbar colors
+  "--navbar-background": "#edeaf8",
+  "--navbar-text": "#54387a",
+  "--navbar-button": "#ffffff",
+  "--navbar-mobile-link-text": "#ffffff",
+  "--navbar-border": "#54387a",
+
   // Footer
   "--bg-footer": "#54387a",
   "--footer-button-text": " #54387a",
@@ -24,6 +31,13 @@ const darkTheme = {
   "--section-heading-color": "#ffffff",
   "--black-text": " #ffffff",
   "--icons-color": " #ffffff",
+
+  // Navbar colors
+  "--navbar-background": "#edeaf8",
+  "--navbar-text": "#54387a",
+  "--navbar-button-bg": "#ffffff",
+  "--navbar-mobile-link-text": "#ffffff",
+  "--navbar-border": "#54387a",
 
   // Footer
   "--bg-footer": "  #EDEAF8",
