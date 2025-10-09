@@ -30,7 +30,7 @@ function Testimonial() {
         />
       </motion.h2>
 
-      {/* Testimonials list */}
+      {/* Testimonials grid */}
       <div className="testimonial-inner-container">
         {TestimonialsData.map((testimonial, index) => (
           <TestimonialCard
