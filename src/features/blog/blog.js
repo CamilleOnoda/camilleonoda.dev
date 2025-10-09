@@ -11,14 +11,15 @@ function Blogs() {
     <section className="blog-section" aria-labelledby="blog-section-heading">
       <div className="blog-header-container">
         {/* Section Heading with animation */}
-        <motion.div
+        <motion.h2
+          id="blog-section-heading"
           variants={fadeUpItem}
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true, amount: 0.6 }}
+          viewport={{ once: true, amount: 0.5 }}
         >
           <SectionHeader title={BlogsIntro.heading.title} />
-        </motion.div>
+        </motion.h2>
 
         {/* Blog Cards Grid */}
         <div className="blog-inner-container">
@@ -30,10 +31,10 @@ function Blogs() {
               aria-label={`Read full article: ${blog.title}`}
             >
               <Card
-                description={blog.date} // display blog date
-                title={blog.title} // blog title
-                image={blog.image} // blog thumbnail
-                type="hover-arrow" // card hover effect
+                description={blog.date}
+                title={blog.title}
+                image={blog.image}
+                type="hover-arrow"
               />
             </Link>
           ))}

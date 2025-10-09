@@ -17,17 +17,12 @@ function Testimonial() {
       {/* Heading with motion */}
       <motion.h2
         id="testimonial-heading"
-        className="testimonial-title"
         variants={fadeUpItem}
         initial="initial"
         whileInView="animate"
-        viewport={{ once: true, amount: 0.6 }}
+        viewport={{ once: true, amount: 0.5 }}
       >
-        <SectionHeader
-          title={TestimonialHeading.heading.title}
-          highlight={TestimonialHeading.heading.highlight}
-          end={TestimonialHeading.heading.end}
-        />
+        <SectionHeader title={TestimonialHeading.heading.title} />
       </motion.h2>
 
       {/* Testimonials grid */}

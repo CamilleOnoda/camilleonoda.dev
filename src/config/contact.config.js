@@ -8,7 +8,7 @@ export const ContactData = {
     title: "Let's start a new project",
   },
   secondheading: {
-    title: "Let’s connect for projects, collaborations, or a quick hello",
+    title: "Let's connect for projects, collaborations, or a quick hello",
   },
   contactCards: [
     {

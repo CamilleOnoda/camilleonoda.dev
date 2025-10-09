@@ -10,7 +10,6 @@ const ExternalLink = ({ href, children, ...props }) => (
 function ContactCard({ card }) {
   return (
     <article className="contact-card">
-      {/* Icon */}
       {card.iconClass && (
         <div className="contact-card-icon" aria-hidden="true">
           <i className={card.iconClass}></i>

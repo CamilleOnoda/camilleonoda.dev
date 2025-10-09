@@ -16,7 +16,7 @@ const ContactForm = () => {
     >
       <div className="contact-form-container">
         <div className="contact-form-inner-container">
-          {/* Left: Image Container with Animation */}
+          {/* Left: Image section */}
           <motion.div
             className="home-banner-image-container"
             initial="initial"
@@ -51,8 +51,10 @@ const ContactForm = () => {
             aria-describedby="contact-form-description"
             name="contact"
           >
+            {/* Form title */}
             <SectionHeader title={ContactData.heading.title} align="left" />
 
+            {/* Basic info (Name + Email) */}
             <fieldset className="contact-form-input-container">
               <label htmlFor="name" className="sr-only">
                 Your Name
@@ -114,6 +116,7 @@ const ContactForm = () => {
               className="contact-form-textarea"
             ></textarea>
 
+            {/* Submit button */}
             <div className="contact-form-submit-wrapper">
               <Button
                 text="Send Message"

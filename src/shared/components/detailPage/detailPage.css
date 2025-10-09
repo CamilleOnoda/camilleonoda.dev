@@ -6,6 +6,7 @@
   margin-top: 2rem;
 }
 
+/* Container to limit width */
 .details-container {
   max-width: 50rem;
   margin: 0 auto;
@@ -34,7 +35,7 @@
   margin: 1rem 0;
 }
 
-/* ========== Project / Blog Skills Section ========== */
+/* Skills / project info container */
 .details-skills-container {
   display: flex;
   flex-direction: column;
@@ -54,6 +55,7 @@
   margin-right: 0.2rem;
 }
 
+/* Links to external sites */
 .details-skills-website-link {
   color: var(--black-text);
   font-size: 1.05rem;

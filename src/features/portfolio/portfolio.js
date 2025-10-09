@@ -48,7 +48,7 @@ const Portfolio = () => {
           variants={fadeUpItem}
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true, amount: 0.6 }}
+          viewport={{ once: true, amount: 0.5 }}
         >
           <SectionHeader title={ProjectsIntro.heading.title} />
         </motion.h2>

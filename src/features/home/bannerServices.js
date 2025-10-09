@@ -13,14 +13,15 @@ function BannerServices() {
       aria-labelledby="services-heading"
     >
       {/* Section Header */}
-      <motion.div
+      <motion.h2
+        id="services-heading"
         variants={fadeUpItem}
         initial="initial"
         whileInView="animate"
-        viewport={{ once: true, amount: 0.6 }}
+        viewport={{ once: true, amount: 0.5 }}
       >
         <SectionHeader title={bannerServices.heading.title} />
-      </motion.div>
+      </motion.h2>
 
       {/* Services Grid */}
       <div className="home-services-inner-container">

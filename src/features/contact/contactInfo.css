@@ -5,9 +5,10 @@
   width: 100%;
 }
 
+/* Grid container */
 .contact-info-inner-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr); /* Two cards per row */
   gap: 3rem;
   width: 100%;
   max-width: 75rem;
@@ -17,6 +18,6 @@
 
 @media (max-width: 768px) {
   .contact-info-inner-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Single column for mobile */
   }
 }

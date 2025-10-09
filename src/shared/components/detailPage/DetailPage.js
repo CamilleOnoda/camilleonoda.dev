@@ -5,13 +5,14 @@ function DetailsPage({ title, subtitle, heroImg, sections, extraContent }) {
   return (
     <section className="details-section" aria-labelledby="details-title">
       <div className="details-container">
+        {/* Page heading */}
         <SectionHeader title={title} align="left" />
-
         {subtitle && <p className="details-description">{subtitle}</p>}
 
-        {/* Extra content above image */}
+        {/* Optional extra content above hero image */}
         {extraContent}
 
+        {/* Hero image */}
         {heroImg && (
           <img
             src={heroImg}
@@ -23,6 +24,7 @@ function DetailsPage({ title, subtitle, heroImg, sections, extraContent }) {
           />
         )}
 
+        {/* Sections content */}
         {sections?.length > 0 &&
           sections.map((section, index) => (
             <article className="details-description-block" key={index}>
@@ -30,13 +32,14 @@ function DetailsPage({ title, subtitle, heroImg, sections, extraContent }) {
                 {section.heading || section.sectionTitle}
               </h2>
 
-              {/* FIXED: Handle both “content” and “sectionContent” */}
+              {/* Single paragraph content */}
               {(section.content || section.sectionContent) && (
                 <p className="details-description">
                   {section.content || section.sectionContent}
                 </p>
               )}
 
+              {/* Multiple description paragraphs */}
               {section.sectionDescriptions &&
                 section.sectionDescriptions.map((desc, i) => (
                   <p className="details-description" key={i}>
@@ -44,6 +47,7 @@ function DetailsPage({ title, subtitle, heroImg, sections, extraContent }) {
                   </p>
                 ))}
 
+              {/* Optional lists */}
               {section.list && (
                 <ul className="details-list">
                   {section.list.map((item, idx) => (

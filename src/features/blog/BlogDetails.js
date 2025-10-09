@@ -3,6 +3,7 @@ import BlogDetailsData from "../../config/blogDetails.config";
 
 function BlogDetails() {
   return (
+    // Render blog details using the reusable DetailPage component
     <DetailsPage
       title={BlogDetailsData.title}
       subtitle={BlogDetailsData.subtitle}

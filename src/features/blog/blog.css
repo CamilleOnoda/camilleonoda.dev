@@ -26,7 +26,7 @@
 }
 
 .blog-card-link {
-  text-decoration: none; /* removes underline from link */
+  text-decoration: none;
   color: inherit; /* maintain text color */
   display: block; /* entire card clickable */
 }

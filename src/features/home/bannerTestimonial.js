@@ -15,14 +15,15 @@ function BannerTestimonial() {
       aria-labelledby="testimonials-heading"
     >
       {/* Section Header */}
-      <motion.div
+      <motion.h2
+        id="testimonials-heading"
         variants={fadeUpItem}
         initial="initial"
         whileInView="animate"
-        viewport={{ once: true, amount: 0.6 }}
+        viewport={{ once: true, amount: 0.5 }}
       >
         <SectionHeader title={TestimonialHeading.heading.homeTitle} />
-      </motion.div>
+      </motion.h2>
 
       {/* Testimonials Grid */}
       <div className="home-testimonials-inner-container">

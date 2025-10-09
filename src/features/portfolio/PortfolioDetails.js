@@ -4,12 +4,14 @@ import { ProjectDetailsData } from "../../config/projectDetails.config";
 function ProjectDetails() {
   const project = ProjectDetailsData.ecommerceApp;
 
+  // Extra content: Technologies, live website link, and GitHub link
   const extraContent = (
     <div
       className="details-skills-container"
       role="region"
       aria-label="Project technologies and links"
     >
+      {/* Display tech stack */}
       {project.techStack?.length > 0 && (
         <div className="details-skills-line">
           <strong>Technologies:</strong>{" "}
@@ -17,6 +19,7 @@ function ProjectDetails() {
         </div>
       )}
 
+      {/* Live website link */}
       {project.liveLink && (
         <div className="details-skills-line">
           <strong>Website:</strong>{" "}
@@ -31,6 +34,7 @@ function ProjectDetails() {
         </div>
       )}
 
+      {/* GitHub repository link */}
       {project.githubLink && (
         <div className="details-skills-line">
           <strong>GitHub:</strong>{" "}
@@ -47,6 +51,7 @@ function ProjectDetails() {
     </div>
   );
 
+  // Render the reusable DetailPage component
   return (
     <DetailsPage
       title={project.projectTitle}

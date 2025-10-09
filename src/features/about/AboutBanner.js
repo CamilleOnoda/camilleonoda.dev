@@ -57,7 +57,7 @@ function AboutBanner() {
               href={aboutIntro.cvLink}
               download
               variant="primary"
-              size="small"
+              size="medium"
             />
           </motion.div>
         </div>
