@@ -219,6 +219,14 @@
     display: none;
   }
 
+  .navbar-close-btn {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
   /* Theme toggle (mobile) */
   .navbar-theme-toggle-btn-mobile {
     background: none;
