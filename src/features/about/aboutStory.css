@@ -60,6 +60,7 @@
   line-height: 2.2rem;
   color: var(--black-text);
   margin-bottom: 1.5rem;
+  margin-top: -0.3rem;
 }
 
 .about-story-link {
@@ -76,7 +77,7 @@
   .about-story-inner-container {
     flex-direction: column;
     text-align: center;
-    gap: 3.5rem;
+    gap: 2rem;
   }
   .about-story-image-container {
     order: 2; /* move image below text */
