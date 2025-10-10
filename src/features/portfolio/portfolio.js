@@ -67,7 +67,7 @@ const Portfolio = () => {
               text={category}
               onClick={() => setSelectedCategory(category)}
               variant="secondary"
-              size="large"
+              size="medium"
               isActive={selectedCategory === category}
               ariaPressed={selectedCategory === category}
             />
