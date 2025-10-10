@@ -18,6 +18,7 @@
   padding: 0.4rem 0.8rem;
   font-size: 1rem;
 }
+
 .btn.nav {
   background-color: var(--nav-button-bg);
   color: var(--nav-button-text);

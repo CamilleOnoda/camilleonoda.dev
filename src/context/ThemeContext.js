@@ -23,6 +23,10 @@ const lightTheme = {
   // Buttons
   "--bg-button": "  #54387a",
   "--button-text": "  #ffffff",
+
+  //navbar button
+  "--nav-button-bg": "#54387a",
+  "--nav-button-text": "#ffffff",
 };
 
 const darkTheme = {
