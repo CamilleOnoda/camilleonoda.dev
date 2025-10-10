@@ -20,8 +20,8 @@
 }
 
 .btn.nav {
-  background-color: var(--nav-button-bg);
-  color: var(--nav-button-text);
+  background-color: var(--nav-btn-bg);
+  color: var(--nav-btn-text);
   padding: 0.4rem 0.8rem;
   font-weight: 500;
 }

@@ -10,11 +10,14 @@ const lightTheme = {
   "--icons-color": " #54387a",
 
   // Navbar colors
-  "--navbar-background": "#edeaf8",
-  "--navbar-text": "#54387a",
-  "--navbar-button": "#ffffff",
-  "--navbar-mobile-link-text": "#ffffff",
-  "--navbar-border": "#54387a",
+  "--nav-bg": "#edeaf8",
+  "--nav-text": "#54387a",
+  "--nav-dropdown-bg": "#ffffff",
+  "--nav-close": "#ffffff",
+  "--nav--mobile-link-text": "#ffffff",
+  "--nav-border": "#54387a",
+  "--nav-btn-bg": "#54387a",
+  "--nav-btn-text": "#ffffff",
 
   // Footer
   "--bg-footer": "#54387a",
@@ -23,10 +26,6 @@ const lightTheme = {
   // Buttons
   "--bg-button": "  #54387a",
   "--button-text": "  #ffffff",
-
-  //navbar button
-  "--nav-button-bg": "#54387a",
-  "--nav-button-text": "#ffffff",
 };
 
 const darkTheme = {
@@ -37,11 +36,14 @@ const darkTheme = {
   "--icons-color": " #ffffff",
 
   // Navbar colors
-  "--navbar-background": "#edeaf8",
-  "--navbar-text": "#54387a",
-  "--navbar-button-bg": "#ffffff",
-  "--navbar-mobile-link-text": "#ffffff",
-  "--navbar-border": "#54387a",
+  "--nav-bg": "#edeaf8",
+  "--nav-text": "#54387a",
+  "--nav-dropdown-bg": "#ffffff",
+  "--nav-close": "#ffffff",
+  "--nav--mobile-link-text": "#ffffff",
+  "--nav-border": "#54387a",
+  "--nav-btn-bg": "#54387a",
+  "--nav-btn-text": "#ffffff",
 
   // Footer
   "--bg-footer": "  #EDEAF8",
@@ -50,10 +52,6 @@ const darkTheme = {
   // Buttons
   "--bg-button": " #ffffff",
   "--button-text": " #54387a",
-
-  //navbar button
-  "--nav-button-bg": "#54387a",
-  "--nav-button-text": "#ffffff",
 };
 
 export const ThemeProvider = ({ children }) => {

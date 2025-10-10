@@ -3,7 +3,7 @@
   top: 0;
   width: 100%;
   z-index: 999;
-  background: var(--navbar-background);
+  background: var(--nav-bg);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
@@ -51,7 +51,7 @@
 
 .navbar-links-container a {
   text-decoration: none;
-  color: var(--navbar-text);
+  color: var(--nav-text);
   font-weight: 400;
   padding: 0.5rem 0.7rem;
   font-size: 1rem;
@@ -72,12 +72,12 @@
   position: absolute;
   top: calc(100% + 20px); /* spacing below the navbar link */
   left: 0;
-  background: var(--navbar-button-bg);
+  background: var(--nav-dropdown-bg);
   min-width: 9rem;
   height: 2.5rem;
   border-radius: 0 0 5px 5px; /* only top corners rounded */
   padding: 0.5rem 0;
-  border-top: 1.8px solid var(--navbar-border); /* highlight top border */
+  border-top: 1.8px solid var(--nav-border); /* highlight top border */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   z-index: 1000;
   display: none;
@@ -92,7 +92,7 @@
 
 .navbar-dropdown-item {
   padding: 1.5rem 1rem;
-  color: var(--navbar-text);
+  color: var(--nav-text);
   text-decoration: none;
   font-size: 1rem;
   transition: background-color 0.2s ease;
@@ -146,7 +146,7 @@
 .navbar-close-btn {
   background: none;
   border: none;
-  color: var(--navbar-button);
+  color: var(--nav-close);
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -163,7 +163,7 @@
     flex-direction: column;
     width: 40%;
     height: 100vh;
-    background: var(--navbar-text);
+    background: var(--nav-border);
     position: absolute;
     top: 0;
     left: 0;
@@ -197,7 +197,7 @@
   .navbar-links-container a {
     padding: 0.75rem 1rem;
     display: block;
-    color: var(--navbar-mobile-link-text);
+    color: var(--nav--mobile-link-text);
   }
 
   .navbar-dropdown-menu {
@@ -210,7 +210,7 @@
   }
 
   .navbar-dropdown-item {
-    color: var(--navbar-mobile-links);
+    color: var(--nav--mobile-link-text);
     padding-left: 2rem;
   }
 
@@ -222,7 +222,7 @@
   .navbar-close-btn {
     background: none;
     border: none;
-    color: #ffffff;
+    color: var(--nav-close);
     font-size: 1.5rem;
     cursor: pointer;
   }
