@@ -46,6 +46,10 @@ const darkTheme = {
   // Buttons
   "--bg-button": " #ffffff",
   "--button-text": " #54387a",
+
+  //navbar button
+  "--nav-button-bg": "#54387a",
+  "--nav-button-text": "#ffffff",
 };
 
 export const ThemeProvider = ({ children }) => {
