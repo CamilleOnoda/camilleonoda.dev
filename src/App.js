@@ -7,7 +7,7 @@ import Blog from "./features/blog/blog";
 import Portfolio from "./features/portfolio/portfolio";
 import PortfolioDetails from "./features/portfolio/PortfolioDetails";
 import Testimonial from "./features/testimonial/testimonial";
-import ScrollToTop from "./ScrollToTop";
+import ScrollToTop from "../src/shared/utils/ScrollToTop";
 import Footer from "./features/Footer/footer";
 import { Contact } from "./features/contact/Contact";
 import Story from "./features/story/StoryDetails";

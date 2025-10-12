@@ -27,6 +27,7 @@ function Button({
         target={target}
         rel={rel}
         aria-pressed={ariaPressed}
+        aria-label={text}
       >
         {text}
       </a>
