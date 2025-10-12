@@ -1,7 +1,10 @@
 {
-  "name": "designers",
-  "version": "0.1.0",
-  "private": true,
+  "name": "lumina-react-portfolio",
+  "version": "1.0.0",
+  "description": "Lumina is a modern, responsive React portfolio template built with React, Framer Motion, and React Router. Designed to help developers launch polished portfolios quickly.",
+  "author": "Sobia Soomro",
+  "license": "Personal Use License",
+  "private": false,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
     "cra-template": "1.2.0",
