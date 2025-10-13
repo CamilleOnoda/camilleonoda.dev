@@ -14,7 +14,7 @@ function BannerTestimonial() {
       className="home-testimonials-section"
       aria-labelledby="testimonials-heading"
     >
-      {/* Section Header */}
+      {/* Section Header with animation */}
       <motion.h2
         id="testimonials-heading"
         variants={fadeUpItem}
@@ -25,7 +25,7 @@ function BannerTestimonial() {
         <SectionHeader title={TestimonialHeading.heading.homeTitle} />
       </motion.h2>
 
-      {/* Testimonials Grid */}
+      {/* Testimonials Grid: Show up to 4 testimonials using TestimonialCard */}
       <div className="home-testimonials-inner-container">
         {TestimonialsData.slice(0, 4).map((testimonial, index) => (
           <TestimonialCard

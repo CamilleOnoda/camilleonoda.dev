@@ -12,7 +12,7 @@ function BannerServices() {
       className="home-services-container"
       aria-labelledby="services-heading"
     >
-      {/* Section Header */}
+      {/* Section Header with animation */}
       <motion.h2
         id="services-heading"
         variants={fadeUpItem}
@@ -23,7 +23,7 @@ function BannerServices() {
         <SectionHeader title={bannerServices.heading.title} />
       </motion.h2>
 
-      {/* Services Grid */}
+      {/* Services Grid: Map over services and render each as clickable Card */}
       <div className="home-services-inner-container">
         {bannerServices.services.map((item) => (
           <Link

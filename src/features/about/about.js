@@ -3,7 +3,7 @@ import AboutStats from "./AboutStats";
 import AboutSkills from "./AboutSkills";
 import AboutStory from "./AboutStory";
 
-// About: Combines all main sections of the About page
+// About page: Combines banner, skills, stats, and story sections
 function About() {
   return (
     <>

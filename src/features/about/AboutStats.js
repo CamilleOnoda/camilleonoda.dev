@@ -27,7 +27,7 @@ function AboutStats() {
             variants={fadeUpItem}
             style={{ display: "flex", flexDirection: "column", height: "100%" }}
           >
-            {/* Stat Card */}
+            {/* Stat Card using reusable AboutCard */}
             <AboutCard title={stat.title} description={stat.description} />
           </motion.article>
         ))}

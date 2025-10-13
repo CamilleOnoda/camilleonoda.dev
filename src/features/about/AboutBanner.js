@@ -48,10 +48,12 @@ function AboutBanner() {
             viewport={{ once: true, amount: 0.5 }}
             variants={slideFromRight}
           >
+            {/* Section heading */}
             <SectionHeader title={aboutIntro.heading.title} align="left" />
 
             <p className="about-banner-description">{aboutIntro.description}</p>
 
+            {/* Download CV button */}
             <Button
               text={aboutIntro.cvText}
               href={aboutIntro.cvLink}

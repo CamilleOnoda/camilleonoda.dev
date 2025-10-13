@@ -24,6 +24,7 @@ const AboutSkills = () => {
           variants={slideFromLeft}
           style={{ display: "flex", flexDirection: "column", height: "100%" }}
         >
+          {/* section heading */}
           <SectionHeader
             title={educationAndSkills.educationHeading.title}
             align="left"
@@ -46,6 +47,7 @@ const AboutSkills = () => {
           variants={slideFromRight}
           style={{ display: "flex", flexDirection: "column", height: "100%" }}
         >
+          {/* section heading */}
           <SectionHeader
             title={educationAndSkills.skillHeading.title}
             align="left"
