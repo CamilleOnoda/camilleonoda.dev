@@ -1,5 +1,6 @@
 import heroImage from "../Assets/blog4.webp";
 
+// Stores content for the Blog Details page and can be expanded for multiple blogs.
 const BlogDetailsData = {
   title: "Optimizing React Performance: Tips and Techniques",
   subtitle:

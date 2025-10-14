@@ -1,3 +1,4 @@
+/* Base heading style */
 .section-header-title {
   font-size: 1.9rem;
   font-weight: 500;
@@ -6,6 +7,7 @@
   color: var(--section-heading-color);
 }
 
+/* Alignment variations */
 .section-header-title.center {
   text-align: center;
 }
@@ -14,6 +16,7 @@
   text-align: left;
 }
 
+/* Responsive font size */
 @media (max-width: 768px) {
   .section-header-title {
     font-size: 1.7rem;

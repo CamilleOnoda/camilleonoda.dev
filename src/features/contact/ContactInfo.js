@@ -11,7 +11,7 @@ const ContactInfo = () => {
       className="contact-info-section"
       aria-labelledby="contact-info-heading"
     >
-      {/* Heading with motion */}
+      {/* Section heading with fade-up animation */}
       <motion.h2
         id="contact-info-heading"
         className="contact-info-heading"

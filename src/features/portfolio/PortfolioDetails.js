@@ -1,17 +1,17 @@
 import DetailsPage from "../../shared/components/detailPage/DetailPage";
-import { ProjectDetailsData } from "../../config/projectDetails.config";
+import { ProjectDetailsData } from "../../config/projectDetails";
 
 function ProjectDetails() {
   const project = ProjectDetailsData.ecommerceApp;
 
-  // Extra content: Technologies, live website link, and GitHub link
+  // Extra content: tech stack, live site, and GitHub links
   const extraContent = (
     <div
       className="details-skills-container"
       role="region"
       aria-label="Project technologies and links"
     >
-      {/* Display tech stack */}
+      {/* Show tech stack */}
       {project.techStack?.length > 0 && (
         <div className="details-skills-line">
           <strong>Technologies:</strong>{" "}
@@ -19,7 +19,7 @@ function ProjectDetails() {
         </div>
       )}
 
-      {/* Live website link */}
+      {/* Show live website link */}
       {project.liveLink && (
         <div className="details-skills-line">
           <strong>Website:</strong>{" "}
@@ -34,7 +34,7 @@ function ProjectDetails() {
         </div>
       )}
 
-      {/* GitHub repository link */}
+      {/* Show live website link */}
       {project.githubLink && (
         <div className="details-skills-line">
           <strong>GitHub:</strong>{" "}
@@ -51,7 +51,7 @@ function ProjectDetails() {
     </div>
   );
 
-  // Render the reusable DetailPage component
+  // Render reusable DetailsPage with project info
   return (
     <DetailsPage
       title={project.projectTitle}

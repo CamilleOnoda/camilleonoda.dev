@@ -1,5 +1,6 @@
 import heroImg from "../Assets/project1.webp";
 
+//  Holds all project info used on the Project Details page.
 export const ProjectDetailsData = {
   ecommerceApp: {
     projectId: 1,

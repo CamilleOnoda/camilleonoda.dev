@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo } from "react";
 import { useLocation, useNavigate, Link } from "react-router-dom";
 import "./portfolio.css";
-import { ProjectsData, ProjectsIntro } from "../../config/projects.config";
+import { ProjectsData, ProjectsIntro } from "../../config/portfolio.config";
 import { motion } from "framer-motion";
 import { fadeUpItem } from "../../shared/components/FramerVariants";
 import Button from "../../shared/components/button/Button";

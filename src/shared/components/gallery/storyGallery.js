@@ -1,5 +1,6 @@
 import "./storyGallery.css";
 
+// StoryGallery: Displays a gallery of images for a story
 function StoryGallery({ images }) {
   return (
     <div

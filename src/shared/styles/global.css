@@ -1,15 +1,17 @@
+/* Reset default browser styles and apply box-sizing globally */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/* Base styles for html and body */
 html,
 body {
   width: 100%;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  font-family: "Inter", sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+  font-family: "Inter", sans-serif; /* Default font */
   margin: 0;
   padding: 0;
   box-sizing: border-box;

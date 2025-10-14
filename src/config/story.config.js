@@ -3,6 +3,7 @@ import image3 from "../Assets/about2.webp";
 import image4 from "../Assets/blog4.webp";
 import image5 from "../Assets/project4.webp";
 
+// Story data with title, images, and content sections
 const storyData = {
   title: "How I Became a Web Developer",
   subtitle:

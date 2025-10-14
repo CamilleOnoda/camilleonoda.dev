@@ -1,3 +1,4 @@
+// ScrollToTop: Automatically scrolls to top on route change
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -6,12 +7,12 @@ const ScrollToTop = () => {
 
   useEffect(() => {
     window.scrollTo({
-      top: 0,
-      behavior: "smooth",
+      top: 0, // Scroll to top of page
+      behavior: "smooth", // Smooth scrolling effect
     });
-  }, [pathname]);
+  }, [pathname]); // Trigger on route/path change
 
-  return null;
+  return null; // No UI element rendered
 };
 
 export default ScrollToTop;

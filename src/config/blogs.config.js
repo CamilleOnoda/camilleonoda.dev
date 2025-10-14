@@ -3,6 +3,7 @@ import blogImg2 from "../Assets/blog2.webp";
 import blogImg3 from "../Assets/blog3.webp";
 import blogImg4 from "../Assets/blog4.webp";
 
+// Intro section: headings for blog pages
 export const BlogsIntro = {
   heading: {
     title: "Lessons, stories, and expertise from my developer journey",
@@ -10,9 +11,9 @@ export const BlogsIntro = {
   homeHeading: {
     title: "My latest articles",
   },
-  categories: ["All", "Frontend", "Backend"],
 };
 
+// Array of blog posts with metadata for list and detail pages
 export const BlogsData = [
   {
     id: 1,

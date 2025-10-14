@@ -5,13 +5,15 @@ import avatar4 from "../Assets/user1.webp";
 import avatar5 from "../Assets/user2.webp";
 import avatar6 from "../Assets/user3.webp";
 
+// Heading data used for the Testimonial section
 export const TestimonialHeading = {
   heading: {
-    title: "What my clients say about my work",
-    homeTitle: "Stories from happy clients",
+    title: "What my clients say about my work", // Main page heading
+    homeTitle: "Stories from happy clients", // Alternate heading (homepage)
   },
 };
 
+// Array of testimonial data objects
 export const TestimonialsData = [
   {
     name: "Emma Hayes",

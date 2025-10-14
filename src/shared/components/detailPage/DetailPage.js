@@ -47,7 +47,7 @@ function DetailsPage({ title, subtitle, heroImg, sections, extraContent }) {
                   </p>
                 ))}
 
-              {/* Optional lists */}
+              {/* Optional list section */}
               {section.list && (
                 <ul className="details-list">
                   {section.list.map((item, idx) => (

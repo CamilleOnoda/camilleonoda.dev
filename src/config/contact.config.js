@@ -2,18 +2,26 @@ import contactImg from "../Assets/contact-img.webp";
 import { FaGlobe, FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { SiStackoverflow } from "react-icons/si";
 
+// Contact section configuration
 export const ContactData = {
+  // Main image for the contact section
   image: contactImg,
+
+  // Primary heading displayed above the contact form
   heading: {
     title: "Let's start a new project",
   },
+
+  // Secondary heading displayed above contact cards
   secondheading: {
     title: "Let's connect for projects, collaborations, or a quick hello",
   },
+
+  // Array of contact cards (Hire Me, Phone, Email, Social Media)
   contactCards: [
     {
       type: "Hire Me",
-      iconClass: "fas fa-user-tie",
+      iconClass: "fas fa-user-tie", // Font Awesome icon class
       links: [
         { label: "Fiverr", href: "#" },
         { label: "Upwork", href: "#" },

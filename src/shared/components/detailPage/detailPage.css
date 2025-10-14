@@ -6,13 +6,13 @@
   margin-top: 2rem;
 }
 
-/* Container to limit width */
 .details-container {
   max-width: 50rem;
   margin: 0 auto;
   padding: 0.5rem;
 }
 
+/* Page Heading */
 .details-title {
   font-size: 2rem;
   font-weight: 500;
@@ -20,6 +20,7 @@
   line-height: 3rem;
 }
 
+/* Section Titles inside content */
 .details-container-title {
   font-size: 1.8rem;
   font-weight: 500;
@@ -27,6 +28,7 @@
   color: var(--section-heading-color);
 }
 
+/* Paragraphs */
 .details-description {
   font-size: 1.05rem;
   line-height: 2.2rem;
@@ -35,7 +37,7 @@
   margin: 1rem 0;
 }
 
-/* Skills / project info container */
+/* Extra content container (e.g., project skills/info) */
 .details-skills-container {
   display: flex;
   flex-direction: column;
@@ -55,10 +57,11 @@
   margin-right: 0.2rem;
 }
 
-/* Links to external sites */
+/* External links styling */
 .details-skills-website-link {
   color: var(--black-text);
   font-size: 1.05rem;
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {

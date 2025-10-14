@@ -10,10 +10,11 @@ const ThemeToggle = ({ isMobile }) => {
       className={
         isMobile ? "navbar-theme-toggle-btn-mobile" : "navbar-theme-toggle-btn"
       }
-      onClick={toggleTheme}
+      onClick={toggleTheme} // toggle light/dark theme
       aria-label="Toggle Theme"
     >
-      {isDark ? <FaSun size={20} /> : <FaMoon size={20} />}
+      {isDark ? <FaSun size={20} /> : <FaMoon size={20} />}{" "}
+      {/* icon based on theme */}
     </button>
   );
 };

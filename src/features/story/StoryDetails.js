@@ -3,16 +3,16 @@ import StoryGallery from "../../shared/components/gallery/storyGallery";
 import storyData from "../../config/story.config";
 
 function Story() {
-  // Gallery section with all story images
+  // Display story images in a gallery
   const extraContent = <StoryGallery images={storyData.images} />;
 
-  // Render shared DetailsPage with story-specific content
+  // Render DetailsPage with story content and gallery
   return (
     <DetailsPage
-      title={storyData.title} // Story page title
-      subtitle={storyData.subtitle} // Short intro or description
-      sections={storyData.sections} // Story content sections
-      extraContent={extraContent} // Embedded image gallery
+      title={storyData.title}
+      subtitle={storyData.subtitle}
+      sections={storyData.sections}
+      extraContent={extraContent}
     />
   );
 }

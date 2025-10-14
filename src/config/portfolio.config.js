@@ -4,12 +4,14 @@ import portflioImg3 from "../Assets/project1.webp";
 import portflioImg4 from "../Assets/project2.webp";
 import portflioImg5 from "../Assets/project2.webp";
 
+// Intro section for portfolio page
 export const ProjectsIntro = {
   heading: {
     title: "10+ years of development, creativity, and growth",
   },
 };
 
+// Portfolio projects data
 export const ProjectsData = [
   {
     id: 1,
