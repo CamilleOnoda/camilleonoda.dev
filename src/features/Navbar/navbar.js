@@ -245,7 +245,13 @@ const Navbar = () => {
               size="medium"
               onClick={closeMenu}
             /> */}
-            <NavButton to="/contact" onClick={closeMenu} text="Hire Me" />
+            <Button
+              text="Hire Me"
+              href="/contact"
+              variant="nav"
+              size="medium"
+              onClick={closeMenu}
+            />
           </div>
 
           {/*Mobile Theme Toggle  */}
