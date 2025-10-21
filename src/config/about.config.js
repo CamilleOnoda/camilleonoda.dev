@@ -12,7 +12,7 @@ export const aboutIntro = {
   cvLink: "#",
   cvText: "See my CV",
   heading: {
-    title: "I build software that solve users’ problems",
+    title: "I build software that solve users' problems",
   },
   description: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
   Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.ks

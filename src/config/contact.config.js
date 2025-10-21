@@ -2,11 +2,8 @@ import contactImg from "../Assets/contact-img.webp";
 import { FaGlobe, FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { SiStackoverflow } from "react-icons/si";
 
-// Contact section configuration
 export const ContactData = {
-  // Main image for the contact section
   image: contactImg,
-
   // Primary heading displayed above the contact form
   heading: {
     title: "Let's start a new project",
