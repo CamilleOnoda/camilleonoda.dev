@@ -16,10 +16,10 @@
 }
 
 /* navbar button */
-.btn.nav {
+/* .btn.nav {
   background-color: var(--nav-btn-bg);
   color: var(--nav-btn-text);
-}
+} */
 
 /* Primary button (CV download or main actions) */
 .btn.primary {

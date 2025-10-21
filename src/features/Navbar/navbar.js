@@ -5,6 +5,7 @@ import logo from "../../Assets/logo.webp";
 import { FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
 import ThemeToggle from "../../shared/components/ThemeToggle";
 import Button from "../../shared/components/button/Button";
+import NavButton from "../../shared/components/navButton/navButton";
 
 const Navbar = () => {
   // States
@@ -237,13 +238,14 @@ const Navbar = () => {
           {/*  Right Side Buttons */}
           <div className="navbar-btn-container">
             <ThemeToggle isMobile={false} />
-            <Button
+            {/* <Button
               text="Hire Me"
               href="/contact"
               variant="nav"
               size="medium"
               onClick={closeMenu}
-            />
+            /> */}
+            <NavButton to="/contact" onClick={closeMenu} text="Hire Me" />
           </div>
 
           {/*Mobile Theme Toggle  */}
