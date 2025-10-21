@@ -17,10 +17,8 @@
 
 /* navbar button */
 .btn.nav {
-  /* background-color: var(--nav-btn-bg);
-  color: var(--nav-btn-text); */
-  background-color: var(--bg-button);
-  color: var(--button-text);
+  background-color: var(--nav-btn-bg);
+  color: var(--nav-btn-text);
 }
 
 /* Primary button (CV download or main actions) */
