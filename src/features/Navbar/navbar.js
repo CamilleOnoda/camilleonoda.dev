@@ -237,13 +237,13 @@ const Navbar = () => {
           {/*  Right Side Buttons */}
           <div className="navbar-btn-container">
             <ThemeToggle isMobile={false} />
-            <Button
+            {/* <Button
               text="Hire Me"
               href="/contact"
               variant="nav"
               size="medium"
               onClick={closeMenu}
-            />
+            /> */}
           </div>
 
           {/*Mobile Theme Toggle  */}
