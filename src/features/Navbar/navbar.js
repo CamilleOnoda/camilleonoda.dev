@@ -54,7 +54,7 @@ const Navbar = () => {
         <div className="navbar-inner-container">
           <div className="navbar-logo-container">
             <Link to="/" onClick={closeMenu} aria-label="Go to homepage">
-              <img src={logo} alt="Indol logo" className="navbar-logo" />
+              <img src={logo} alt="Lumina" className="navbar-logo" />
             </Link>
           </div>
 
