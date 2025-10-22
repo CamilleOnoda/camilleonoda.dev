@@ -1,0 +1,12 @@
+.nav-btn {
+  background-color: var(--nav-btn-bg);
+  color: var(--nav-btn-text);
+  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  display: inline-block;
+}
