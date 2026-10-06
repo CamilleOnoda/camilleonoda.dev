@@ -1,5 +1,3 @@
-import projectImage from "../Assets/image.webp";
-
 export const TestimonialHeading = {
   heading: {
     title: "Projects & contributions",

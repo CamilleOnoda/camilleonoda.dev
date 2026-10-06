@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import SectionHeader from "../../shared/components/sectionHeader/SectionHeader";
 import { ServicesData, ServicesIntro } from "../../config/services.config";
 import { fadeUpItem } from "../../shared/components/FramerVariants";
-import { Link } from "react-router-dom";
 
 function Services() {
   return (

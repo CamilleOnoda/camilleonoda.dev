@@ -1,5 +1,4 @@
 import { FaGithub, FaLinkedinIn, FaGlobe, FaEnvelope } from "react-icons/fa";
-import { SiStackoverflow } from "react-icons/si";
 
 // Social links, edit once, updates everywhere automatically
 // Used in: Homepage banner, Contact page, Footer
