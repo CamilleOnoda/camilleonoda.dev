@@ -1,0 +1,132 @@
+.about-education-section {
+  background: var(--website-bg);
+  padding-bottom: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 0;
+}
+
+.about-education-container {
+  max-width: 75rem;
+  margin-bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: start;
+  padding: 0 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-education-wrapper .card-container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.about-education-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: auto;
+}
+
+.about-education-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1.1rem;
+  color: var(--website-text);
+  padding: 0.85rem 0; /* ← padding handles spacing */
+  border-bottom: 1px solid var(--card-border);
+  margin: 0;
+  line-height: 2rem;
+}
+
+.about-education-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.about-education-degree {
+  flex: 1;
+  margin-right: 1rem;
+}
+
+.about-education-year {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--section-heading);
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+/* Right column */
+.about-achievements-wrapper {
+  display: flex;
+  flex-direction: column;
+  color: var(--section-heading);
+  gap: 1rem;
+  height: 100%;
+}
+
+/* Grid fills remaining height after heading */
+.about-achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  flex: 1; /* ← takes remaining height */
+}
+
+/* Each achievement card fills its cell */
+.about-achievements-grid > * {
+  height: 100%;
+}
+
+@media (max-width: 1024px) {
+  .about-education-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .about-education-section .section-header-title {
+    text-align: center;
+  }
+
+  .about-achievements-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-education-wrapper,
+  .about-achievements-wrapper {
+    height: auto;
+  }
+
+  .about-education-degree {
+    text-align: left;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .about-education-section {
+    padding: 2rem 1rem;
+  }
+
+  .about-achievements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-education-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+
+  .about-education-year {
+    margin-left: 0;
+  }
+}

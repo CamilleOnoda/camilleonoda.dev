@@ -1,57 +1,31 @@
-import contactImg from "../Assets/contact-img.webp";
-import { FaGlobe, FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
-import { SiStackoverflow } from "react-icons/si";
+import contactImg from "../Assets/GOPR0502.JPG";
+import { socialLinks } from "./social.config";
 
 export const ContactData = {
   image: contactImg,
-  // Primary heading displayed above the contact form
   heading: {
-    title: "Let's start a new project",
+    title: "Let's talk",
+    description:
+      "About a role, a project, or something in my work that caught your attention.",
   },
-
-  // Secondary heading displayed above contact cards
   secondheading: {
-    title: "Let's connect for projects, collaborations, or a quick hello",
+    title: "You can also find me here",
   },
-
-  // Array of contact cards (Hire Me, Phone, Email, Social Media)
   contactCards: [
-    {
-      type: "Hire Me",
-      iconClass: "fas fa-user-tie", // Font Awesome icon class
-      links: [
-        { label: "Fiverr", href: "#" },
-        { label: "Upwork", href: "#" },
-      ],
-      description: "Available for freelance projects on trusted platforms",
-    },
-    {
-      type: "Phone",
-      iconClass: "fas fa-phone-alt",
-      phone: "+123 456 7890",
-      description: "Feel free to reach out by phone for any questions or ideas",
-    },
     {
       type: "Email",
       iconClass: "fas fa-envelope",
       email: {
-        label: "email@gmail.com",
-        href: "#",
+        label: "info@camilleonoda.com",
+        href: "mailto:info@camilleonoda.com",
       },
-      description:
-        "Connect with me via email for projects, collaborations, or opportunities",
+      description: "I usually reply within one business day. Based in Japan (JST).",
     },
     {
-      type: "Social Media",
+      type: "Find me online",
       iconClass: "fas fa-share-alt",
-      icons: [
-        { icon: FaGithub, href: "#" },
-        { icon: FaLinkedinIn, href: "#" },
-        { icon: FaInstagram, href: "#" },
-        { icon: FaGlobe, href: "#" },
-        { icon: SiStackoverflow, href: "#" },
-      ],
-      description: "Stay connected for more stories from my coding journey",
+      icons: socialLinks,
+      description: "My code, writing, and professional background.",
     },
   ],
 };

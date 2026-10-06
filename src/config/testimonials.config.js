@@ -1,54 +1,35 @@
-import avatar1 from "../Assets/user1.webp";
-import avatar2 from "../Assets/user2.webp";
-import avatar3 from "../Assets/user3.webp";
-import avatar4 from "../Assets/user1.webp";
-import avatar5 from "../Assets/user2.webp";
-import avatar6 from "../Assets/user3.webp";
+import projectImage from "../Assets/image.webp";
 
-// Heading data used for the Testimonial section
 export const TestimonialHeading = {
   heading: {
-    title: "What my clients say about my work", // Main page heading
-    homeTitle: "Stories from happy clients", // Alternate heading (homepage)
+    title: "Projects & contributions",
+    homeTitle: "Projects & contributions",
   },
 };
 
-// Array of testimonial data objects
 export const TestimonialsData = [
   {
-    name: "Emma Hayes",
-    role: "Business Owner",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, commodo consequat.",
-    image: avatar1,
+    name: "Webhook Relay",
+    role: "Go · PostgreSQL · reliable delivery",
+    text: "A backend service that stores incoming webhooks, delivers them through background workers, retries failures, and records each attempt. Built with authenticated APIs and integration tests against PostgreSQL.",
+    image: "",
+    link: "https://github.com/CamilleOnoda/webhook-relay",
+    linkText: "Explore the project",
   },
   {
-    name: "Sarah Williams",
-    role: "Entrepreneur",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, commodo consequat.",
-    image: avatar2,
+    name: "HTTP server from scratch",
+    role: "Python · TCP · HTTP/1.1",
+    text: "An HTTP server built directly on Python sockets to work through request parsing, routing, persistent connections, compression, and concurrent requests.",
+    image: "",
+    link: "https://github.com/CamilleOnoda/http-server-python",
+    linkText: "Explore the code",
   },
   {
-    name: "David Smith",
-    role: "Startup Founder",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, commodo consequat.",
-    image: avatar3,
-  },
-  {
-    name: "Jessica Lane",
-    role: "Product Designer",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, commodo consequat.",
-    image: avatar4,
-  },
-  {
-    name: "Daniel Brooks",
-    role: "Frontend Team Lead",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, commodo consequat.",
-    image: avatar5,
-  },
-  {
-    name: "Liam Carter",
-    role: "Startup Founder & CEO",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, commodo consequat.",
-    image: avatar6,
+    name: "Open source contribution",
+    role: "Bash · testing · basis-cli",
+    text: "A fix for an installer that tried to use curl without checking whether it was available, with a regression test that runs under a controlled PATH.",
+    image: "",
+    link: "https://github.com/basis-network/basis-cli/pulls",
+    linkText: "View the contribution",
   },
 ];

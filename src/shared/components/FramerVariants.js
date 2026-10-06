@@ -5,7 +5,7 @@ export const slideFromLeft = {
     opacity: 1,
     x: 0,
     transition: {
-      duration: 1, // 1 second animation
+      duration: 1,
       ease: [0.42, 0, 0.58, 1], // smooth easing
       delay: 0.1, // start delay
     },

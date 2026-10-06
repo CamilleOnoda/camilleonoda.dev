@@ -1,0 +1,31 @@
+/* Tech stack, links section */
+.details-skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+}
+
+.details-skills-line {
+  color: var(--website-text);
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+
+.details-skills-line strong {
+  color: var(--section-heading);
+  font-weight: 500;
+  margin-right: 0.2rem;
+}
+
+/* External links */
+.details-skills-website-link {
+  color: var(--website-text);
+  font-size: 1.05rem;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.details-skills-website-link:hover {
+  color: var(--section-heading);
+}

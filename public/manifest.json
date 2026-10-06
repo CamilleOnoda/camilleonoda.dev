@@ -4,5 +4,18 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#54387A",
-  "background_color": "#EDEAF8"
+  "background_color": "#EDEAF8",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "logo.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    }
+  ]
 }

@@ -1,57 +1,121 @@
-import profileImage from "../Assets/about1.webp";
-import deskImg from "../Assets/about2.webp";
+import profileImage from "../Assets/inuyama-sakura.jpg";
+import storyImage from "../Assets/golden-torii.png";
 
-// Intro section: profile, badge, CV link, and description
+// 1. BANNER
+
 export const aboutIntro = {
   image: profileImage,
   badge: {
-    emoji: "😊",
-    text: "80+",
-    description: "Happy Clients",
+    emoji: "",
+    text: "",
+    description: "",
   },
-  cvLink: "#",
-  cvText: "See my CV",
+  cvLink: "/assets/Camille_Onoda_CV.pdf",
+  cvText: "Download CV",
   heading: {
-    title: "I build software that solve users' problems",
+    title: "Backend software, Linux, and a habit of investigating",
   },
-  description: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-  Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.ks
-  Donec quam felis, ultricies nec. enean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.`,
+  description:
+    "I'm drawn to work that gives me something to figure out. I build backend software with Go and Python, and I want to understand what happens once it's running. A failed delivery, an unexpected response, or a service that stops working gives me a reason to look closer. Years of technical translation and review have shaped how I approach that work: paying attention to details, asking precise questions, and making sense of complex information.",
 };
 
-// Education and skills section data
-export const educationAndSkills = {
-  educationHeading: { title: "My Education" },
+// 2. EDUCATION + APPROACH
+// Existing export names and fields are kept for component compatibility.
+
+export const educationData = {
+  heading: { title: "Education and training" },
   education: [
-    { degree: "MSc Software Engineering", year: "2020 - 2024" },
-    { degree: "Diploma In Web Development", year: "2020" },
-    { degree: "Specialization in Backend", year: "2019" },
-    { degree: "Specialization in Frontend", year: "2020" },
-    { degree: "BSc Computer Science", year: "2016 - 2019" },
+    {
+      degree: "Backend Engineering Program · Boot.dev",
+      year: "Nov 2024 - Jun 2026",
+    },
+    {
+      degree: "AWS Certified Cloud Practitioner",
+      year: "Apr 2024",
+    },
+    {
+      degree: "PCEP · Certified Entry-Level Python Programmer",
+      year: "Nov 2024",
+    },
+    {
+      degree: "CS50 Computer Science & CS50 Python · Harvard University",
+      year: "2023 - 2024",
+    },
+    {
+      degree: "Master's Degree in English - French Translation",
+      year: "2019",
+    },
   ],
-  skillHeading: { title: "My Skills" },
-  skills: [
-    "Frontend (ReactJS, JavaScript, Vue)",
-    "Backend (Node.js, Django, Java)",
-    "Databases (MongoDB, MySQL, PostgreSQL)",
-    "Fully API Integration & RESTful Services",
-    "Testing, performance & Debugging",
+  achievementsHeading: { title: "How I work" },
+  achievements: [
+    {
+      title: "Investigate",
+      description:
+        "Follow a problem from its symptoms toward the cause, using logs, tests, and observed behavior to check assumptions.",
+    },
+    {
+      title: "Test",
+      description:
+        "Check what happens when requests fail, dependencies are unavailable, or background work is interrupted.",
+    },
+    {
+      title: "Explain",
+      description:
+        "Make technical information clear enough for someone else to understand the decisions and continue the work.",
+    },
+    {
+      title: "Collaborate",
+      description:
+        "Bring experience working remotely with international clients, managing deadlines, and resolving questions across languages.",
+    },
   ],
 };
 
-// Stats cards showing achievements or milestones
-export const aboutStats = [
-  { title: "1K+", description: "Satisfied clients who trust my work" },
-  { title: "300+", description: "Projects built with care and creativity" },
-  { title: "10+", description: "Years of web development experience" },
-  { title: "100+", description: "Skilled collaborators around the world" },
-];
+// 3. PROFESSIONAL EXPERIENCE
 
-// Story section: personal journey
+export const workExperience = {
+  heading: { title: "Professional background" },
+  jobs: [
+    {
+      role: "Freelance technical translator & reviewer",
+      company: "International clients · Japan / Remote",
+      period: "2019 - Present",
+      description:
+        "Translate and review technical and software-related content from English and Japanese into French. Investigate ambiguities, identify inconsistencies, and work with clients to clarify meaning. Independently manage terminology, deadlines, and quality requirements across international projects.",
+    },
+  ],
+};
+
+// 4. TECHNICAL SKILLS
+
+export const skillsData = {
+  heading: { title: "Tools and technologies I work with" },
+  skills: [
+    "Go",
+    "Python",
+    "PostgreSQL",
+    "SQL",
+    "HTTP",
+    "REST APIs",
+    "Integration testing",
+    "Linux",
+    "Bash",
+    "systemd",
+    "SSH",
+    "Docker",
+    "Docker Compose",
+    "Git",
+    "GitHub",
+  ],
+};
+
+// 5. PERSONAL CONTEXT
+
 export const storyData = {
-  image: deskImg,
-  heading: { title: "My Story" },
-  text: `I discovered my passion for development by exploring how things work behind the web. That curiosity turned into a journey of learning, building, and sharing what I create. Along the way, I’ve picked up valuable lessons, favorite books, and a few stories from my very first project. I love tackling challenges, solving problems, and growing with every new experience.`,
-  linkText: "Read my story",
+  image: storyImage,
+  heading: { title: "Beyond the technical work" },
+  text:
+    "I'm French and based in Japan, working across French, English, and Japanese. Outside software, I enjoy road cycling, detective fiction, and 80s music. A good mystery tends to hold my attention, whether it's in a book or somewhere between a failed request and a system log.",
+  linkText: "More about my path",
   linkUrl: "/story",
 };

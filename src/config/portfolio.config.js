@@ -1,96 +1,65 @@
-import portflioImg1 from "../Assets/project4.webp";
-import portflioImg2 from "../Assets/project2.webp";
-import portflioImg3 from "../Assets/project1.webp";
-import portflioImg4 from "../Assets/project2.webp";
-import portflioImg5 from "../Assets/project2.webp";
+import webhookRelayImage from "../Assets/webhook-relay.png";
+import httpServerImage from "../Assets/HTTP-server.png";
+import ubuntuImage from "../Assets/Ubuntu-webhook.png";
+import quintleImage from "../Assets/quintle.png";
+import basisCliImage from "../Assets/oss-curl-dependency.png";
 
-// Intro section for portfolio page
 export const ProjectsIntro = {
   heading: {
-    title: "10+ years of development, creativity, and growth",
+    title: "Build. Test. Debug.",
+    description: "From Python sockets to Go services running on Linux."
   },
 };
 
-// Portfolio projects data
 export const ProjectsData = [
   {
     id: 1,
-    image: portflioImg1,
-    title: "Social Media Dashboard",
+    image: webhookRelayImage,
+    title: "Webhook Relay",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elit... ",
+      "A Go service for asynchronous webhook delivery. Stores incoming events in PostgreSQL, processes deliveries through background workers, retries failures, and records each attempt. Includes authenticated APIs and integration tests.",
     link: "/portfolio-details/1",
-    categories: ["Database"],
-    type: "Web Dashboard",
+    categories: ["Backend", "Testing & Debugging"],
+    type: "Go · PostgreSQL",
   },
   {
     id: 2,
-    image: portflioImg2,
-    title: "MERN Stack Blog Platform",
+    image: httpServerImage,
+    title: "HTTP server from scratch",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elit... ",
+      "An HTTP/1.1 server built directly with Python sockets. Implements request parsing, routing, persistent connections, gzip compression, and concurrent request handling to explore what happens beneath a web framework.",
     link: "/portfolio-details/2",
-    categories: ["Frontend"],
-    type: "Web Blog",
+    categories: ["Backend"],
+    type: "Python · TCP · HTTP",
   },
   {
     id: 3,
-    image: portflioImg3,
-    title: "E-Commerce Web App",
+    image: ubuntuImage,
+    title: "Webhook Relay on Ubuntu",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elit...",
-    link: `/portfolio-details/3`, // link to details page
-    categories: ["Frontend", "Backend"],
-    type: "Web App",
+      "Running a local copy of the webhook relay against a restored PostgreSQL database on Ubuntu. Set up a dedicated application role, resolved authentication issues, and verified delivery retries through changes in the database.",
+    link: "/portfolio-details/3",
+    categories: ["Linux"],
+    type: "Ubuntu · PostgreSQL · Troubleshooting",
   },
   {
     id: 4,
-    image: portflioImg4,
-    title: "Project Management Tool",
+    image: quintleImage,
+    title: "Quintle",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elit... ",
+      "A word puzzle application developed with a remote team during Chingu Voyage 61. Contributed to the Go backend and worked on API contracts connecting daily and practice game modes to the React frontend.",
     link: "/portfolio-details/4",
-    categories: ["Database", "Backend"],
-    type: "DataBase Management",
+    categories: ["Backend"],
+    type: "Go · React · Team collaboration",
   },
   {
     id: 5,
-    image: portflioImg5,
-    title: "SaaS Landing Page",
+    image: basisCliImage,
+    title: "Open source: basis-cli",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elit... ",
+      "An installer dependency fix submitted through a pull request. Added a check for curl and an actionable error message, with a controlled-PATH regression test confirming that installation stops before downloading when curl is unavailable.",
     link: "/portfolio-details/5",
-    categories: ["Testing & Debugging"],
-    type: "Website",
-  },
-  {
-    id: 6,
-    image: portflioImg1,
-    title: "Real-time Chat Application",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elit... ",
-    link: "/portfolio-details/6",
-    categories: ["Testing & Debugging"],
-    type: "Tested Web App",
-  },
-  {
-    id: 7,
-    image: portflioImg2,
-    title: "Booking Backend Architecture",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elit... ",
-    link: "/portfolio-details/7",
-    categories: ["Backend"],
-    type: "Database Management",
-  },
-  {
-    id: 8,
-    image: portflioImg3,
-    title: "CMS Backend for Portfolio Management",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elit... ",
-    link: "/portfolio-details/8",
-    categories: ["Backend"],
-    type: "Web App",
+    categories: ["Testing & Debugging", "Open Source"],
+    type: "Bash · Regression testing",
   },
 ];

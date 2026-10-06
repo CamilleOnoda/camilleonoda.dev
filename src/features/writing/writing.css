@@ -1,0 +1,265 @@
+.writing-section {
+  background: var(--website-bg);
+  padding: 6rem 1rem 3rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.writing-container {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+/* Heading */
+.writing-heading {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.writing-intro {
+  max-width: 42rem;
+  color: var(--website-text);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8;
+  margin: 1rem auto 0;
+  text-align: center;
+}
+
+/* Category filters */
+.writing-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.writing-filter {
+  background: transparent;
+  color: var(--website-text);
+  border: 2px solid var(--card-border);
+  border-radius: 999px;
+  padding: 0.6rem 1rem;
+  font: inherit;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.writing-filter:hover {
+  background: var(--card-bg);
+  border-color: var(--section-heading);
+}
+
+.writing-filter[aria-pressed="true"] {
+  background: var(--filter-active-bg);
+  color: var(--filter-active-text);
+  border-color: var(--filter-active-bg);
+}
+
+.writing-filter:focus-visible,
+.writing-card-link:focus-visible {
+  outline: 2px solid var(--section-heading);
+  outline-offset: 4px;
+}
+
+/* Article grid */
+.writing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.75rem;
+}
+
+/* Article cards */
+.writing-card {
+  position: relative;
+  background: var(--card-bg);
+  border: 1px solid
+    color-mix(in srgb, var(--card-border) 40%, transparent);
+  border-radius: 14px;
+  min-width: 0;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Subtle accent along the top edge */
+.writing-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    var(--section-heading),
+    transparent 85%
+  );
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.writing-card-link,
+.writing-card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  color: var(--website-text);
+  text-decoration: none;
+}
+
+.writing-card-link {
+  transition: background-color 0.2s ease;
+}
+
+.writing-card-link:hover,
+.writing-card-link:focus-visible {
+  background-color: color-mix(
+    in srgb,
+    var(--section-heading) 5%,
+    var(--card-bg)
+  );
+}
+
+/* Keep the keyboard outline inside the clipped card */
+.writing-card-link:focus-visible {
+  outline-offset: -4px;
+}
+
+/* Category */
+.writing-card-category {
+  color: var(--section-heading);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0 0 1rem;
+  opacity: 0.8;
+}
+
+/* Article title */
+.writing-card-title {
+  color: var(--section-heading);
+  font-size: clamp(1.35rem, 2vw, 1.65rem);
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.025em;
+  margin: 0 0 1rem;
+  text-wrap: balance;
+}
+
+.writing-card-link:hover .writing-card-title,
+.writing-card-link:focus-visible .writing-card-title {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+/* Summary */
+.writing-card-description {
+  color: var(--website-text);
+  font-size: 1rem;
+  line-height: 1.75;
+  margin: 0 0 1.25rem;
+}
+
+/* Topics — quieter than the category filters */
+.writing-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+
+.writing-card-tags li {
+  color: var(--website-text);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  opacity: 0.75;
+}
+
+.writing-card-tags li::before {
+  content: "#";
+  color: var(--section-heading);
+  margin-right: 0.1rem;
+}
+
+/* Publication and article link */
+.writing-card-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid
+    color-mix(in srgb, var(--card-border) 30%, transparent);
+  color: var(--website-text);
+  font-size: 0.85rem;
+}
+
+.writing-card-footer > span:first-child {
+  opacity: 0.75;
+}
+
+.writing-card-read {
+  color: var(--section-heading);
+  font-weight: 600;
+  transition: transform 0.2s ease;
+}
+
+.writing-card-link:hover .writing-card-read,
+.writing-card-link:focus-visible .writing-card-read {
+  transform: translateX(3px);
+}
+
+.writing-empty {
+  color: var(--website-text);
+  line-height: 1.7;
+  padding: 2rem 0;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .writing-section {
+    padding: 3rem 1rem;
+  }
+
+  .writing-container {
+    padding: 0;
+  }
+
+  .writing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .writing-card-link,
+  .writing-card-content {
+    padding: 1.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .writing-filter,
+  .writing-card-link,
+  .writing-card-read {
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .writing-card-read {
+    transition: none;
+  }
+}

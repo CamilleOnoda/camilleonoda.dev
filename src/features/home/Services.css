@@ -1,0 +1,28 @@
+.home-services-container {
+  background: var(--website-bg);
+  padding: 1rem 1rem;
+  width: 100%;
+  margin-top: -0.5rem;
+}
+
+/* Services Grid */
+.home-services-inner-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 75rem;
+  margin: 1.5rem auto;
+  padding: 0 0rem;
+}
+
+.home-services-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .home-services-inner-container {
+    grid-template-columns: 1fr;
+  }
+}

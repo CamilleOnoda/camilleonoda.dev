@@ -1,0 +1,108 @@
+.about-experience-section {
+  background: var(--website-bg);
+  padding-top: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 0;
+}
+
+/* Container */
+.about-experience-container {
+  max-width: 75rem;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Cards list */
+.about-experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Single experience card */
+.about-experience-item {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  gap: 2rem;
+  padding: 1.5rem;
+  background: var(--card-bg);
+  border-radius: 10px;
+  border-left: 1.8px solid var(--card-border);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+/* Left: Period badge */
+.about-experience-period {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 0.2rem;
+}
+
+.about-experience-period span {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--section-heading);
+  border: 1.5px solid var(--section-heading);
+  border-radius: 20px;
+  padding: 0.3rem 0.7rem;
+  white-space: nowrap;
+  line-height: 1.4;
+}
+
+/* Right: Job details */
+.about-experience-role {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--section-heading);
+  margin: 0 0 0.25rem 0;
+}
+
+.about-experience-company {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--website-text);
+  opacity: 0.7;
+  margin: 0 0 0.6rem 0;
+}
+
+.about-experience-description {
+  font-size: 1rem;
+  color: var(--website-text);
+  line-height: 1.7rem;
+  margin: 0;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .about-experience-section .section-header-title {
+    text-align: center;
+  }
+
+  .about-experience-item {
+    grid-template-columns: 8rem 1fr;
+    gap: 1.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .about-experience-section {
+    padding: 2rem 1rem;
+  }
+
+  .about-experience-item {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .about-experience-period {
+    padding-top: 0;
+  }
+}
