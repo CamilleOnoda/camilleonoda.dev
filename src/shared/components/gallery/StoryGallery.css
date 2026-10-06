@@ -1,0 +1,15 @@
+/* Grid container for story images */
+.details-story-images-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.7rem;
+  margin-top: 1.3rem;
+}
+
+/* Mobile responsiveness: single column */
+@media (max-width: 768px) {
+  .details-story-images-container {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+}

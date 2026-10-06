@@ -1,0 +1,24 @@
+/* Base heading style */
+.section-header-title {
+  font-size: 1.9rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  line-height: 2.8rem;
+  color: var(--section-heading);
+}
+
+/* Alignment variations */
+.section-header-title.center {
+  text-align: center;
+}
+
+.section-header-title.left {
+  text-align: left;
+}
+
+/* Responsive font size */
+@media (max-width: 768px) {
+  .section-header-title {
+    font-size: 1.7rem;
+  }
+}

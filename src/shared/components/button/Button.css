@@ -1,0 +1,81 @@
+.btn {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  border-radius: 6px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  display: inline-block;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--icons-color);
+  outline-offset: 4px;
+}
+
+/* Sizes */
+.btn.medium {
+  padding: 0.2rem 0.8rem;
+  font-size: 1rem;
+}
+
+/* Primary actions */
+.btn.primary {
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  padding: 0.4rem 0.8rem;
+}
+
+.btn.primary:hover {
+  background-color: var(--btn-hover-bg);
+}
+
+/* Category filters */
+.btn.secondary {
+  background-color: transparent;
+  color: var(--website-text);
+  border-color: var(--input-border);
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  padding: 0.6rem 1rem;
+}
+
+.btn.secondary:hover {
+  background-color: var(--btn-secondary-hover-bg);
+  color: var(--btn-secondary-hover-text);
+  border-color: var(--icons-color);
+}
+
+/* Selected category, including while hovered */
+.btn.secondary.active,
+.btn.secondary[aria-pressed="true"] {
+  background-color: var(--filter-active-bg);
+  color: var(--filter-active-text);
+  border-color: var(--filter-active-bg);
+}
+
+/* Footer button */
+.btn.footer {
+  background-color: var(--footer-btn-bg);
+  color: var(--footer-btn-text);
+  padding: 0.6rem 0.7rem;
+}
+
+@media (max-width: 480px) {
+  .btn.medium,
+  .btn.primary {
+    padding: 0.5rem 0.6rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: none;
+  }
+}

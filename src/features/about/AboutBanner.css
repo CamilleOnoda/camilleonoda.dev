@@ -1,0 +1,114 @@
+.about-banner-section {
+  background: var(--website-bg);
+  padding: 5rem 1rem 3rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.about-banner-container {
+  max-width: 75rem;
+  width: 100%;
+  margin: 1rem auto 0;
+  padding: 2.3rem 1rem;
+  box-sizing: border-box;
+}
+
+/* Image and text */
+.about-banner-inner-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  width: 100%;
+}
+
+.about-banner-image-container {
+  flex: 0 1 28rem;
+  min-width: 0;
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+
+.about-banner-image {
+  display: block;
+  width: 100%;
+  max-width: 28rem;
+  height: auto;
+  aspect-ratio: 5 / 4;
+  object-fit: cover;
+  object-position: center bottom;
+  border-radius: 14px;
+}
+
+/* Hide the unused badge */
+.about-banner-badge {
+  display: none;
+}
+
+/* Text */
+.about-banner-text-container {
+  flex: 1;
+  min-width: 0;
+  line-height: 1.6;
+}
+
+.about-banner-description {
+  font-size: 1.05rem;
+  color: var(--website-text);
+  margin: 1rem 0;
+  line-height: 2.2rem;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .about-banner-section {
+    padding: 4rem 1rem 3rem;
+  }
+
+  .about-banner-inner-container {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .about-banner-text-container {
+    flex: none;
+    order: -1;
+    width: 100%;
+  }
+
+  .about-banner-image-container {
+    flex: none;
+    max-width: 28rem;
+    margin: 0 auto;
+  }
+
+  .about-banner-text-container .section-header-title {
+    text-align: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .about-banner-section {
+    padding: 3rem 1rem;
+  }
+
+  .about-banner-container {
+    padding: 1rem 0;
+  }
+
+  .about-banner-inner-container {
+    gap: 1.5rem;
+  }
+
+  .about-banner-description {
+    font-size: 1rem;
+    line-height: 1.9;
+  }
+
+  .about-banner-image {
+    border-radius: 12px;
+  }
+}

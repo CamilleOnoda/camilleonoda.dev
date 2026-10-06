@@ -1,0 +1,214 @@
+.contact-form-section {
+  background: var(--website-bg);
+  padding-top: 4rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-form-container {
+  max-width: 75rem;
+  margin: 0 auto;
+  width: 100%;
+  padding: 2rem 1rem;
+  margin-top: 1rem;
+}
+
+.contact-form-inner-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.contact-form-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.contact-form-image {
+  width: 100%;
+  max-width: 35rem;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Form */
+.contact-form-text-container {
+  flex: 1;
+  margin-top: 1rem;
+}
+
+.contact-intro {
+  font-size: 1rem;
+  color: var(--website-text);
+  line-height: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Input row */
+.contact-form-input-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  border: none;
+  padding: 0;
+}
+
+/* Field wrapper */
+.contact-form-field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Inputs */
+.contact-form-input,
+.contact-form-select,
+.contact-form-textarea {
+  width: 100%;
+  padding: 0.8rem;
+  background: var(--input-bg);
+  border: 1px solid var(--input-border);
+  color: var(--input-text);
+  border-radius: 7px;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+}
+
+.contact-form-input::placeholder,
+.contact-form-select::placeholder,
+.contact-form-textarea::placeholder {
+  color: var(--input-placeholder);
+}
+
+.contact-form-input:focus,
+.contact-form-select:focus,
+.contact-form-textarea:focus {
+  border-color: var(--input-focus-border);
+  outline: none;
+}
+
+/* Textarea */
+.contact-form-textarea {
+  height: 7.5rem;
+  resize: none;
+  margin-bottom: 1rem;
+}
+
+/* Dropdown */
+.contact-form-select {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2354387a' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-color: var(--input-bg);
+  padding-right: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Submit button */
+.contact-form-submit-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+/* Validation */
+.contact-form-input-error {
+  border-color: #e53e3e !important;
+  outline-color: #e53e3e !important;
+}
+
+.contact-field-error {
+  font-size: 0.82rem;
+  color: #e53e3e;
+  margin-top: 2px;
+  padding-left: 2px;
+}
+
+/* Feedback banners */
+.contact-form-feedback {
+  width: 100%;
+  padding: 0.85rem 1.2rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.contact-form-success {
+  background-color: #f0fff4;
+  border: 1px solid #68d391;
+  color: #276749;
+}
+
+.contact-form-error {
+  background-color: #fff5f5;
+  border: 1px solid #fc8181;
+  color: #c53030;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .contact-form-section {
+    padding: 3rem 1rem;
+  }
+
+  .contact-form-inner-container {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .contact-form-text-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-form-image {
+    max-width: 100%;
+  }
+
+  .contact-form-text-container .section-header-title {
+    text-align: center !important;
+  }
+
+  .contact-form-submit-wrapper {
+    justify-content: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .contact-form-section {
+    padding: 2rem 1rem;
+  }
+
+  .contact-form-input-container {
+    flex-direction: column;
+  }
+
+  .contact-form-input::placeholder,
+  .contact-form-select::placeholder,
+  .contact-form-textarea::placeholder {
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+  }
+
+  .contact-form-select {
+    font-size: 0.8rem;
+  }
+
+  .contact-form-select option {
+    font-size: 0.8rem;
+  }
+}

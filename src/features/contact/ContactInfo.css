@@ -1,0 +1,24 @@
+.contact-info-section {
+  background: var(--website-bg);
+  padding: 3rem 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: -1rem;
+}
+
+.contact-info-inner-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 75rem;
+  margin: 1.2rem auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .contact-info-inner-container {
+    grid-template-columns: 1fr;
+  }
+}
