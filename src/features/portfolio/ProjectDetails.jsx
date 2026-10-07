@@ -8,29 +8,24 @@ function ProjectDetails() {
   const { id } = useParams();
   const navigate = useNavigate();
 
-  // Find the project matching the URL id
   const project = ProjectDetailsData.find(
     (p) => p.projectId === parseInt(id, 10)
   );
 
-  // Redirect to portfolio page if project not found
   useEffect(() => {
     if (!project) {
       navigate("/portfolio", { replace: true });
     }
   }, [project, navigate]);
 
-  // Show nothing while redirecting
   if (!project) return null;
 
-  // Extra content: tech stack, live site, and GitHub links
   const extraContent = (
     <div
       className="details-skills-container"
       role="region"
-      aria-label="Project technologies and links"
+      aria-label="Project technologies, links, and demo access"
     >
-      {/* Show tech stack */}
       {project.techStack?.length > 0 && (
         <div className="details-skills-line">
           <strong>Technologies:</strong>{" "}
@@ -38,7 +33,6 @@ function ProjectDetails() {
         </div>
       )}
 
-      {/* Show live website link */}
       {project.liveLink && (
         <div className="details-skills-line">
           <strong>Website:</strong>{" "}
@@ -48,12 +42,11 @@ function ProjectDetails() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Visit Site
+            {project.liveLinkText || "Try the app"}
           </a>
         </div>
       )}
 
-      {/* Show GitHub link */}
       {project.githubLink && (
         <div className="details-skills-line">
           <strong>GitHub:</strong>{" "}
@@ -63,14 +56,48 @@ function ProjectDetails() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            View Code
+            {project.githubLinkText || "Explore the repository"}
           </a>
         </div>
+      )}
+
+      {project.liveLink && project.demoCredentials && (
+        <section
+          className="details-demo"
+          aria-labelledby={`project-${project.projectId}-demo`}
+        >
+          <h2 id={`project-${project.projectId}-demo`}>
+            Demo access
+          </h2>
+
+          <p>
+            Use this shared account to explore the application.
+            Please use sample data only.
+          </p>
+
+          <dl className="details-demo-credentials">
+            <div>
+              <dt>Email</dt>
+              <dd>
+                <code>{project.demoCredentials.email}</code>
+              </dd>
+            </div>
+            <div>
+              <dt>Password</dt>
+              <dd>
+                <code>{project.demoCredentials.password}</code>
+              </dd>
+            </div>
+          </dl>
+
+          {project.demoCredentials.note && (
+            <p>{project.demoCredentials.note}</p>
+          )}
+        </section>
       )}
     </div>
   );
 
-  // Render reusable DetailsPage with dynamic project info
   return (
     <DetailsPage
       title={project.projectTitle}

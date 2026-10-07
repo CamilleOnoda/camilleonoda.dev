@@ -20,7 +20,7 @@ export const ProjectsData = [
       "A Go service for asynchronous webhook delivery. Stores incoming events in PostgreSQL, processes deliveries through background workers, retries failures, and records each attempt. Includes authenticated APIs and integration tests.",
     link: "/portfolio-details/1",
     categories: ["Backend", "Testing & Debugging"],
-    type: "Go · PostgreSQL",
+    type: "Go · PostgreSQL · Asynchronous delivery",
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ export const ProjectsData = [
       "An HTTP/1.1 server built directly with Python sockets. Implements request parsing, routing, persistent connections, gzip compression, and concurrent request handling to explore what happens beneath a web framework.",
     link: "/portfolio-details/2",
     categories: ["Backend"],
-    type: "Python · TCP · HTTP",
+    type: "Python · Sockets · HTTP/1.1",
   },
   {
     id: 3,
@@ -40,7 +40,7 @@ export const ProjectsData = [
       "Running a local copy of the webhook relay against a restored PostgreSQL database on Ubuntu. Set up a dedicated application role, resolved authentication issues, and verified delivery retries through changes in the database.",
     link: "/portfolio-details/3",
     categories: ["Linux"],
-    type: "Ubuntu · PostgreSQL · Troubleshooting",
+    type: "Ubuntu · PostgreSQL · Database restore & troubleshooting",
   },
   {
     id: 4,
@@ -50,7 +50,7 @@ export const ProjectsData = [
       "A word puzzle application developed with a remote team during Chingu Voyage 61. Contributed to the Go backend and worked on API contracts connecting daily and practice game modes to the React frontend.",
     link: "/portfolio-details/4",
     categories: ["Backend"],
-    type: "Go · React · Team collaboration",
+    type: "Go backend · React frontend · Remote team project",
   },
   {
     id: 5,
@@ -60,6 +60,6 @@ export const ProjectsData = [
       "An installer dependency fix submitted through a pull request. Added a check for curl and an actionable error message, with a controlled-PATH regression test confirming that installation stops before downloading when curl is unavailable.",
     link: "/portfolio-details/5",
     categories: ["Testing & Debugging", "Open Source"],
-    type: "Bash · Regression testing",
+    type: "Bash · Installer dependency check · Regression test",
   },
 ];

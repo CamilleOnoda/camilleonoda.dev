@@ -1,5 +1,3 @@
-import projectImage from "../Assets/image.webp";
-
 export const ProjectDetailsData = [
   {
     projectId: 1,
@@ -14,9 +12,14 @@ export const ProjectDetailsData = [
       "JWT",
       "Testcontainers",
     ],
-    liveLink: "",
+    liveLink: "https://webhook-relay-production-5e97.up.railway.app/",
+    demoCredentials: {
+    email: "user@demo.com",
+    password: "password1234",
+    note: "This account is shared with other visitors. Its data may change.",
+    },
     githubLink: "https://github.com/CamilleOnoda/webhook-relay",
-    heroImage: projectImage,
+    heroImage: "",
     projectSections: [
       {
         sectionTitle: "What it does",
@@ -53,7 +56,7 @@ export const ProjectDetailsData = [
     techStack: ["Python", "Sockets", "TCP", "HTTP/1.1", "Threading"],
     liveLink: "",
     githubLink: "https://github.com/CamilleOnoda/http-server-python",
-    heroImage: projectImage,
+    heroImage: "",
     projectSections: [
       {
         sectionTitle: "Purpose",
@@ -91,7 +94,7 @@ export const ProjectDetailsData = [
     ],
     liveLink: "",
     githubLink: "https://github.com/CamilleOnoda/webhook-relay",
-    heroImage: projectImage,
+    heroImage: "",
     projectSections: [
       {
         sectionTitle: "Purpose",
@@ -128,7 +131,7 @@ export const ProjectDetailsData = [
     techStack: ["Go", "React", "REST APIs", "Git", "GitHub"],
     liveLink: "",
     githubLink: "https://github.com/chingu-voyages/V61-tier3-team-35",
-    heroImage: projectImage,
+    heroImage: "",
     projectSections: [
       {
         sectionTitle: "The application",
@@ -155,7 +158,8 @@ export const ProjectDetailsData = [
     techStack: ["Bash", "ShellCheck", "Regression testing"],
     liveLink: "",
     githubLink: "https://github.com/CamilleOnoda/basis-cli",
-    heroImage: projectImage,
+    githubLinkText: "View pull request",
+    heroImage: "",
     projectSections: [
       {
         sectionTitle: "The issue",
