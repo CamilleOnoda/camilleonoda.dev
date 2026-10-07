@@ -1,49 +1,77 @@
 const storyData = {
-  title: "Following the questions",
+  title: "Understanding what’s underneath",
   subtitle:
-    "Technical translation, backend software, and Linux. The thread connecting them is my curiosity about how things work and how to make sense of them.",
+    "Technical translation, backend software, and Linux. Different kinds of work, connected by a need to understand the details and make sense of them.",
 
   images: [],
 
   description:
-    "I started studying computer science in 2022, alongside my work as a freelance translator and reviewer. Backend development caught my attention, and building my own services brought Linux into the picture. I found myself just as interested in what happened after the code started running: which process was listening, where the data went, and why something that worked yesterday had stopped today.",
+    "I started studying computer science in 2022 while working as a freelance translator and reviewer. Backend development held my attention, and running my own services brought Linux into the picture. I wanted to follow the whole path: from a request arriving to the process handling it, the data being stored, and the evidence left when something went wrong.",
 
   sections: [
     {
-      sectionTitle: "What translation taught me",
+      id: "translation",
+      sectionTitle: "Precision before programming",
       sectionDescriptions: [
-        "Since 2019, I’ve translated and reviewed content across technical documentation, user interfaces, and training materials. Getting the words right starts with understanding the subject. An ambiguous instruction or an inconsistent term can mean going back to the source, checking the context, and asking a precise question.",
-        "Those habits carry into my technical work. I pay attention to details, check my assumptions, and think about the person who will need to use what I’ve written, whether that is a translated instruction, an API, or a troubleshooting note.",
+        "Since 2019, I’ve translated and reviewed technical content, user interfaces, and training materials. An inconsistent term, a missing condition, or an ambiguous instruction can change what someone understands or does. Getting the wording right starts with understanding the subject.",
+        {
+          before:
+            "That work taught me to check the source, question an assumption, and notice when an explanation leaves something unresolved. I bring those habits into software: ",
+          emphasis: "paying attention to what does not quite fit",
+          after:
+            ", then investigating it closely enough to explain it clearly.",
+        },
       ],
     },
     {
-      sectionTitle: "Building something I could investigate",
+      id: "backend",
+      sectionTitle: "Beyond a successful request",
       sectionDescriptions: [
-        "CS50 gave me a foundation in computer science, and the Boot.dev backend path took me further into Python, Go, SQL, and HTTP. I was particularly drawn to the parts of an application that users depend on without necessarily seeing: request handling, data storage, and background work.",
-        "My webhook relay gave those interests a concrete shape. I built a Go service backed by PostgreSQL that stores incoming events, delivers them through background workers, and records and retries failed attempts. It pushed me to think beyond whether a request succeeded: what should happen if delivery fails, or the service restarts before the work is finished?",
-        "I also built an HTTP server directly on Python sockets. Working through the connection, request parsing, and response handling helped me connect the protocol to the code that implements it.",
+        "CS50 gave me a foundation in computer science, and the Boot.dev backend path took me further into Python, Go, SQL, and HTTP. My projects gave me a place to put those ideas to work and see the consequences of my decisions.",
+        {
+          before:
+            "My webhook relay stores events in PostgreSQL and delivers them through Go background workers, recording attempts and retrying failures. The interesting decisions were about ",
+          emphasis: "what happens when delivery does not succeed",
+          after:
+            ": a destination is unavailable, work is interrupted, or the service restarts with deliveries still pending.",
+        },
+        "Building an HTTP/1.1 server directly on Python sockets let me examine a different layer. Request parsing, persistent connections, compression, and concurrent handling made the steps between a connection and a response visible.",
       ],
     },
     {
-      sectionTitle: "Following the application into Linux",
+      id: "linux",
+      sectionTitle: "The system around the code",
       sectionDescriptions: [
-        "Running software brought a new set of questions. Which process owns this port? What permissions does it need? Where should I look when it fails to start? Linux gives me a way to inspect those things, and I enjoy piecing together the answers.",
-        "Moving a copy of my webhook relay onto Ubuntu was a satisfying example. After restoring the PostgreSQL database and resolving an authentication problem, I logged in and retried a failed delivery. Watching the attempt count increase in the local database confirmed that the application and its delivery logic were working against the restored environment.",
-        "That connection between code and the system around it is where I want to take my work: backend services, Linux, and the investigation needed to keep them running reliably.",
+        "Linux extended the investigation beyond the application. Processes, ports, permissions, services, and logs became part of the same picture. I enjoy tracing a symptom through those layers and checking whether the evidence supports my explanation.",
+        "Moving a copy of my webhook relay onto Ubuntu brought them together. I restored its PostgreSQL database, configured a dedicated application role, and resolved an authentication problem. Then I logged in, retried a failed delivery, and watched its attempt count increase in the local database. That confirmed the application was using the restored data and running its delivery logic.",
+      ],
+      callout: {
+        label: "Where I’m heading",
+        text:
+          "Building backend services, understanding how they run, and investigating failures until I can explain what happened.",
+      },
+    },
+    {
+      id: "writing",
+      sectionTitle: "Tech, made clear",
+      sectionDescriptions: [
+        {
+          before: "I often need ",
+          emphasis: "a simple mental picture",
+          after:
+            " before a technical definition becomes useful. A familiar object, an everyday situation, or a sketch gives me somewhere to start. Then I can add the detail and see where the comparison stops matching the real system.",
+        },
+        "My writing follows that approach. I want readers to come away with something they can picture and reason about, whether they need an introduction or want to go into the technical details. Translation taught me to consider the reader; working with software gives me a way to test whether the explanation holds up.",
       ],
     },
     {
-      sectionTitle: "Making the picture clearer",
-      sectionDescriptions: [
-        "A technical definition does not always give me a picture I can reason with. Sometimes I need something much simpler first: a familiar object, an everyday situation, or a sketch. Once I have that starting point, I can add the details and see where the comparison breaks down.",
-        "That is the approach behind my writing. I want readers to leave with a clear mental picture, whether they need an accessible introduction or want to follow me into the technical details. My translation background has made me attentive to how explanations land; working with software gives me something to test them against.",
-      ],
-    },
-    {
+      id: "personal",
       sectionTitle: "Away from the screen",
+      variant: "personal",
       sectionDescriptions: [
-        "I’m French and live in Japan, with French, English, and Japanese woven into my daily life. Away from work, I enjoy road cycling, detective fiction, and 80s music.",
-        "A long ride is a good reason to leave the computer alone. A detective story tends to bring back the questions, usually with considerably more suspicious characters.",
+        "I first came to Japan on a working holiday in 2014–2015 and moved back in 2018. I now live near Nagoya, but some of my favourite memories here involve being out on a mountain trail or somewhere far from home on my road bike. I used to hike and cycle like my life depended on it, and I want much more of both back in my life.",
+        "Music takes up quite a bit of space too. I play the piano, I’m trying to learn the kalimba (a small instrument with metal tines you pluck with your thumbs), and I dream of playing the violin. I have a soft spot for 80s and 90s british music, but there’s plenty beyond that. Japan also introduced me to a love of karaoke. Singing in Japanese, reading in Japanese, and watching anime have become things I enjoy for their own sake, beyond studying the language.",
+        "I also love detective fiction. Between books, music, instruments, and places I want to explore, I’m fairly good at finding another interest to make room for. The photographs on this site come from some of those moments: Miyajima in November 2015, cherry blossoms in Inuyama, and a bike that deserves to get out more often.",
       ],
     },
   ],
