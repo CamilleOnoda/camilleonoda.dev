@@ -74,7 +74,7 @@ export const ProjectDetailsData = [
           "The implementation required thinking about the boundary between a TCP connection and an HTTP message: how to interpret incoming bytes, format a valid response, and handle multiple requests over a connection.",
       },
       {
-        sectionTitle: "Validation & explanation",
+        sectionTitle: "Validation and explanation",
         sectionContent:
           "Automated tests validate the server’s behavior. I also published Building an HTTP Server From Scratch in Python, explaining the implementation and the HTTP concepts behind it.",
       },
@@ -157,8 +157,8 @@ export const ProjectDetailsData = [
       "An installer dependency check with a regression test that reproduces an environment where curl is unavailable.",
     techStack: ["Bash", "ShellCheck", "Regression testing"],
     liveLink: "",
-    githubLink: "https://github.com/CamilleOnoda/basis-cli",
-    githubLinkText: "View pull request",
+    githubLink: "https://github.com/basis-network/basis-cli/pull/32",
+    githubLinkText: "View merged pull request",
     heroImage: "",
     projectSections: [
       {
@@ -177,9 +177,14 @@ export const ProjectDetailsData = [
           "The regression test uses a controlled PATH containing the utilities needed by the script, while deliberately excluding curl. It checks that the installer exits with status 1, reports the missing dependency, and downloads nothing.",
       },
       {
-        sectionTitle: "Validation & contribution",
+        sectionTitle: "Validation and upstream merge",
         sectionContent:
-          "All 31 tests passed, and ShellCheck passed. I submitted the change through a pull request addressing issue #16 in basis-network/basis-cli.",
+          "The regression test failed against the original script and passed with my change. All 31 tests and ShellCheck passed. The contribution addressed issue #16 and was merged upstream through PR #32 on October 7, 2026, with attribution in the CHANGELOG.",
+      },
+      {
+        sectionTitle: "Working in a new codebase",
+        sectionContent:
+          "This was practical Bash experience beyond my own projects: reading the existing script and test suite, following the project’s contribution rules, and placing the check so it preserved the existing checksum-tool validation and ran before any files were written."
       },
     ],
   },
