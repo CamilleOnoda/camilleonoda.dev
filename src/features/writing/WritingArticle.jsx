@@ -95,12 +95,11 @@ function WritingArticle() {
           <p>
             Windows, Docker, WSL, Prometheus… I knew what each was doing
             individually, but I struggled to picture how the request was supposed
-            to travel between them. I used AI to help me investigate because I’m
-            still unfamiliar with that combination, and I wouldn’t have known
-            which checks to run on my own. Even after we got the connection
-            working, I had to ask for the explanation several times and then for
-            a diagram. Following a command and understanding why it helps are
-            two different things.
+            to travel between them. I used AI to help guide the investigation because I was unfamiliar with how WSL, Docker, and Windows networking fitted together. 
+            It helped me choose checks and interpret the results. Even after the connection worked, 
+            I still couldn’t clearly picture which environment was connecting to which address. 
+            I asked for the explanation in different ways, then for a diagram showing the connection path. 
+            That helped me connect the individual checks to the bigger picture.
           </p>
 
           <p>
