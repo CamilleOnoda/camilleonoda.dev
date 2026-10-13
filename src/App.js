@@ -17,6 +17,9 @@ const Writing = lazy(() => import("./features/writing/Writing"));
 const Focus = lazy(() => import("./features/services/Services"));
 const Story = lazy(() => import("./features/story/StoryDetails"));
 const NotFound = lazy(() => import("./features/notFound/NotFound"));
+const WritingArticle = lazy(() =>
+  import("./features/writing/WritingArticle")
+);
 
 function App() {
   return (
@@ -43,6 +46,7 @@ function App() {
           <Route path="/story" element={<Story />} />
           <Route path="/portfolio-details/:id" element={<PortfolioDetails />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/writing/browser-prometheus-connection" element={<WritingArticle />}/>
         </Routes>
       </Suspense>
 
