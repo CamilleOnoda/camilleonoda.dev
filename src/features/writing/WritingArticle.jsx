@@ -63,11 +63,12 @@ function WritingArticle() {
         description="Working through Windows, WSL, and Docker networking during a Boot.dev Prometheus lesson, with a post office analogy to explain listeners and port forwarding."
       />
 
-      <main className="writing-article">
-        <Link className="writing-article__back" to="/writing">
-          ← Back
-        </Link>
-
+      <main className="writing-article-page">
+        <div className="writing-article">
+          <Link className="writing-article__back" to="/writing">
+            ← Back
+          </Link>
+      
         <article>
           <header className="writing-article__header">
             <p className="writing-article__category">Tech, made clear</p>
@@ -78,7 +79,7 @@ function WritingArticle() {
 
             <p className="writing-article__author">
               Camille Onoda ·{" "}
-              <time dateTime="2026-10-08">8 October 2026</time>
+              <time dateTime="2026-10-08">14 October 2026</time>
             </p>
           </header>
 
@@ -349,6 +350,7 @@ function WritingArticle() {
         <Link className="writing-article__back" to="/writing">
           ← Back
         </Link>
+         </div>
       </main>
     </>
   );
