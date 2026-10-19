@@ -1,6 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import DetailsPage from "../../shared/components/detailPage/DetailPage";
+import SEO from "../../shared/components/seo/SEO";
 import { ProjectDetailsData } from "../../config/projectDetails.config";
 import "./ProjectDetails.css";
 
@@ -99,13 +100,20 @@ function ProjectDetails() {
   );
 
   return (
-    <DetailsPage
-      title={project.projectTitle}
-      subtitle={project.projectSubtitle}
-      heroImg={project.heroImage}
-      sections={project.projectSections}
-      extraContent={extraContent}
-    />
+    <>
+      <SEO
+        title={`${project.projectTitle} | Camille Onoda`}
+        description={project.projectSubtitle}
+      />
+
+      <DetailsPage
+        title={project.projectTitle}
+        subtitle={project.projectSubtitle}
+        heroImg={project.heroImage}
+        sections={project.projectSections}
+        extraContent={extraContent}
+      />
+    </>
   );
 }
 
