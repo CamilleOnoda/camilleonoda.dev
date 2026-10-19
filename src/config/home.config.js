@@ -1,12 +1,13 @@
 import img from "../Assets/picture-perso.png";
 import { socialLinks } from "./social.config";
+import cvLink from "../Assets/Camille_Onoda_CV.pdf";
 
 export const bannerIntro = {
   greeting: "",
   name: "Camille Onoda",
   description:
     "I build backend software and follow it into the systems that run it. From webhook delivery and HTTP internals to Linux services and networking, I care about how things behave, why they fail, and how to make them easier to understand and maintain.",
-  cvLink: "/Camille_Onoda_CV.pdf",
+  cvLink: cvLink,
   button: "Download CV",
   experience: {
     years: "7+",

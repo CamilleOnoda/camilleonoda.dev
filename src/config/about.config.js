@@ -1,5 +1,6 @@
 import profileImage from "../Assets/inuyama-sakura.jpg";
 import storyImage from "../Assets/golden-torii.png";
+import cvLink from "../Assets/Camille_Onoda_CV.pdf";
 
 // 1. BANNER
 
@@ -10,7 +11,7 @@ export const aboutIntro = {
     text: "",
     description: "",
   },
-  cvLink: "/assets/Camille_Onoda_CV.pdf",
+  cvLink: cvLink,
   cvText: "Download CV",
   heading: {
     title: "Backend software, Linux, and a habit of investigating",
