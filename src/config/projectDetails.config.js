@@ -1,53 +1,69 @@
 export const ProjectDetailsData = [
-  {
-    projectId: 1,
-    projectTitle: "Webhook Relay",
-    projectSubtitle:
-      "A backend service for storing webhooks, delivering them asynchronously, and keeping track of what happens when delivery fails.",
-    techStack: [
-      "Go",
-      "PostgreSQL",
-      "sqlc",
-      "Goose",
-      "JWT",
-      "Testcontainers",
-    ],
-    liveLink: "https://webhook-relay-production-5e97.up.railway.app/",
-    demoCredentials: {
+{
+  projectId: 1,
+  projectTitle: "Webhook Relay",
+  projectSubtitle:
+    "A Go service that persists incoming webhooks, delivers them asynchronously, and makes failed deliveries available for retry and investigation.",
+  techStack: [
+    "Go",
+    "PostgreSQL",
+    "sqlc",
+    "Goose",
+    "JWT",
+    "httptest",
+    "Testcontainers",
+  ],
+  liveLink: "https://webhook-relay-production-5e97.up.railway.app/",
+  demoCredentials: {
     email: "user@demo.com",
     password: "password1234",
     note: "This account is shared with other visitors. Its data may change.",
-    },
-    githubLink: "https://github.com/CamilleOnoda/webhook-relay",
-    heroImage: "",
-    projectSections: [
-      {
-        sectionTitle: "What it does",
-        sectionContent:
-          "The service receives webhook events, stores them in PostgreSQL, and delivers them to configured endpoints through background workers. Authenticated APIs let users manage their endpoints and inspect events and delivery attempts.",
-      },
-      {
-        sectionTitle: "Designing for failed delivery",
-        sectionContent:
-          "Receiving an event and delivering it are separate steps. Keeping events and delivery records in the database makes failed work visible and gives retries a persistent record to work from. Delivery logs include attempt status, HTTP response codes, and retry times.",
-      },
-      {
-        sectionTitle: "Implementation",
-        sectionContent:
-          "The backend uses Go HTTP handlers, PostgreSQL data models, sqlc queries, and Goose migrations. Authentication uses Argon2id password hashing and JWTs. Background workers handle delivery and retry scheduling.",
-      },
-      {
-        sectionTitle: "Testing",
-        sectionContent:
-          "Integration tests exercise application behavior against PostgreSQL in containerized test environments. This checks the interaction between HTTP handlers, database queries, and migrations using real dependencies.",
-      },
-      {
-        sectionTitle: "Ongoing work",
-        sectionContent:
-          "I continue to develop the service and investigate its operational behavior. Current areas of interest include observability, delivery security, and running the application on Linux.",
-      },
-    ],
   },
+  githubLink: "https://github.com/CamilleOnoda/webhook-relay",
+  heroImage: "",
+  projectSections: [
+    {
+      sectionTitle: "Why I built it",
+      sectionContent:
+        "I wanted to understand what happens after a service sends a webhook, especially when its destination is unavailable. Building a relay gave me a concrete way to work through persistence, background processing, retry decisions, and the difference between accepting a request and completing its delivery.",
+    },
+    {
+      sectionTitle: "From incoming event to outgoing delivery",
+      sectionContent:
+        "The HTTP handler validates the endpoint, stores the event payload and headers in PostgreSQL, and creates a pending delivery record before returning HTTP 202 Accepted. A background processor polls the database for pending deliveries and retries whose scheduled time has arrived. It sends the stored payload to the destination and updates the delivery record with the outcome. Reception and delivery are separate, so the sender does not have to wait for the destination to respond.",
+    },
+    {
+      sectionTitle: "Deciding when to retry",
+      sectionContent:
+        "A 2xx response marks a delivery as successful. Transport errors and selected HTTP responses, including 408, 429, 500, 502, 503, and 504, are eligible for retry. The delay grows exponentially, with a small random variation to spread retry times. The application currently allows five attempts in total. Non-retryable failures and deliveries that exhaust their attempts enter a dead-letter state, where an administrator can inspect and replay them through the normal delivery workflow.",
+    },
+    {
+      sectionTitle: "Recovering work after a restart",
+      sectionContent:
+        "Pending delivery records, attempt counts, and retry times live in PostgreSQL rather than only in memory. When the application starts again, its processor queries those records and resumes eligible work. This also exposes an important failure window: a destination may accept a webhook before the relay records success. If the process stops in between, the same event can be sent again. The relay includes an event identifier in the outgoing request, but the receiving application must decide how to detect and handle duplicates.",
+    },
+    {
+      sectionTitle: "Making delivery outcomes visible",
+      sectionContent:
+        "Authenticated dashboards let users inspect their endpoints, events, and delivery state. Delivery records retain the attempt count and latest outcome, including response information and retry timing. Application logs identify the delivery, attempted destination, attempt number, HTTP result, and whether the state update was persisted. This helps distinguish a failed outgoing request from a failure to record its outcome. The database currently stores the latest delivery state rather than a separate historical row for every attempt.",
+    },
+    {
+      sectionTitle: "Testing the boundaries",
+      sectionContent:
+        "The endpoint-creation integration test starts PostgreSQL with Testcontainers and applies Goose migrations before exercising the HTTP handler. It covers successful creation and invalid input. Separate delivery-processor tests use httptest destinations and a mock database to check successful delivery, retry scheduling after HTTP 500, and dead-letter handling at the attempt limit. These tests cover useful parts of the workflow, but do not yet verify the complete receive-to-deliver path or recovery after a real process restart against PostgreSQL.",
+    },
+    {
+      sectionTitle: "Current limitations",
+      sectionContent:
+        "The processor currently handles each fetched batch sequentially, so slow destinations can delay other deliveries. It does not claim rows for exclusive processing across multiple application instances. Event creation and delivery creation are also separate database operations, leaving a possible gap if the second operation fails. Retry handling does not yet honour Retry-After headers, and webhook signatures and rate limiting remain future work. These are concrete boundaries of the current implementation, rather than guarantees of production readiness.",
+    },
+    {
+      sectionTitle: "What I’m developing next",
+      sectionContent:
+        "My next focus is structured logging that makes a delivery easier to follow across reception, processing, retries, and database updates. I also want stronger database-backed delivery tests, including interrupted processing and failed state updates. Running a second copy on Ubuntu gives me an environment for investigating process behaviour, PostgreSQL connectivity, and service recovery alongside the application code.",
+    },
+  ],
+},
   {
     projectId: 2,
     projectTitle: "HTTP server from scratch",
