@@ -1,8 +1,9 @@
 import profileImage from "../Assets/inuyama-sakura.webp";
 import storyImage from "../Assets/golden-torii.webp";
 import cvLink from "../Assets/Camille_Onoda_CV.pdf";
+import React from "react";
 
-// 1. BANNER
+// 1. INTRODUCTION
 
 export const aboutIntro = {
   image: profileImage,
@@ -11,23 +12,22 @@ export const aboutIntro = {
     text: "",
     description: "",
   },
-  cvLink: cvLink,
+  cvLink,
   cvText: "Download CV",
   heading: {
-    title: "Backend software, Linux, and a habit of investigating",
+    title: "Building backend software. Understanding how it runs.",
   },
   description:
-    "I'm drawn to work that gives me something to figure out. I build backend software with Go and Python, and I want to understand what happens once it's running. A failed delivery, an unexpected response, or a service that stops working gives me a reason to look closer. Years of technical translation and review have shaped how I approach that work: paying attention to details, asking precise questions, and making sense of complex information.",
+    "I’m a backend-focused software engineer working with Go, Python, and PostgreSQL, with a growing focus on Linux and infrastructure. My projects cover asynchronous webhook delivery, HTTP server implementation, and running an application against a restored database on Ubuntu. I’m interested in the connection between application code and its operating environment: how requests move through a system, how failures appear, and what evidence helps explain them.",
 };
 
-// 2. EDUCATION + APPROACH
-// Existing export names and fields are kept for component compatibility.
+// 2. EDUCATION AND APPROACH
 
 export const educationData = {
   heading: { title: "Education and training" },
   education: [
     {
-      degree: "Backend Engineering Program · Boot.dev",
+      degree: "Backend Developer Career Path · Boot.dev",
       year: "Nov 2024 - Jun 2026",
     },
     {
@@ -39,50 +39,50 @@ export const educationData = {
       year: "Nov 2024",
     },
     {
-      degree: "CS50 Computer Science & CS50 Python · Harvard University",
+      degree: "CS50’s Introduction to Computer Science & Programming with Python · Harvard",
       year: "2023 - 2024",
     },
     {
-      degree: "Master's Degree in English - French Translation",
+      degree: "Master’s Degree in English–French Translation",
       year: "2019",
     },
   ],
-  achievementsHeading: { title: "How I work" },
+  achievementsHeading: { title: "How I approach the work" },
   achievements: [
     {
       title: "Investigate",
       description:
-        "Follow a problem from its symptoms toward the cause, using logs, tests, and observed behavior to check assumptions.",
+        "Start with the symptom, establish what is happening, and use logs, database state, and targeted checks to narrow down the cause.",
     },
     {
-      title: "Test",
+      title: "Verify",
       description:
-        "Check what happens when requests fail, dependencies are unavailable, or background work is interrupted.",
+        "Look for observable evidence: a response from a test endpoint, a changed delivery record, or a service listening where expected.",
     },
     {
-      title: "Explain",
+      title: "Document",
       description:
-        "Make technical information clear enough for someone else to understand the decisions and continue the work.",
+        "Record the reasoning as well as the fix, including unsuccessful attempts, remaining questions, and the limits of what was verified.",
     },
     {
       title: "Collaborate",
       description:
-        "Bring experience working remotely with international clients, managing deadlines, and resolving questions across languages.",
+        "Clarify expectations, raise questions early, and communicate decisions through written exchanges, API contracts, and review.",
     },
   ],
 };
 
-// 3. PROFESSIONAL EXPERIENCE
+// 3. PROFESSIONAL BACKGROUND
 
 export const workExperience = {
   heading: { title: "Professional background" },
   jobs: [
     {
-      role: "Freelance technical translator & reviewer",
-      company: "International clients · Japan / Remote",
+      role: "Freelance translator & reviewer",
+      company: "International clients · Remote from Japan",
       period: "2019 - Present",
       description:
-        "Translate and review technical and software-related content from English and Japanese into French. Investigate ambiguities, identify inconsistencies, and work with clients to clarify meaning. Independently manage terminology, deadlines, and quality requirements across international projects.",
+        "Translate and review English and Japanese content into French, including technical documentation, software interfaces, policies, and training materials. Work includes projects for humanitarian and international organisations. Resolve ambiguous instructions, maintain terminology, and coordinate questions and deadlines with clients. This experience informs how I document technical work and communicate across languages.",
     },
   ],
 };
@@ -90,33 +90,47 @@ export const workExperience = {
 // 4. TECHNICAL SKILLS
 
 export const skillsData = {
-  heading: { title: "Tools and technologies I work with" },
+  heading: { title: "Technologies used in my projects and practice" },
   skills: [
     "Go",
     "Python",
     "PostgreSQL",
     "SQL",
-    "HTTP",
-    "REST APIs",
-    "Integration testing",
-    "Linux",
+    "HTTP / REST APIs",
+    "sqlc",
+    "Goose",
+    "httptest",
+    "Testcontainers",
+    "Linux / Ubuntu",
     "Bash",
-    "systemd",
+    "systemd / journalctl",
     "SSH",
     "Docker",
     "Docker Compose",
-    "Git",
-    "GitHub",
+    "Git / GitHub",
   ],
 };
 
-// 5. PERSONAL CONTEXT
+// 5. LINK TO PERSONAL STORY
 
 export const storyData = {
   image: storyImage,
-  heading: { title: "Beyond the technical work" },
-  text:
-    "I'm French and based in Japan, working across French, English, and Japanese. Outside software, I enjoy road cycling, detective fiction, and 80s music. A good mystery tends to hold my attention, whether it's in a book or somewhere between a failed request and a system log.",
-  linkText: "More about my path",
+  heading: { title: "A little further from the keyboard" },
+  text: (
+  <>
+    I first came to Japan on a working holiday in 2014–2015 and returned
+    in 2018. Outside technical work, I play the piano, am learning the{" "}
+    <a
+      href="https://en.wikipedia.org/wiki/Mbira"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      kalimba
+    </a>
+    , and would love to learn the violin. I also enjoy detective fiction,
+    karaoke, and reading in Japanese. I also love long hikes and long days on my road bike!
+  </>
+),
+  linkText: "Read my story",
   linkUrl: "/story",
 };
