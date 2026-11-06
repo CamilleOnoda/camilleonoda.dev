@@ -81,48 +81,54 @@ export const ProjectDetailsData = [
     ],
   },
   {
-    projectId: 3,
-    projectTitle: "Webhook Relay on Ubuntu",
-    projectSubtitle:
-      "An operational case study: bringing the Go application and a restored PostgreSQL database into a local Ubuntu environment.",
-    techStack: [
-      "Ubuntu",
-      "Go",
-      "PostgreSQL 18",
-      "pg_dump",
-      "pg_restore",
-    ],
-    liveLink: "",
-    githubLink: "https://github.com/CamilleOnoda/webhook-relay",
-    heroImage: "",
-    projectSections: [
-      {
-        sectionTitle: "Purpose",
-        sectionContent:
-          "This is the Linux deployment work behind the Webhook Relay, using the same application in a second environment. The aim was to connect backend development with database administration, configuration, and troubleshooting.",
-      },
-      {
-        sectionTitle: "Preparing the database",
-        sectionContent:
-          "I installed PostgreSQL 18 to match the hosted database, created a custom-format backup with pg_dump, and inspected its contents with pg_restore. I then created a dedicated local database and application role and restored the data without carrying over the original ownership.",
-      },
-      {
-        sectionTitle: "Investigating authentication",
-        sectionContent:
-          "A peer authentication error exposed a difference between the connection I expected and the authentication method PostgreSQL was applying. I adjusted the relevant pg_hba.conf rule to use scram-sha-256 and configured the Go application to connect to the local database.",
-      },
-      {
-        sectionTitle: "Verifying the application",
-        sectionContent:
-          "I logged in with a restored account, retried a failed webhook delivery, and checked that the delivery attempt increased in the local database. This confirmed that the application was reading and writing restored data and executing its delivery logic.",
-      },
-      {
-        sectionTitle: "Next step",
-        sectionContent:
-          "The application runs locally on Ubuntu. The next step is managing it as a systemd service and investigating startup behavior, service logs, and recovery.",
-      },
-    ],
-  },
+  projectId: 3,
+  projectTitle: "Webhook Relay on Ubuntu",
+  projectSubtitle:
+    "Restoring a hosted PostgreSQL database on Ubuntu, resolving authentication, and verifying the Go application against its local data.",
+  techStack: [
+    "Ubuntu",
+    "Go",
+    "PostgreSQL 18",
+    "pg_dump",
+    "pg_restore",
+    "PostgreSQL authentication",
+  ],
+  liveLink: "",
+  githubLink: "https://github.com/CamilleOnoda/webhook-relay",
+  heroImage: "",
+  projectSections: [
+    {
+      sectionTitle: "Why a second environment?",
+      sectionContent:
+        "I wanted to take the Webhook Relay beyond its hosted setup and understand the environment around it. Running a local copy on Ubuntu meant working directly with PostgreSQL installation, database roles, authentication rules, and application configuration. The goal was to restore the existing data and verify that the application could use it through a complete workflow.",
+    },
+    {
+      sectionTitle: "Restoring the database",
+      sectionContent:
+        "I installed PostgreSQL 18 to match the hosted database and created a custom-format backup with pg_dump. Before restoring it, I inspected the archive with pg_restore to check its contents. I then created a dedicated local database and application role and restored the backup without preserving the original ownership, using local ownership and credentials instead of reproducing the hosted environment’s roles.",
+    },
+    {
+      sectionTitle: "Investigating an authentication failure",
+      sectionContent:
+        "A connection attempt failed with a peer authentication error. PostgreSQL was checking the operating-system user, while I expected to authenticate using database credentials. I investigated the connection method and the applicable pg_hba.conf rule, then configured the relevant rule to use scram-sha-256. I pointed the Go application at the local PostgreSQL instance over TCP at 127.0.0.1:5432, making the destination, database role, and authentication method explicit.",
+    },
+    {
+      sectionTitle: "Verifying more than a page load",
+      sectionContent:
+        "I logged in with an account from the restored database, opened an existing failed webhook delivery, and triggered a retry. I then checked the local database and confirmed that its delivery attempt count had increased. This provided evidence that the application was using the restored data and executing its retry logic. The increased count confirmed another recorded attempt; it did not, by itself, prove successful delivery to the destination.",
+    },
+    {
+      sectionTitle: "Current scope and limitations",
+      sectionContent:
+        "The Go application runs locally on Ubuntu against the restored PostgreSQL database. This exercise verified database restoration, application connectivity, login, and a delivery retry. Automatic application startup, service supervision, and recovery after a VM reboot remain to be verified. The setup is a local operational practice environment.",
+    },
+    {
+      sectionTitle: "Next: service management and recovery",
+      sectionContent:
+        "The next step is to manage the application with systemd, using a dedicated service account and explicit configuration. I want to verify startup, inspect application output through the journal, and investigate what happens when the process stops or PostgreSQL becomes unavailable.",
+    },
+  ],
+},
   {
     projectId: 4,
     projectTitle: "Quintle",

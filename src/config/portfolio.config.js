@@ -1,8 +1,8 @@
-import webhookRelayImage from "../Assets/webhook-relay.png";
-import httpServerImage from "../Assets/HTTP-server.png";
-import ubuntuImage from "../Assets/Ubuntu-webhook.png";
-import quintleImage from "../Assets/quintle.png";
-import basisCliImage from "../Assets/oss-curl-dependency.png";
+import webhookRelayImage from "../Assets/webhook-relay.webp";
+import httpServerImage from "../Assets/HTTP-server.webp";
+import ubuntuImage from "../Assets/Ubuntu-webhook.webp";
+import quintleImage from "../Assets/quintle.webp";
+import basisCliImage from "../Assets/oss-curl-dependency.webp";
 
 export const ProjectsIntro = {
   heading: {

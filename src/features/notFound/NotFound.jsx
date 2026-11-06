@@ -13,6 +13,7 @@ function NotFound() {
       <SEO
         title={seoData.notFound.title}
         description={seoData.notFound.description}
+        noindex
       />
       <section className="notfound-section">
         <motion.div

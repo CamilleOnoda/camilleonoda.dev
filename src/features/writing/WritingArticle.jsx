@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import SEO from "../../shared/components/seo/SEO";
+import { seoData } from "../../config/seo.config";
 import "./WritingArticle.css";
-import postOfficeImage from "../../Assets/linko-post-office.png";
+import postOfficeImage from "../../Assets/linko-post-office.webp";
 
 function BeforeDiagram() {
   return (
@@ -56,8 +57,9 @@ function WritingArticle() {
   return (
     <>
       <SEO
-        title="Why Could My Browser Reach the App When Prometheus Couldn’t? | Camille Onoda"
-        description="Working through Windows, WSL, and Docker networking during a Boot.dev Prometheus lesson, with a post office analogy to explain listeners and port forwarding."
+        title={seoData.writingArticle.title}
+        description={seoData.writingArticle.description}
+        type="article"
       />
       <main className="writing-article-page">
         <div className="writing-article">
@@ -305,4 +307,3 @@ function WritingArticle() {
 }
 
 export default WritingArticle;
-

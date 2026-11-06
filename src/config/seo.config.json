@@ -1,0 +1,81 @@
+{
+  "siteUrl": "https://camilleonoda.dev",
+  "socialPreviewPath": "/social-preview.jpg",
+  "seoData": {
+    "home": {
+      "title": "Camille Onoda | Backend & Linux",
+      "description": "Camille Onoda builds backend software with Go, Python, and PostgreSQL, with a focus on reliable delivery, testing, and understanding systems on Linux."
+    },
+    "about": {
+      "title": "About | Camille Onoda",
+      "description": "Meet Camille Onoda, a backend developer based in Japan whose background in technical translation shapes an approach built on curiosity, precision, and clear communication."
+    },
+    "portfolio": {
+      "title": "Portfolio | Camille Onoda",
+      "description": "Explore Camille Onoda’s work: a Go webhook relay, a Python HTTP server, PostgreSQL restoration on Ubuntu, a team-built word game, and an open source contribution."
+    },
+    "writing": {
+      "title": "Writing | Camille Onoda",
+      "description": "Software and Linux made clearer through mental pictures, practical explanations, project walkthroughs, and troubleshooting notes by Camille Onoda."
+    },
+    "writingArticle": {
+      "title": "Why Could My Browser Reach the App When Prometheus Couldn’t? | Camille Onoda",
+      "description": "Working through Windows, WSL, and Docker networking during a Boot.dev Prometheus lesson, with a post office analogy to explain listeners and port forwarding."
+    },
+    "testimonials": {
+      "title": "Projects & Contributions | Camille Onoda",
+      "description": "Explore Camille Onoda’s backend projects and open source contributions in Go, Python, PostgreSQL, and Bash."
+    },
+    "contact": {
+      "title": "Contact | Camille Onoda",
+      "description": "Contact Camille Onoda about a job opportunity, a project, a collaboration, or a question about backend development, Linux, or published work."
+    },
+    "story": {
+      "title": "Following the Questions | Camille Onoda",
+      "description": "From technical translation to backend software and Linux: Camille Onoda’s path through building services, investigating failures, and making complex ideas clearer."
+    },
+    "notFound": {
+      "title": "Page Not Found | Camille Onoda",
+      "description": "This page could not be found. Explore Camille Onoda’s projects, writing, and background, or get in touch."
+    }
+  },
+  "staticPages": [
+    { "path": "/", "seoKey": "home" },
+    { "path": "/about", "seoKey": "about" },
+    { "path": "/portfolio", "seoKey": "portfolio" },
+    { "path": "/testimonial", "seoKey": "testimonials" },
+    { "path": "/contact", "seoKey": "contact" },
+    { "path": "/writing", "seoKey": "writing" },
+    {
+      "path": "/writing/browser-prometheus-connection",
+      "seoKey": "writingArticle",
+      "type": "article"
+    },
+    { "path": "/story", "seoKey": "story" },
+    {
+      "path": "/portfolio-details/1",
+      "title": "Webhook Relay | Camille Onoda",
+      "description": "A backend service for storing webhooks, delivering them asynchronously, and keeping track of what happens when delivery fails."
+    },
+    {
+      "path": "/portfolio-details/2",
+      "title": "HTTP server from scratch | Camille Onoda",
+      "description": "Building an HTTP/1.1 server directly with Python sockets to understand how a connection becomes a request and a response."
+    },
+    {
+      "path": "/portfolio-details/3",
+      "title": "Webhook Relay on Ubuntu | Camille Onoda",
+      "description": "An operational case study: bringing the Go application and a restored PostgreSQL database into a local Ubuntu environment."
+    },
+    {
+      "path": "/portfolio-details/4",
+      "title": "Quintle | Camille Onoda",
+      "description": "A browser-based word puzzle built with a remote team during Chingu Voyage 61."
+    },
+    {
+      "path": "/portfolio-details/5",
+      "title": "Open source: basis-cli | Camille Onoda",
+      "description": "An installer dependency check with a regression test that reproduces an environment where curl is unavailable."
+    }
+  ]
+}

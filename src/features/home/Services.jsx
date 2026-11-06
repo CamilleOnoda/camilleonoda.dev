@@ -24,22 +24,32 @@ function HomeServices() {
 
       {/* Services Grid */}
       <div className="home-services-inner-container">
-        {bannerServices.services.map((item, index) => (
-          <Link
-            key={item.id}
-            to={`/portfolio?category=${encodeURIComponent(item.category)}`}
-            className="home-services-card-link"
-            aria-label={`Explore ${item.title} projects`}
-          >
+        {bannerServices.services.map((item) => {
+          const card = (
             <Card
               meta={item.projects}
               title={item.title}
               description={item.description}
               metaFirst={true}
-              type="hover-arrow"
+              type={item.clickable ? "hover-arrow" : "default"}
             />
-          </Link>
-        ))}
+          );
+
+          return item.clickable && item.link ? (
+            <Link
+              key={item.id}
+              to={item.link}
+              className="home-services-card-link"
+              aria-label={`Explore ${item.title}`}
+            >
+              {card}
+            </Link>
+          ) : (
+            <div key={item.id} className="home-services-card">
+              {card}
+            </div>
+          );
+        })}
       </div>
     </section>
   );

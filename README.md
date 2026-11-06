@@ -1,6 +1,6 @@
-# Lumina - ReactJS Portfolio Template
+# Camille Onoda Portfolio
 
-Thank you for purchasing Lumina!
+Personal portfolio website for Camille Onoda, built with React.
 
 ## Quick Start
 
@@ -9,12 +9,4 @@ npm install
 npm start
 ```
 
-## Documentation
-
-Please refer to the `documentation/` folder 
-for full setup and customization guide.
-
-## Support
-
-Email: sobiasoomro97@gmail.com
-Response: 24-48 hours
+`npm run build` also generates static route metadata and `sitemap.xml` in `build/`.

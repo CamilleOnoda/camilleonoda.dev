@@ -1,8 +1,8 @@
 {
-  "name": "lumina-react-portfolio",
+  "name": "camilleonoda-portfolio",
   "version": "1.0.0",
-  "description": "Lumina is a modern, responsive React portfolio template built with React, Framer Motion, and React Router. Designed to help developers launch polished portfolios quickly.",
-  "author": "Sobia Soomro",
+  "description": "Personal portfolio website for Camille Onoda, built with React.",
+  "author": "Camille Onoda",
   "license": "Personal Use License",
   "private": false,
   "dependencies": {
@@ -20,6 +20,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "postbuild": "node scripts/generate-static-pages.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.{js,jsx}",

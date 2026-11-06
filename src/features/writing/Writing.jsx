@@ -1,5 +1,6 @@
 import { useState } from "react";
 import SEO from "../../shared/components/seo/SEO";
+import { seoData } from "../../config/seo.config";
 import SectionHeader from "../../shared/components/sectionHeader/SectionHeader";
 import {
   writingHeading,
@@ -22,14 +23,14 @@ function Writing() {
   return (
     <>
       <SEO
-        title="Writing | Camille Onoda"
-        description={writingHeading.description}
+        title={seoData.writing.title}
+        description={seoData.writing.description}
       />
 
       <main className="writing-section">
         <div className="writing-container">
           <header className="writing-heading">
-            <SectionHeader />
+            <SectionHeader title={writingHeading.title} />
             <p className="writing-intro">{writingHeading.description}</p>
           </header>
 

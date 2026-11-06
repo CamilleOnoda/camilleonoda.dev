@@ -1,4 +1,4 @@
-import img from "../Assets/picture-perso.png";
+import img from "../Assets/picture-perso.webp";
 import { socialLinks } from "./social.config";
 import cvLink from "../Assets/Camille_Onoda_CV.pdf";
 
@@ -27,7 +27,6 @@ export const bannerServices = {
       projects: "Go · Python · PostgreSQL",
       description:
         "Designing APIs and backend services, from data models and authentication to background processing and HTTP behavior.",
-      category: "Backend",
       clickable: false,
       link: "",
     },
@@ -37,7 +36,6 @@ export const bannerServices = {
       projects: "Retries · recovery · integration tests",
       description:
         "Designing for failed requests and interrupted work, with stored events, delivery records, and tests that check how the system behaves when something goes wrong.",
-      category: "Backend",
       clickable: false,
       link: "",
     },
@@ -47,7 +45,6 @@ export const bannerServices = {
       projects: "Ubuntu · Bash · networking",
       description:
         "Running services, examining logs and processes, and tracing problems through the application, operating system, and network.",
-      category: "Linux",
       clickable: false,
       link: "",
     },
@@ -57,7 +54,6 @@ export const bannerServices = {
       projects: "French · English · Japanese",
       description:
         "Turning complex technical information into clear documentation, asking precise questions, and working across languages and teams.",
-      category: "Communication",
       clickable: false,
       link: "",
     },

@@ -2,8 +2,8 @@ import "./Navbar.css";
 import { useState, useEffect, useContext } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { ThemeContext } from "../../context/ThemeContext";
-import logoLight from "../../Assets/logo.png";
-import logoDark from "../../Assets/logo-dark.png";
+import logoLight from "../../Assets/logo.webp";
+import logoDark from "../../Assets/logo-dark.webp";
 import { FaBars, FaTimes } from "react-icons/fa";
 import ThemeToggle from "../../shared/components/ThemeToggle";
 import NavButton from "../../shared/components/navButton/NavButton";
@@ -42,7 +42,6 @@ const Navbar = () => {
   const navLinks = [
     { path: "/", label: "Home" },
     { path: "/about", label: "About" },
-    { path: "/focus", label: "Focus" },
     { path: "/portfolio", label: "Portfolio" },
     { path: "/writing", label: "Writing" },
     { path: "/contact", label: "Contact" },
@@ -57,7 +56,7 @@ const Navbar = () => {
             <Link to="/" onClick={closeMenu} aria-label="Go to homepage">
               <img
                 src={isDark ? logoDark : logoLight}
-                alt="Lumina"
+                alt="Camille Onoda"
                 className="navbar-logo"
               />
             </Link>

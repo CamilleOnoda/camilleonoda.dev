@@ -14,7 +14,7 @@ const PortfolioDetails = lazy(
 );
 const Contact = lazy(() => import("./features/contact/Contact"));
 const Writing = lazy(() => import("./features/writing/Writing"));
-const Focus = lazy(() => import("./features/services/Services"));
+const Testimonials = lazy(() => import("./features/testimonial/Testimonials"));
 const Story = lazy(() => import("./features/story/StoryDetails"));
 const NotFound = lazy(() => import("./features/notFound/NotFound"));
 const WritingArticle = lazy(() =>
@@ -41,8 +41,7 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/writing" element={<Writing />} />
-          <Route path="/testimonial" element={<Writing />} />
-          <Route path="/focus" element={<Focus />} />
+          <Route path="/testimonial" element={<Testimonials />} />
           <Route path="/story" element={<Story />} />
           <Route path="/portfolio-details/:id" element={<PortfolioDetails />} />
           <Route path="*" element={<NotFound />} />

@@ -1,5 +1,5 @@
-import profileImage from "../Assets/inuyama-sakura.jpg";
-import storyImage from "../Assets/golden-torii.png";
+import profileImage from "../Assets/inuyama-sakura.webp";
+import storyImage from "../Assets/golden-torii.webp";
 import cvLink from "../Assets/Camille_Onoda_CV.pdf";
 
 // 1. BANNER

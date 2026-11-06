@@ -23,7 +23,7 @@ function AboutBanner() {
           >
             <img
               src={aboutIntro.image}
-              alt="Amara Lune, frontend developer"
+              alt="A bicycle parked by the river beneath cherry blossoms in Inuyama"
               className="about-banner-image"
               loading="lazy"
               width="560"

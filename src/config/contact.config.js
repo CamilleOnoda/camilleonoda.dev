@@ -1,4 +1,4 @@
-import contactImg from "../Assets/GOPR0502.JPG";
+import contactImg from "../Assets/contact-photo.webp";
 import { socialLinks } from "./social.config";
 
 export const ContactData = {

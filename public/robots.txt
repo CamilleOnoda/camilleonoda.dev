@@ -1,2 +1,4 @@
 User-agent: *
 Disallow:
+
+Sitemap: https://camilleonoda.dev/sitemap.xml
